@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(Bg\ photo.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;    
+            background-size: cover;
+            height: 100vh;
+            /* display: flex; */
+
+        }
+        main{
+            padding-top: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            background: #D1CCCC;
+            height: 81px;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 23px;
+            font-weight: 900;
+            font-family: Poppins;
+            color: #173B45;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        .menu-item {
+            margin-right: 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            color: #173B45;
+            text-decoration: none;
+        }
+        .login {
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+        .transparent-container {
+            width: 70%;
+            height: 60%;
+            background-color: rgba(16, 15, 15, 0.594); 
+            backface-visibility:visible;
+            border-radius: 10px;
+            padding: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 500px;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 80%;
+            padding: 12px;
+            margin: 8px 0;
+            color: #ccc;
+            background-color: black;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+
+        input[type="submit"] {
+            width: 80%;
+            padding: 12px;
+            background-color: #FF7D00;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #E67300;
+        }
+
+        .forgot-password {
+            color: #FF7D00;
+            font-size: 12px;
+            text-align: right;
+            display: block;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            padding-right: 10%;
+        }
+
+        .signup-link {
+            color: #FF7D00;
+            text-decoration: none;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
+        .logo-container img {
+            max-width: 130px;
+        }
+
+        .logo-container h2 {
+            color: white;
+            font-size: 350%;
+            font-family: Poppins;
+            font-style: bold ;
+            font-weight: bolder;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar-left">
+                <span class="logo">CharitEase</span>
+                <a class="menu-item" href="">Home</a>
+                <a class="menu-item" href="">Connect</a>
+                <a class="menu-item" href="">Communities</a>
+                <a class="menu-item" href="">Events</a>
+            </div>
+            <div class="navbar-right">
+                <a class="menu-item" href="">Contact</a>
+                <a class="login" href="">Login</a>
+            </div>
+        </div>
+    </header>
+<main>
+<div class="transparent-container">
+    <div class="login-container">
+        <h1>Welcome back!</h1>
+        <p>Enter your Credentials to access your account</p>
+        <form action="#">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <a href="#" class="forgot-password">forgot password</a>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
+    </div>
+
+    <div class="logo-container">
+        <img src="logo.png" alt="CharItEase Logo">
+        <h2>CharltEase</h2>
+    </div>
+</div>
+</main>
+</body>
+</html>
