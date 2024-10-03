@@ -2,13 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CharlitEase - Swachabhiyan</title>
+    <title>CharitEase - Swachabhiyan</title>
     <style>
         body, html {
-            margin: 0;
+            margin-top:2%;
             padding: 0;
+            font-family: 'Poppins';
+            margin-left: 0;
+            margin-right:0;
         }
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+        }
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            margin-left: auto;
+        }
+        .charitease {
+            font-size: 16px;
+            font-weight: bolder;
+            z-index: 100;
+        }
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -21,7 +61,7 @@
         .logo {
             font-size: 23px;
             font-weight: 900;
-            font-family: Poppins;
+            font-family: 'Poppins';
             color: #173B45;
             margin-right: 20px;
             text-decoration: none;
@@ -37,21 +77,25 @@
         .login {
             border: 2px solid #B43F3F;
             padding: 10px 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Poppins';
             font-size: 16px;
             font-weight: 800;
             color: #B43F3F;
             text-decoration: none;
         }
         .main-img{
-            width: 100%; height: 795px; position: relative; background: #89CED4;
+            position: relative; 
+            background: #89CED4;
+            align-content: center;
+            display: flex;
+            justify-content: center;
         }
         .countdown {
             text-align: center;
             padding: 20px 5px;
         }
         .countdown h2 {
-            font-family: Poppins;
+            font-family: 'Poppins';
             font-size: 35px;
             margin-bottom: 20px;
         }
@@ -61,7 +105,7 @@
             gap: 35px;
         }
         .timer p {
-            font-family: Roboto;
+            font-family: 'Poppins';
             font-size: 30px;
             font-weight: bold;
             color: #C7600C;
@@ -136,30 +180,45 @@
             border: none;
             cursor: pointer;
         }
+        .p{
+            text-align: justify;
+
+        }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="navbar">
-            <div class="navbar-left">
-                <span class="logo">CharitEase</span>
-                <a class="menu-item" href="">Home</a>
-                <a class="menu-item" href="">Connect</a>
-                <a class="menu-item" href="">Communities</a>
-                <a class="menu-item" href="">Events</a>
-            </div>
-            <div class="navbar-right">
-                <a class="menu-item" href="">Contact</a>
-                <a class="login" href="">Login</a>
-            </div>
+    <div class="menu-bar">
+        <div class="menu-bar1">
+            <div class="charitease">CharitEase</div>
+            <div>Home</div>
+            <div>Connect</div>
+            <div>Communities</div>
+            <div>Events</div>
         </div>
-    </header>
+        <div class="menu-bar2">
+            <div>Contact</div>
+            <div>Login</div>
+        </div>
+    </div>
 
     <main>
-        <div class="main-img">
-            <img src="assets/event_bg.png" class="main-img">
-            <img class="event_pic" style="width: 70%; height: 80%; left: 15%; top: 10%; position: absolute" src="assets/image 109.png" />
-            <div class="SwachAbhiyan" style="width: 729px; left: 27%; top: 385px; position: absolute; text-align: center; color: white; font-size: 500%; font-family: Poppins; font-weight: 900;">SWACH ABHIYAN</div>
+        <div class="main-img" >
+            <img src="assets/event_bg.png" class="main-img" style="height:20%; width:100%;">
+            <img class="event_pic" style="margin:auto; margin-top:50px; position: absolute; z-index:100; width:80%;height:80%" src="assets/image 109.png" />
+            <div class="SwachAbhiyan" 
+            style=" 
+            margin-top:20%;
+            display:flex;
+            justify-content:center;
+            position: absolute; 
+            color: white; 
+            font-size: 300%; 
+            font-family: 'Poppins'; 
+            font-weight: 900; 
+            z-index:200;"
+            >
+                SWACH ABHIYAN
+            </div>
         </div>
 
         <div class="countdown">
@@ -177,7 +236,7 @@
             <div class="feature">
                 <img src="assets/event_logo1.png" alt="Cleanliness icon">
                 <h3>Cleanliness</h3>
-                <p>Promoting clean spaces to enhance health and community responsibility. Cleanliness reflects collective responsibility and enhances community well-being.</p>
+                <p >Promoting clean spaces to enhance health and community responsibility. Cleanliness reflects collective responsibility and enhances community well-being.</p>
             </div>
             <div class="feature">
                 <img src="assets/event_logo2.png" alt="Waste icon">
@@ -192,7 +251,7 @@
         </div>
 
         <div class="footer-links">
-            <div>
+            <div style="display: inline; justify-content:center">
                 <h3>Perks</h3>
                 <p>Snacks along with Volunteer Certificates</p>
             </div>
@@ -207,33 +266,5 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="logo">CharlitEase</div>
-        <div class="footer-nav">
-            <div class="footer-column">
-                <h4>Communities</h4>
-                <a href="#">NGOs</a>
-                <a href="#">Students Clubs</a>
-                <a href="#">Cleanliness</a>
-                <a href="#">Animal</a>
-                <a href="#">Children</a>
-                <a href="#">Old Age Home</a>
-            </div>
-            <div class="footer-column">
-                <h4>Facilities</h4>
-                <a href="#">Donate</a>
-                <a href="#">Volunteer</a>
-                <a href="#">Connect</a>
-                <a href="#">Register With Us</a>
-            </div>
-            <div class="footer-column">
-                <h4>Contact</h4>
-                <a href="#">Gallery</a>
-                <a href="#">Achievements</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Founders</a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

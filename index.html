@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CharitEase</title>
     <style>
+        .star1{
+            margin: 0;
+            width: 100%;
+            
+        }
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
             height: 100%;
+            margin:0 5%;
         }
+
         .menu-bar {
             padding: 20px;
             text-align: center;
@@ -28,46 +41,56 @@
             width: 100%;
             z-index: 100;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            
         }
+
         .menu-bar1 {
             display: flex;
             width: 60%;
             justify-content: space-evenly;
+            align-items: center;
         }
+
         .menu-bar2 {
             display: flex;
             width: 20%;
             justify-content: space-evenly;
+            align-items: center;
             margin-left: auto;
         }
+
         .charitease {
-            font-size: 16px;
+            font-size: 24px;
             font-weight: bolder;
+            align-content: center;
         }
 
         .content {
             padding-top: 100px;
-        
         }
-        .carousel{
+
+        .carousel {
             background-color: #E3EBED;
             height: 600px;
             z-index: 20;
-            margin-left: 7%;
-            margin-right: 7%;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
 
         }
-        .hr1{
-            margin-top: 2%;
-            margin-left:4%; 
-            margin-right:4%;
+
+        .hr1 {
+            margin: 2% 5%;
             border: 1px solid rgba(0, 0, 0, 0.122);
+
         }
-        .ourpartners{
-            margin: 24px auto;
+
+        .ourpartners {
+            margin: 20px auto;
             align-self: center;
             justify-self: center;
-            background-color: #ec7d23b9;
+            background-color: #f47c19;
             color: #173B45;
             font-size: 12px;
             font-weight: bold;
@@ -76,29 +99,281 @@
             align-items: center;
             justify-content: center;
             height: 32px;
-            width: 100px;
-            
+            width: 120px;
+
         }
-        .industrypartners{
+
+        .industrypartnersmain {
+            margin-bottom: 5%;
+
+        }
+
+        .industrypartners {
             font-size: 20px;
-            font-weight: bolder;
+            font-weight: 700;
             text-align: center;
-            margin: 5px auto;
+            margin: 5px;
+            color: #173B45;
         }
-        .partners{
+
+        .partners {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap:24px;
+            gap: 24px;
             margin-top: 20px;
 
         }
-        .partnerimages{
+
+        .partnerimages {
             height: 24px;
+        }
+
+        .events {
+            font-family: 'Poppins';
+            font-weight: 900;
+            color: #173B45;
+            font-size: 20px;
+        }
+
+        .eventsbuttons {
+            margin: 2% 0;
+            display: flex;
+            gap: 20px;
+
+
+        }
+
+        .evb {
+            background-color: #f47c19;
+            color: #f2f2f2;
+            font-family: 'Poppins';
+            border-radius: 24px;
+            border: none;
+            width: 100px;
+            height: 30px;
+            font-weight: 500;
+        }
+
+        .eventslist {
+            min-height: 250px;
+            padding-left:0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0px;
+            gap:40px;
+
+        }
+
+        .educationdrive {
+            min-height: 200px;
+            max-height: 300px;
+            min-width: 23%;
+            max-width: 24%;
+            border-radius: 8px;
+            overflow: hidden;
+            border-radius: 10;
+            background-color: #f47c19;
+        }
+
+        .eddownpanel {
+            background-color: #E4E4E4;
+            height: 18%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            padding-top: 4%;
+            gap: 24px;
+        }
+
+        .volunteerbutton {
+            font-family: 'Poppins';
+            font-weight: 500;
+            min-width: 104px;
+            background-color: #173B45;
+            color: #f2f2f2;
+            border-radius: 8px;
+            height: 72%;
+            font-size: 90%;
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+
+        .moreinfobutton {
+            background-color: #f2f2f2;
+            color: #173B45;
+            border: 2px #173B45 solid;
+            border-radius: 8px;
+            height: 72%;
+            font-family: 'Poppins';
+            font-weight: 500;
+            min-width: 100px;
+            font-size: 90%;
+            margin-bottom: 0;
+        }
+        .hr2{
+            color: rgba(0, 0, 0, 0.125);
+            z-index:100;
+            margin:0;
+            padding: 0;
+        }
+        .jointhenetwork{
+            margin-top: 4%;
+    min-height: 400px;
+    background-image: url('assets/jointhenetwork.png');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: start;
+    align-items:self-end;
+    flex-direction: column;
+    text-align: right;
+    color: #173B45; /* Optional: Adjust text color */
+    border-radius: 8px;
+    margin-bottom: 4%;
+    
+        }
+
+        .jointhenetworkbtns{
+            display: flex;
+            justify-content: end;
+            align-content: end;
+            padding-top: 2%;
+            padding-right: 6%;
+           
+            min-height: 60px;
+            
+            gap: 15px;
+
+        }
+        .volunteerbtn{
+            letter-spacing: 0.5px;
+            font-family: 'Poppins';
+            font-weight: 900;
+            min-width: 140px;
+            background-color: #ECF5F8;
+            color: #173B45;
+            border-radius: 40px;
+            border: 2px #173B45 solid;
+            height: 72%;
+            font-size: 90%;
+            margin-bottom: 0;
+            margin-right: 10px;
+
+        }
+        .moreinfobtn{
+            min-width: 50%;
+            font-family: 'Poppins';
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            min-width: 140px;
+            background-color: #173B45;
+            color:  #ECF5F8;
+            border-radius: 40px;
+            height: 72%;
+            font-size: 90%;
+            margin-bottom: 0;
+            margin-right: 10px;
+
+        }
+        .communitieslist{
+            display: flex;
+            justify-content: space-between;
+            min-height: 360px;
+            padding-left:0;
+            width: 100%;
+            margin-bottom: 0px;
+            gap:40px;
+            margin-top: 16px;
+
+        }
+        .indicommunity{
+
+            background-color: #f0edeac9;
+            min-height: 160px;
+            max-height: 280px;
+            min-width: 16%;
+            max-width: 16%;
+            border-radius: 8px;
+            overflow: hidden;
+            border-radius: 10;
+            border: 10px solid white;
+            box-shadow: 1px 2px 2px 1px rgb(0 0 0 / 20%);
+           
+        }
+        .indiimage{
+            background-repeat:no-repeat; 
+            background-size: cover;
+
+        }
+        .communitiestext{
+            
+            display: flex;
+            justify-content: start;
+            
+            
+        }
+        .communitiestext1{
+            padding-left: 8px;
+            padding-top: 10px;
+            font-weight: 800;
+            font-size: 16px;
+            
+
+        }
+        .communitiestext2{
+            padding-left: 8px;
+            font-weight: 700;
+            font-size: 12px;
+            color: #667479b3;
+
+        }
+        .communitiestext3{
+            padding-left: 8px;
+            font-weight: 500;
+            font-size: 10px;
+            color: black;
+
+        }
+        .starsoftheweek{
+            display: flex;
+            justify-content: space-between;
+            min-height: 100px;
+            padding-left:0;
+            width: 100%;
+            margin-bottom: 0px;
+            margin-top: 16px;
+
+        }
+        
+        .footer{
+            background-color: #232323;
+            color: white;
+            height: 400px;
+            display: flex;
+            
+        }
+        .leftfooter{
+            
+            width: 40%;
+            
+            background-color: #f47c19;
+            
+        }
+        .rightfooter{
+            
+            width: 60%;
+            margin: auto;
+            background-color: #256277;
+
         }
     </style>
 </head>
-<body>
+
+<body >
     <div class="menu-bar">
         <div class="menu-bar1">
             <div class="charitease">CharitEase</div>
@@ -112,36 +387,297 @@
             <div>Login</div>
         </div>
     </div>
-    
+
     <div class="content">
-        
-        
+
+
     </div>
     <div class="carousel">
+
+
+    </div>
+
+    <hr class="hr1">
+    <div class="industrypartnersmain">
+        <div class="ourpartners">
+            OUR PARTNERS
+
+        </div>
+        <div class="industrypartners">
+            Industry Partners
+        </div>
+        <div class="partners">
+            <img src="assets/logo1.png" alt="" class="partnerimages">
+            <img src="assets/logo2.png" alt="" class="partnerimages">
+            <img src="assets/logo3.png" alt="" class="partnerimages">
+            <img src="assets/logo4.png" alt="" class="partnerimages">
+            <img src="assets/logo5.png" alt="" class="partnerimages">
+            <img src="assets/logo6.png" alt="" class="partnerimages">
+
+        </div>
+
+    </div>
+
+    <hr class="hr1">
+    <div>
+        <div class="events">
+            Events
+        </div>
+        <div class="eventsbuttons">
+            <button type="button" class="evb">Ongoing</button>
+            <button type="button" class="evb">Upcoming</button>
+
+
+        </div>
+        <div class="eventslist">
+            <div class="educationdrive">
+
+                <div style="background-image: url(assets/educationdrive.png); width:100%;
+        height:62%;">
+                    udqdjdbgq
+                </div>
+                <div class="eddownpanel">
+                    <div>
+                        <button class="volunteerbutton">Volunteer</button>
+                        <button class="moreinfobutton">More info</button>
+                    </div>
+
+                </div>
+               <hr class="hr2">
+                <div style="display: flex; justify-content:start;background-color: #E4E4E4;">
+                    
+                    <div>
+                        <img src="assets/tick.png" alt="" style="width: auto;">
+                    </div>
+                    <div style="text-align: start; padding:6px;font-size:12px">
+                        100+ volunteers enrolled
+                    </div>
+                </div>
+            </div>
+            <div class="educationdrive">
+
+                <div style="background-image: url(assets/ekbachaapka.png); width:100%;
+    height:62%;">
+                    udqdjdbgq
+                </div>
+                <div class="eddownpanel">
+                    <div>
+                        <button class="volunteerbutton">Volunteer</button>
+                        <button class="moreinfobutton">More info</button>
+                    </div>
+
+
+                </div>
+               <hr class="hr2">
+                <div style="display: flex; justify-content:start;background-color: #E4E4E4;">
+                    
+                    <div>
+                        <img src="assets/tick.png" alt="" style="width: auto;">
+                    </div>
+                    <div style="text-align: start; padding:6px;font-size:12px">
+                        100+ volunteers enrolled
+                    </div>
+                </div>
+            </div>
+            <div class="educationdrive">
+
+                <div style="background-image: url(assets/swachabhiyan.png); width:100%;
+    height:62%;">
+                    udqdjdbgq
+                </div>
+                <div class="eddownpanel">
+                    <div>
+                        <button class="volunteerbutton">Volunteer</button>
+                        <button class="moreinfobutton">More info</button>
+                    </div>
+
+                </div>
+               <hr class="hr2">
+                <div style="display: flex; justify-content:start;background-color: #E4E4E4;">
+                    
+                    <div>
+                        <img src="assets/tick.png" alt="" style="width: auto;">
+                    </div>
+                    <div style="text-align: start; padding:6px;font-size:12px">
+                        100+ volunteers enrolled
+                    </div>
+                </div>
+            </div>
+            <div class="educationdrive">
+
+                <div style="background-image: url(assets/ekpedmakenam.png); width:100%;
+    height:62%;">
+                    udqdjdbgq
+                </div>
+                <div class="eddownpanel">
+                    <div>
+                        <button class="volunteerbutton">Volunteer</button>
+                        <button class="moreinfobutton">More info</button>
+                    </div>
+
+                </div>
+                <hr class="hr2">
+                <div style="display: flex; justify-content:start;background-color: #E4E4E4; padding-left:20px;">
+                    
+                    <div>
+                        <img src="assets/tick.png" alt="" style="width: auto;">
+                    </div>
+                    <div style="text-align: start; padding:6px;font-size:12px">
+                        100+ volunteers enrolled
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="jointhenetwork">
+            <h1 style="padding-right: 6%; font-weight:900;font-size:40px">Join The Network</h1>
+            <h2 style="padding-right: 6%;font-weight:850">Thousands More Fun !</h2>
+            <h3 style="width:36%;padding-right: 6%;">Join a community of people who share your interests and passions and find your tribe</h3>
+            <div class="jointhenetworkbtns">
+                <div>
+                    <button class="volunteerbtn">Volunteer</button>
+                    <button class="moreinfobtn">More info</button>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+    <div>
+        <div class="events">
+            Communities
+        </div>
+        <div class="communitieslist">
+
+            <div class="indicommunity" >
+                <div class="indiimage" style="background-image: url(assets/chetna.png);min-height:180px;">
+
+                </div>
+                <div class="communtiestext">
+                    <div class="communitiestext1">CHETNA</div>
+                    
+                    <div class="communitiestext2">Members : 16</div>
+                    <div class="communitiestext3">                    An currently benefitting more than 300,000 underpriviled children.
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="indicommunity" >
+                <div class="indiimage" style="background-image: url(assets/diyafoundation.png);min-height:180px;">
+
+                </div>
+                <div class="communtiestext">
+                    <div class="communitiestext1">Diya Foundation</div>
+                    
+                    <div class="communitiestext2">Members : 25</div>
+                    <div class="communitiestext3">A happy inclusive environment for the especially abled
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="indicommunity" >
+                <div class="indiimage" style="background-image: url(assets/ashakiran.png);min-height:180px;">
+
+                </div>
+                <div class="communtiestext">
+                    <div class="communitiestext1">Asha-kiran</div>
+                    
+                    <div class="communitiestext2">Members : 20</div>
+                    <div class="communitiestext3"> 
+                        Be the ASHA to someone's basic human rights
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="indicommunity" >
+                <div class="indiimage" style="background-image: url(assets/care.png);min-height:180px;">
+
+                </div>
+                <div class="communtiestext">
+                    <div class="communitiestext1">C.A.R.E.</div>
+                    
+                    <div class="communitiestext2">Members : 80</div>
+                    <div class="communitiestext3">
+                        Charlie's Animal Rescue Centre
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="indicommunity" >
+                <div class="indiimage" style="background-image: url(assets/chetna.png);min-height:180px;">
+
+                </div>
+                <div class="communtiestext">
+                    <div class="communitiestext1">CHETNA</div>
+                    
+                    <div class="communitiestext2">Members : 16</div>
+                    <div class="communitiestext3">                    An currently benefitting more than 300,000 underpriviled children.
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+    </div>
+    <div>
+        <div class="events">
+           Stars Of The Week
+        </div>
         
 
     </div>
-    
-    <hr class="hr1">
-    <div class="industrypartnersmain">
-    <div class="ourpartners">
-        OUR PARTNERS
 
-    </div>
-    <div class="industrypartners">
-        Industry Partners
-    </div>
-    <div class="partners">
-        <img src="assets/logo1.png" alt=""class="partnerimages">
-        <img src="assets/logo2.png" alt=""class="partnerimages">
-        <img src="assets/logo3.png" alt=""class="partnerimages">
-        <img src="assets/logo4.png" alt=""class="partnerimages">
-        <img src="assets/logo5.png" alt=""class="partnerimages">
-        <img src="assets/logo6.png" alt=""class="partnerimages">
+    <div class="starsoftheweek">
+            
+                
+        <!-- <div class="star1" style="background-image: url(assets/starsoftheweek1.png); background-repeat:no-repeat;">
 
-    </div>
+        </div>
+        <div class="star2" style="background-image: url(assets/starsoftheweek2.png);background-repeat:no-repeat;">
+
+        </div>
+        
+        
+            <div class="star3" style="background-image: url(assets/starsoftheweek3.png); background-repeat:no-repeat;">
+
+            </div>
+            <div  class="star4" style="background-image: url(assets/starsoftheweek4.png);background-repeat:no-repeat;">
+
+            </div>
+            <div class="star5" style="background-image: url(assets/starsoftheweek5.png);background-repeat:no-repeat;">
+
+            </div>
+         -->
+
+</div>
 
 </div>
 
 </body>
+<footer class="footer" style="margin: -100px;">
+    <div class="leftfooter" >
+        <div> <img src="assets/chariteaselogo.png" alt="" style="margin: 12% 16%"></div>
+
+    </div>
+    <div class="rightfooter">
+
+        jkfh
+    </div>
+
+</div>
+
 </html>
