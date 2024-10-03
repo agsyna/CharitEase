@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Sign-up Page</title>
     <style>
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('assets/bg\ vol.png');
+            background-image: url('assets/bg vol.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -18,18 +17,53 @@
 
         main {
             display: flex;
-            /* justify-content: center; */
-            /* height: 850px; */
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
         }
 
-        .navbar {
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
             display: flex;
             justify-content: space-between;
-            align-content: center;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             align-items: center;
-            background: #D1CCCC;
-            height: 81px;
-            padding: 0 20px;
+        }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        a {
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
         }
 
         .logo {
@@ -50,7 +84,7 @@
             text-decoration: none;
         }
 
-        .login {
+        .login-btn {
             border: 2px solid #B43F3F;
             padding: 10px 20px;
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -65,7 +99,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* align-items: center; */
             color: black;
         }
 
@@ -79,19 +112,19 @@
         .left-container img {
             width: 50%;
             border-radius: 60px;
-            /* align-content: center; */
             margin-left: 55%;
-
         }
 
         .right-container {
+            margin-top: 0;
             width: 40%;
             background-color: white;
-            padding: 40px;
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
             border-top-left-radius: 100px;
             border-bottom-left-radius: 100px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            /* height: 90; */
             padding-bottom: 12%;            
         }
 
@@ -101,11 +134,12 @@
             font-weight: bold;
             margin-bottom: 30px;
         }
-        .form-container{
+
+        .form-container {
             align-content: space-evenly;
             height: 100%;
-            /* justify-content: space-evenly; */
         }
+
         .form-container form {
             display: flex;
             flex-direction: column;
@@ -156,6 +190,7 @@
         .submit-container {
             text-align: center;
             margin-top: 20px;
+            
         }
 
         .submit-container input[type="submit"] {
@@ -166,6 +201,7 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            width: 500px;
         }
 
         .submit-container input[type="submit"]:hover {
@@ -176,17 +212,17 @@
 <body>
 
     <header class="header">
-        <div class="navbar">
-            <div class="navbar-left">
-                <span class="logo">CharltEase</span>
-                <a class="menu-item" href="">Home</a>
-                <a class="menu-item" href="">Connect</a>
-                <a class="menu-item" href="">Communities</a>
-                <a class="menu-item" href="">Events</a>
+        <div class="menu-bar">
+            <div class="menu-bar1">
+                <div class="charitease">CharitEase</div>
+                <a href="index.html"><div>Home</div></a>
+                <a href="volunteer.html"><div>Connect</div></a>
+                <a href="communities.html"><div>Communities</div></a>
+                <a href="events.html"><div>Events</div></a>
             </div>
-            <div class="navbar-right">
-                <a class="menu-item" href="">Contact</a>
-                <a class="login" href="">Login</a>
+            <div class="menu-bar2">
+                <a href="contactus.html"><div>Contact</div></a>
+                <a href="login.html"><div class="login-btn">Login</div></a>
             </div>
         </div>
     </header>

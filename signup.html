@@ -29,6 +29,65 @@
             display: flex;
             justify-content: center;
         }
+        .star1{
+            margin: 0;
+            width: 100%;
+            
+        }
+        .login{
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            
+        }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+            align-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -64,6 +123,7 @@
             text-decoration: none;
         }
         .transparent-container {
+            margin-top: 60px;
             width: 70%;
             height: 60%;
             background-color: rgba(16, 15, 15, 0.594); 
@@ -165,17 +225,17 @@
 </head>
 <body>
     <header class="header">
-        <div class="navbar">
-            <div class="navbar-left">
-                <span class="logo">CharitEase</span>
-                <a class="menu-item" href="">Home</a>
-                <a class="menu-item" href="">Connect</a>
-                <a class="menu-item" href="">Communities</a>
-                <a class="menu-item" href="">Events</a>
+        <div class="menu-bar">
+            <div class="menu-bar1">
+                <div class="charitease">CharitEase</div>
+                <a href="index.html"><div>Home</div></a>
+                <a href="volunteer.html"><div>Connect</div></a>
+                <a href="communities.html"><div>Communities</div></a>
+                <a href="events.html"><div>Events</div></a>
             </div>
-            <div class="navbar-right">
-                <a class="menu-item" href="">Contact</a>
-                <a class="Signup" href=""></a>
+            <div class="menu-bar2">
+                <a href="contactus.html"><div>Contact</div></a>
+                <a href="login.html"><div class="login">Login</div></a>
             </div>
         </div>
     </header>
