@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Signup Page</title>
     <style>
 
         body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-image: url("assets/Bg_photo.png");
+            background-image: url(assets/Bg_photo.png);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;    
             background-size: cover;
             height: 100vh;
-            /* display: flex; */
-
         }
+
         main{
             padding-top: 80px;
             display: flex;
@@ -49,7 +48,7 @@
             color: #173B45;
             text-decoration: none;
         }
-        .login {
+        .Signup {
             border: 2px solid #B43F3F;
             padding: 10px 20px;
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -70,7 +69,7 @@
             align-items: center;
         }
 
-        .login-container {
+        .Signup-container {
             background-color: rgba(0, 0, 0, 0.9);
             padding: 40px;
             border-radius: 10px;
@@ -88,6 +87,7 @@
             font-size: 14px;
         }
 
+        input[type="name"],
         input[type="email"],
         input[type="password"] {
             width: 80%;
@@ -126,12 +126,12 @@
             padding-right: 10%;
         }
 
-        .signup-link {
+        .Login-link {
             color: #FF7D00;
             text-decoration: none;
         }
 
-        .signup-link:hover {
+        .Login-link:hover {
             text-decoration: underline;
         }
 
@@ -169,22 +169,21 @@
             </div>
             <div class="navbar-right">
                 <a class="menu-item" href="">Contact</a>
-                <a class="login" href="">Login</a>
+                <a class="Signup" href="">Signup</a>
             </div>
         </div>
     </header>
 <main>
 <div class="transparent-container">
-    <div class="login-container">
-        <h1>Welcome back!</h1>
-        <p>Enter your Credentials to access your account</p>
+    <div class="Signup-container">
+        <h1>Get Started Now</h1>
         <form action="#">
+            <input type="name" name="name" placeholder="Enter your name" required>
             <input type="email" name="email" placeholder="Enter your email" required>
-            <a href="#" class="forgot-password">forgot password</a>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+            <input type="submit" value="Sign-up">
         </form>
-        <p>Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
+        <p>Have an account? <a href="#" class="Login-link">Login</a></p>
     </div>
 
     <div class="logo-container">
