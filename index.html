@@ -17,15 +17,6 @@
             width: 100%;
             
         }
-        .login{
-            border: 2px solid #B43F3F;
-            padding: 10px 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 16px;
-            font-weight: 800;
-            color: #B43F3F;
-            text-decoration: none;
-        }
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f2f2f2;
@@ -48,7 +39,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 100;
+            z-index: 1000;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             align-items: center;
             
@@ -229,6 +220,9 @@
             margin-bottom: 0;
             margin-right: 10px;
         }
+        .volunteerbutton:hover{
+            background-color:#386d7c;
+        }
 
         .moreinfobutton {
             background-color: #f2f2f2;
@@ -241,6 +235,9 @@
             min-width: 100px;
             font-size: 90%;
             margin-bottom: 0;
+        }
+        .moreinfobutton:hover{
+            background-color: rgb(198, 199, 201);
         }
         .hr2{
             color: rgba(0, 0, 0, 0.125);
@@ -295,8 +292,9 @@
 
         }
         .volunteerbtn:hover{
-            background-color: #173B45;
-            color:  #ECF5F8;
+            background-color: #d0e5effe;
+            color: #122e36;
+            
             
         }
 
@@ -313,11 +311,11 @@
             font-size: 90%;
             margin-bottom: 0;
             margin-right: 10px;
+            transition: ease 0.2s;
 
         }
         .moreinfobtn:hover{
-            background-color: #ECF5F8;
-            color: #173B45;
+            background-color: #2d6f81
 
         }
         .communitieslist{
@@ -513,6 +511,11 @@
 
             
         }
+        a{
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -521,14 +524,14 @@
     <div class="menu-bar">
         <div class="menu-bar1">
             <div class="charitease">CharitEase</div>
-            <div>Home</div>
-            <div>Connect</div>
-            <div>Communities</div>
-            <div>Events</div>
+            <a href="index.html"><div>Home</div></a>
+            <a href="volunteer.html"><div>Connect</div></a>
+            <a href="communities.html"><div>Communities</div></a>
+            <a href="events.html"><div>Events</div></a>
         </div>
         <div class="menu-bar2">
-            <div>Contact</div>
-            <div class="login">Login</div>
+            <a href="contactus.html"><div>Contact</div></a>
+            <a href="login.html"><div class="login">Login</div></a>
         </div>
     </div>
 
@@ -579,8 +582,8 @@
                 <div style="background-image: url(assets/educationdrive.png); width:100%;
         height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
-                        <div>
-                        <h3 >
+                        <div >
+                        <h3 style="margin-bottom: 0;">
                             Education Drive
                         </h3>
                             Savera | Chetna
@@ -597,8 +600,8 @@
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteeer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="educationdrive.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
                 </div>
@@ -619,16 +622,15 @@
     height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
                         <div>
-                        <h3 >
-                            Education Drive
+                        <h3 style="margin-bottom: 0;"">
+                            Ek Bacha Aapka
                         </h3>
-                            Savera | Chetna
+                            PETA India
                         
                     </div>
                     <div>
                         <h4>
-                            October 30, 2024
-    
+                           November 2, 2024
                         </h4>
 
                     </div>    
@@ -636,8 +638,8 @@
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="ekbachaapka.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
 
@@ -659,15 +661,15 @@
     height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
                         <div>
-                        <h3 >
-                            Education Drive
+                        <h3 style="margin-bottom: 0;">
+                            Swach Abhiyan
                         </h3>
-                            Savera | Chetna
+                            Enactus 
                         
                     </div>
                     <div>
                         <h4>
-                            October 30, 2024
+                            December 3, 2024
     
                         </h4>
 
@@ -676,8 +678,8 @@
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="swatch.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
                 </div>
@@ -698,15 +700,15 @@
     height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
                         <div>
-                        <h3 >
-                            Education Drive
+                        <h3 style="margin-bottom: 0;">
+                            Ek Ped Maa Ke Naam
                         </h3>
-                            Savera | Chetna
+                            N.S.S. BMU
                         
                     </div>
                     <div>
                         <h4>
-                            October 30, 2024
+                            October 19, 2024
     
                         </h4>
 
@@ -715,8 +717,8 @@
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="ekpedmakenam.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
                 </div>
@@ -739,8 +741,8 @@
             <h3 style="width:36%;padding-right: 6%;">Join a community of people who share your interests and passions and find your tribe</h3>
             <div class="jointhenetworkbtns">
                 <div>
-                    <button class="volunteerbtn">Volunteer</button>
-                    <button class="moreinfobtn">More info</button>
+                    <a href="volunteer.html"><button class="volunteerbtn">Volunteer</button></a>
+                    <a href="communities.html"><button class="moreinfobtn">More info</button></a>
                 </div>
 
             </div>
