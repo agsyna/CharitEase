@@ -9,7 +9,7 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Communities</title>
+    <title>Document</title>
     <style>
         body {
             font-family: "Poppins";
@@ -338,12 +338,13 @@
         <div class="events-grid">
             
             <div class="card">
-                <img src="assets/yellow kids.png" alt="Event Image">
+                <img src="assets/poor kids.png" alt="Event Image">
                 <div class="card-content">
-                    <h3>Chetna NGO</h3>
-                    <p class="location">Sector-36, Jaipur</p>
+                    <h3>Education Drive</h3>
+                    <p>CHETNA | Savera</p>
+                    <p class="location">Sector-36, Jaipur<br>Tuesday, 23rd Sept</p>
                     <div class="volunteer-count">
-                        <i class="fas fa-user-check"> 200+ volunteers enrolled</i>
+                        <i class="fas fa-user-check"> 500+ volunteers enrolled</i>
                     </div>
                     <br>
                     <div class="card-footer">
@@ -352,15 +353,16 @@
                     </div>
                 </div>
             </div>
-        
+
             
             <div class="card">
-                <img src="assets/poor kids.png" alt="Event Image">
+                <img src="assets/yellow kids.png" alt="Event Image">
                 <div class="card-content">
-                    <h3>Diya Foundation</h3>
-                    <p class="location">Chandani Chowk, Delhi </p>
+                    <h3>BADHTE KADAM</h3>
+                    <p>CHETNA | CRY</p>
+                    <p class="location">Gov. School, Rewari<br>Tuesday, 31st Sept</p>
                     <div class="volunteer-count">
-                        <i class="fa-user"> 4 volunteers enrolled </i>
+                        <i class="fa-user"></i> 200+ volunteers enrolled
                     </div>
                     <br>
                     <div class="card-footer">
@@ -370,33 +372,35 @@
                     </div>
                 </div>
             </div>
-        
+
             
             <div class="card">
-                <img src="assets/papa ji.png" alt="Event Image">
+                <img src="assets/dog kid.png" alt="Event Image">
                 <div class="card-content">
-                    <h3>FMCH Help</h3>
-                    <p class="location">Janakpuri, Delhi</p>
+                    <h3>Ek Bacha Aapka</h3>
+                    <p>UNICEF | PETA India</p>
+                    <p class="location">Sector-12, Jaipur<br>Tuesday, 23rd Sept</p>
                     <div class="volunteer-count">
-                        <i class="fa-user"> 4 volunteers enrolled</i>
+                        <i class="fa-user"></i> 40 volunteers enrolled
                     </div>
                     <br>
                     <div class="card-footer">
-        
+   
                         <button class="volunteer">Volunteer</button>
                         <button class="more-info">More info</button>
                     </div>
                 </div>
             </div>
-        
+
             
             <div class="card">
-                <img src="assets/disabled.png" alt="Event Image">
+                <img src="assets/women brooms.png" alt="Event Image">
                 <div class="card-content">
-                    <h3>Asha Kiran</h3>
-                    <p class="location">Hawa Mahal, Jaipur</p>
+                    <h3>Mind Your Bin</h3>
+                    <p>The Hands India</p>
+                    <p class="location">Hawa Mahal, Jaipur<br>Tuesday, 23rd Sept</p>
                     <div class="volunteer-count">
-                        <i class="fa-user"> 4 volunteers enrolled </i>
+                        <i class="fa-user"></i> 100+ volunteers enrolled
                     </div>
                     <br>
                     <div class="card-footer">
@@ -406,15 +410,16 @@
                     </div>
                 </div>
             </div>
-        
+
             
             <div class="card">
-                <img src="assets/women brooms.png" alt="Event Image">
+                <img src="assets/yogi ji.png" alt="Event Image">
                 <div class="card-content">
-                    <h3>Atree</h3>
-                    <p class="location">Gov. School, Panchgaon</p>
+                    <h3>Tree Plantation Drive</h3>
+                    <p>Green Earth Society</p>
+                    <p class="location">Rajasthan University, Jaipur<br>Friday, 26th Sept</p>
                     <div class="volunteer-count">
-                        <i class="fa-user"></i> 100+ volunteers enrolled
+                        <i class="fa-user"></i> 4 volunteers enrolled
                     </div>
                     <br>
                     <div class="card-footer">
@@ -423,17 +428,17 @@
                     </div>
                 </div>
             </div>
-        
+
             
             <div class="card">
-                <img src="assets/dog kid.png" alt="Event Image">
+                <img src="assets/papa ji.png" alt="Event Image">
                 <div class="card-content">
-                    <h3>CARE</h3>
-                    <p class="location">Patel Chowk,Delhi</p>
+                    <h3>Health Awareness Camp</h3>
+                    <p>Community Health Foundation</p>
+                    <p class="location">City Center, Jaipur<br>Wednesday, 24th Sept</p>
                     <div class="volunteer-count">
-                        <i class="fa-user"></i> 40 volunteers enrolled
+                        <i class="fa-user"></i> 4 volunteers enrolled
                     </div>
-                    <br>
                     <div class="card-footer">
                         
                         <button class="volunteer">Volunteer</button>
@@ -442,7 +447,6 @@
                 </div>
             </div>
         </div>
-        
 
         <div class="pagination">
             <button class="active">1</button>
@@ -454,3 +458,7 @@
     
 </body>
 </html>
+
+
+
+
