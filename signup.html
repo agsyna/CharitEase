@@ -221,6 +221,114 @@
             font-weight: bolder;
             margin: 10px 0;
         }
+        .footer{
+            background-color: #232323;
+            color: white;
+            height: 360px;
+            display: flex;
+            
+        }
+        .leftfooter{
+            
+            width: 40%;  
+            margin: 0px auto;
+            
+            
+        }
+        .midfooter{
+            
+            width: 28%;
+            margin: auto;
+            display: flex;
+            gap:40px;
+        }
+        .midfooter div {
+            display: flex;
+            flex-direction: column;
+
+        }
+        .footericons{
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            width: 40%;  
+            margin: 0px auto;
+            gap:20px;
+            padding-right: 40px;
+        }
+        .footertext{
+            color: #9B9B9B;
+            font-size: 10px;
+            width: 40%;  
+            margin: 12px auto;
+            background-color: #232323;     
+        }
+        .footertext1{
+            color: #9B9B9B;
+            font-size: 10px;
+            font-weight: 400;
+            width: 40%;  
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .footerheadings{
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            width: 40%;  
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+        }
+        .rightfooter{
+           width: 30%;
+           margin: 0 auto;
+            display: block;
+            gap:40px;
+            
+           
+
+        }
+        .registernow{
+            margin: 10% auto;
+            font-weight: 900;
+            font-size: 24px;
+
+        }
+        .subscribenow{
+            background-color: #000000a4;
+            border-radius: 8px;
+            width: 100%;
+            margin-right: 10px;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:4px
+        }
+        .subscribenow input{
+            width: 70%;
+            height: 40px;
+            border-radius: 8px;
+        }
+        .subscribenow input ::placeholder{
+            padding-left: 100px;
+        }
+        .subscribenow button{
+            background-color: #173B45 ;
+            color: #f2f2f2;
+            border: 2px #173B45 solid;
+            border-radius: 8px;
+            height: 40px;
+            font-family: 'Poppins';
+            font-weight: 800;
+            min-width: 20%;
+            font-size: 90%;
+            margin-bottom: 0;
+
+        }
     </style>
 </head>
 <body>
@@ -259,4 +367,66 @@
 </div>
 </main>
 </body>
+<div style="height: 200px;"></div>
+
+</div>
+<div class="footer" style="margin: -100px;">
+    <div class="leftfooter" >
+        <div> <img src="assets/chariteaselogo.png" alt="" style="margin: 12% 16%"></div>
+        <div class="footericons">
+            <a href="https://in.linkedin.com/#:~:text=1%20billion%20members%20|%20Manage%20your%20professional%20identity.%20Build%20and"><img src="assets/linkedin.png" alt=""></a>
+        <a href="https://x.com/?lang=en-in&mx=2">
+            <img src="assets/twitter.png" alt="">
+        </a>
+    </div>
+    <div class="footertext">
+        Copyright 2024 CharitEase. All rights reserved
+    </div>
+
+    </div>
+    <div class="midfooter">
+        <div>
+        <div class="footerheadings">Communities</div>
+        <div class="footertext1">NGOS</div>
+        <div class="footertext1">Old Age Home</div>
+        <div class="footertext1">Children</div>
+        <div class="footertext1">Animal</div>
+        <div class="footertext1">Cleanliness</div>
+        <div class="footertext1">Student Clubs</div>
+        </div>
+        <div>
+            <div class="footerheadings">Facilities</div>
+            <div class="footertext1">Donate</div>
+            <div class="footertext1">Volunteer</div>
+            <div class="footertext1">Connect</div>
+            <div class="footertext1">Register With Us</div>
+        </div>
+        <div>
+            <div class="footerheadings">Contact</div>
+            <div class="footertext1">Gallery</div>
+            <div class="footertext1">Achievements</div>
+            <div class="footertext1">Testimonials</div>
+            <div class="footertext1">Founders</div>
+        </div>
+        <div>
+            <hr style="margin-left:10px; height:100%">
+        </div>
+        
+
+
+        
+    </div>
+    
+    <div class="rightfooter">
+        <div class="registernow">
+            Register Now So You Don't Miss Our Events
+        </div>
+        <div class="subscribenow">
+            <input type="email" placeholder="example@fg.com" >
+            <button type="submit">Subscribe Now</button>
+        </div>
+
+    </div>
+
+</div>
 </html>
