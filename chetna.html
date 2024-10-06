@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,31 +16,53 @@
             margin: 0;
             font-family: 'Poppins', sans-serif;
         }
-        .navbar {
+
+        a {
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
+
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
             display: flex;
             justify-content: space-between;
-            align-content: center;
-            align-items: center;
-            background: #D1CCCC;
-            height: 81px;
-            padding: 0 20px;
-        }
-        .logo {
-            font-size: 23px;
-            font-weight: 900;
-            font-family: Poppins;
-            color: #173B45;
-            margin-right: 20px;
-            text-decoration: none;
-        }
-        .menu-item {
-            margin-right: 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 14px;
-            font-weight: 800;
-            color: #173B45;
-            text-decoration: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+
         }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+            align-content: center;
+        }
+
         .login {
             border: 2px solid #B43F3F;
             padding: 10px 20px;
@@ -49,34 +72,39 @@
             color: #B43F3F;
             text-decoration: none;
         }
-        .inner-box{
+
+        .inner-box {
             width: 28%;
-            height: 45%; 
-            left: 50px; 
+            height: 45%;
+            left: 50px;
             top: 10em;
-            position: absolute; 
+            position: absolute;
             background: rgba(0, 0, 0, 0.721) linear-gradient(0deg, rgba(43.43, 58.87, 63.75, 0.30) 0%, rgba(43.43, 58.87, 63.75, 0.30) 100%);
             flex-direction: column;
-            align-items: flex-start; 
-            gap: 7px; 
+            align-items: flex-start;
+            gap: 7px;
             display: flex;
             flex-direction: column;
         }
-        .img1{
+
+        .img1 {
             background: black;
             color: black;
             width: 100%;
-            height:auto;
+            height: auto;
         }
-        .upper{
+
+        .upper {
             display: flex;
             flex-direction: row;
             gap: 10px;
         }
-        .Ngo_logo{
-          padding: 5px; 
-          width: 40%;
+
+        .Ngo_logo {
+            padding: 5px;
+            width: 40%;
         }
+
         .title {
             font-size: 3em;
             font-weight: bold;
@@ -86,21 +114,25 @@
             color: white;
 
         }
-        .volunteers{
+
+        .volunteers {
             display: flex;
             justify-content: center;
             align-content: center;
         }
+
         .volun {
             margin-top: 10px;
             font-size: 0.9rem;
             color: #F68C35;
             margin-bottom: 10px;
         }
-        .tick{
+
+        .tick {
             /* width: 4px; */
             height: 40px;
         }
+
         .accreditations {
             display: flex;
             justify-content: center;
@@ -108,10 +140,12 @@
             margin-left: 20px;
             margin-top: 20px;
         }
+
         .accreditations img {
             width: 70px;
             height: auto;
         }
+
         .rating {
             font-size: 1.3rem;
             color: #F68C35;
@@ -120,10 +154,12 @@
             margin-top: -20px;
             margin-left: 20px;
         }
-        .rating span{
+
+        .rating span {
             color: white;
         }
-        .options{
+
+        .options {
             display: flex;
             justify-content: space-between;
             margin-left: 30px;
@@ -132,79 +168,91 @@
             margin-bottom: 30px;
             font-weight: 400;
         }
-        .overview{
+
+        .overview {
             background-color: #173B45;
             border-radius: 3px;
         }
-        .about{
+
+        .about {
             font-weight: 700;
             font-size: 35.19px;
             color: #5B5B5B;
+            font-family: 'Poppins';
         }
-        .about_us{
+
+        .about_us {
             font-size: medium;
             background: #F9F9F9;
-            padding: 40.98px; 
-            flex-direction: column; 
-            justify-content: flex-start; 
-            align-items: flex-start; 
-            gap: 11px; 
+            padding: 40.98px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 11px;
             display: flex;
             font-family: Inter;
             margin-bottom: 30px;
         }
-        .about_para{
-            align-self: stretch; 
-            color: #2E2E2E; 
-            font-size: 18px; 
-            font-family: Inter; 
-            font-weight: 500; 
+
+        .about_para {
+            align-self: stretch;
+            color: #2E2E2E;
+            font-size: 18px;
+            font-family: Inter;
+            font-weight: 500;
             word-wrap: break-word;
         }
-        .events{
+
+        .events {
             justify-content: center;
             /* margin: %; */
             padding-left: 40px;
         }
-        .events_img{
+
+        .events_img {
             width: 95%;
         }
-        .gallery{
+
+        .gallery {
             display: flex;
             background: #dad9d991;
             max-height: 10%;
-            margin:50px  80px ;
+            margin: 50px 80px;
             padding: 20px 0px;
             border-radius: 10px;
         }
-        .gallery1{
+
+        .gallery1 {
             display: inline-block;
             width: 50%;
             padding-left: 10px;
 
         }
-        .gallery1 img{
-            padding: 2px ;
+
+        .gallery1 img {
+            padding: 2px;
         }
+
         .input-group {
             display: flex;
             flex-direction: column;
             width: 48%;
         }
+
         .input-full {
             display: flex;
             flex-direction: column;
             width: 99%;
         }
-        
+
         .eventslist {
             min-height: 250px;
-            padding-left:0;
+            padding-left: 0;
             width: 96%;
             display: flex;
             justify-content: space-around;
             margin-bottom: 0px;
-            gap:30px;
+            gap: 30px;
             transition: box-shadow .5s;
             margin: 20px;
         }
@@ -213,19 +261,20 @@
         .educationdrive {
             min-height: 200px;
             max-height: 300px;
-            min-width: 22.8%;
-            max-width: 26%;
+            min-width: 19%;
+            max-width: 25%;
             border-radius: 8px;
             overflow: hidden;
             background-repeat: no-repeat;
-            
-          
+
+
         }
-        .educationdrive:hover{
-            z-index:200;
+
+        .educationdrive:hover {
+            z-index: 200;
             cursor: pointer;
             box-shadow: 4px 4px 16px rgba(36, 36, 36, 0.5);
-            
+
 
         }
 
@@ -240,14 +289,14 @@
             gap: 24px;
         }
 
-        .eventstext{
+        .eventstext {
             color: #f2f2f2d9;
             display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    height: 100%;                 
-    padding-left: 20px;            
-    padding-top: 10px; 
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding-left: 20px;
+            padding-top: 10px;
         }
 
         .volunteerbutton {
@@ -275,48 +324,183 @@
             font-size: 90%;
             margin-bottom: 0;
         }
-        .hr2{
+
+        .hr2 {
             color: rgba(0, 0, 0, 0.125);
-            z-index:100;
-            margin:0;
+            z-index: 100;
+            margin: 0;
             padding: 0;
         }
-        .feedback{
+
+        .feedback {
             display: flex;
             flex-direction: column;
             /* gap: 70px; */
         }
+
+        .footer {
+            background-color: #232323;
+            color: white;
+            height: 360px;
+            display: flex;
+
+        }
+
+        .leftfooter {
+
+            width: 40%;
+            /* margin: 0px 10px; */
+
+
+        }
+
+        .midfooter {
+
+            width: 28%;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+        }
+
+        .midfooter div {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .footericons {
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 0px auto;
+            gap: 20px;
+            padding-right: 40px;
+        }
+
+        .footertext {
+            color: #9B9B9B;
+            font-size: 10px;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+        }
+
+        .footertext1 {
+            color: #9B9B9B;
+            font-size: 10px;
+            font-weight: 400;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .footerheadings {
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+        }
+
+        .rightfooter {
+            width: 30%;
+            margin: 0 auto;
+            display: block;
+            gap: 40px;
+
+
+
+        }
+
+        .registernow {
+            margin: 10% auto;
+            font-weight: 900;
+            font-size: 24px;
+
+        }
+
+        .subscribenow {
+            background-color: #000000a4;
+            border-radius: 8px;
+            width: 100%;
+            margin-right: 10px;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px
+        }
+
+        .subscribenow input {
+            width: 70%;
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        .subscribenow input ::placeholder {
+            padding-left: 100px;
+        }
+
+        .subscribenow button {
+            background-color: #173B45;
+            color: #f2f2f2;
+            border: 2px #173B45 solid;
+            border-radius: 8px;
+            height: 40px;
+            font-family: 'Poppins';
+            font-weight: 800;
+            min-width: 20%;
+            font-size: 90%;
+            margin-bottom: 0;
+
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar-left">
-                <span class="logo">CharitEase</span>
-                <a class="menu-item" href="">Home</a>
-                <a class="menu-item" href="">Connect</a>
-                <a class="menu-item" href="">Communities</a>
-                <a class="menu-item" href="">Events</a>
-            </div>
-            <div class="navbar-right">
-                <a class="menu-item" href="">Contact</a>
-                <a class="login" href="">Login</a>
-            </div>
+    <div class="menu-bar">
+        <div class="menu-bar1">
+            <div class="charitease">CharitEase</div>
+            <a href="index.html">
+                <div>Home</div>
+            </a>
+            <a href="volunteer.html">
+                <div>Connect</div>
+            </a>
+            <a href="communities.html">
+                <div>Communities</div>
+            </a>
+            <a href="events.html">
+                <div>Events</div>
+            </a>
         </div>
-    </header>
+        <div class="menu-bar2">
+            <a href="contactus.html">
+                <div>Contact</div>
+            </a>
+            <a href="login.html">
+                <div class="login">Login</div>
+            </a>
+        </div>
+    </div>
     <main>
         <div class="top">
-            <img class="img1" src="assets\chetna.png" alt="CHETNA">
+            <img class="img1" src="assets\chetna copy.png" alt="CHETNA">
             <div class="inner-box">
                 <div class="upper">
                     <img class="Ngo_logo" src="assets/chetna_logo.png" alt="CHETNA Logo">
                     <div class="title1">
                         <div class="title">CHETNA NGO</div>
                         <div class="volunteers">
-                            <img class="tick"  src="assets/tick.png" >
+                            <img class="tick" src="assets/tick.png">
                             <div class="volun">3000+ volunteers enrolled</div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="accreditations">
@@ -324,27 +508,36 @@
                     <img src="assets/image 13.png">
                     <img src="assets/nci.png">
                 </div>
-            
+
                 <div class="rating">
-                    <span><pre>★ ★ ★ ☆ ☆ </pre></span>
-                    <div><pre>(633 reviews)</pre></div>
+                    <span>
+                        <pre>★ ★ ★ ☆ ☆ </pre>
+                    </span>
+                    <div>
+                        <pre>(633 reviews)</pre>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="options">
-            <button class="volunteerbutton">overview</button>
-            <div>events</div>
-            <div>gallery</div>
-            <div>reviews</div>
-            <div>contact</div>
+            <button class="volunteerbutton">Overview</button>
+            <div>Events</div>
+            <div>Gallery</div>
+            <div>Reviews</div>
+            <div>Contact</div>
             <hr style="margin: -7px;">
-            <button class="volunteerbutton">volunteer</button>
+            <a href="volunteer.html"><button class="volunteerbutton" style="cursor: pointer;">Volunteer</button></a>
         </div>
 
         <div class="about_us">
             <div class="about">About US</div>
-            <div class="about_para">At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.</div>
+            <div class="about_para">At Chetna NGO, we are passionately committed to transforming the lives of street and
+                working children in India. Since our inception in 2002, we have focused on providing education,
+                vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that
+                every child we reach can realize their full potential, live with dignity, and enjoy the rights they
+                deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they
+                come from.</div>
         </div>
 
         <div class="eventslist">
@@ -354,31 +547,31 @@
         height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
                         <div>
-                        <h3 >
-                            Education Drive
-                        </h3>
+                            <h3>
+                                Education Drive
+                            </h3>
                             Savera | Chetna
-                        
-                    </div>
-                    <div>
-                        <h4>
-                            October 30, 2024
-    
-                        </h4>
 
-                    </div>    
+                        </div>
+                        <div>
+                            <h4>
+                                October 30, 2024
+
+                            </h4>
+
+                        </div>
                     </div>
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="educationdrive.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
                 </div>
-               <hr class="hr2">
+                <hr class="hr2">
                 <div style="display: flex; justify-content:start;background-color: #E4E4E4;">
-                    
+
                     <div>
                         <img src="assets/tick.png" alt="" style="width: auto;">
                     </div>
@@ -393,32 +586,32 @@
     height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
                         <div>
-                        <h3 >
-                            Education Drive
-                        </h3>
+                            <h3>
+                                Education Drive
+                            </h3>
                             Savera | Chetna
-                        
-                    </div>
-                    <div>
-                        <h4>
-                            October 30, 2024
-    
-                        </h4>
 
-                    </div>    
+                        </div>
+                        <div>
+                            <h4>
+                                October 30, 2024
+
+                            </h4>
+
+                        </div>
                     </div>
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="ekbachaapka.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
 
                 </div>
-               <hr class="hr2">
+                <hr class="hr2">
                 <div style="display: flex; justify-content:start;background-color: #E4E4E4;">
-                    
+
                     <div>
                         <img src="assets/tick.png" alt="" style="width: auto;">
                     </div>
@@ -433,31 +626,31 @@
     height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
                         <div>
-                        <h3 >
-                            Education Drive
-                        </h3>
+                            <h3>
+                                Education Drive
+                            </h3>
                             Savera | Chetna
-                        
-                    </div>
-                    <div>
-                        <h4>
-                            October 30, 2024
-    
-                        </h4>
 
-                    </div>    
+                        </div>
+                        <div>
+                            <h4>
+                                October 30, 2024
+
+                            </h4>
+
+                        </div>
                     </div>
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="ekpedmakenam.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
                 </div>
-               <hr class="hr2">
+                <hr class="hr2">
                 <div style="display: flex; justify-content:start;background-color: #E4E4E4;">
-                    
+
                     <div>
                         <img src="assets/tick.png" alt="" style="width: auto;">
                     </div>
@@ -472,31 +665,31 @@
     height:62%;">
                     <div class="eventstext" style="padding-left: 20px;padding-top:8px;">
                         <div>
-                        <h3 >
-                            Education Drive
-                        </h3>
+                            <h3>
+                                Education Drive
+                            </h3>
                             Savera | Chetna
-                        
-                    </div>
-                    <div>
-                        <h4>
-                            October 30, 2024
-    
-                        </h4>
 
-                    </div>    
+                        </div>
+                        <div>
+                            <h4>
+                                October 30, 2024
+
+                            </h4>
+
+                        </div>
                     </div>
                 </div>
                 <div class="eddownpanel">
                     <div>
-                        <button class="volunteerbutton">Volunteer</button>
-                        <button class="moreinfobutton">More info</button>
+                        <a href="volunteer.html"><button class="volunteerbutton">Volunteer</button></a>
+                        <a href="swatch.html"><button class="moreinfobutton">More info</button></a>
                     </div>
 
                 </div>
                 <hr class="hr2">
                 <div style="display: flex; justify-content:start;background-color: #E4E4E4; padding-left:20px;">
-                    
+
                     <div>
                         <img src="assets/tick.png" alt="" style="width: auto;">
                     </div>
@@ -510,7 +703,12 @@
 
         <div class="about_us">
             <div class="about">Why Join Us</div>
-            <div class="about_para">At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.</div>
+            <div class="about_para">At Chetna NGO, we are passionately committed to transforming the lives of street and
+                working children in India. Since our inception in 2002, we have focused on providing education,
+                vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that
+                every child we reach can realize their full potential, live with dignity, and enjoy the rights they
+                deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they
+                come from.</div>
         </div>
 
         <div class="gallery">
@@ -520,7 +718,8 @@
                 <img src="assets/image 96.png" width="50%">
                 <img src="assets/image 98.png" width="45%">
                 <img src="assets/image 97.png" width="50%">
-                <img src="assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150 1.png" width="30%" style="margin-left: 20px;">
+                <img src="assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150 1.png" width="30%"
+                    style="margin-left: 20px;">
 
             </div>
             <div>
@@ -531,13 +730,13 @@
         <div class="feedback" style="color: #F9F9F9; margin: 20px;">
             <div style="display: flex; gap: 200px;">
                 <div><img src="assets/Frame 4110.png" width="100%" style="margin: 0  90px"></div>
-                <div style="background-color:#F9F9F9; padding:0  20px; position: relative;display: flex;flex-direction: column;gap: 80px;align-content: space-evenly; width: 50%;" >
+                <div
+                    style="background-color:#F9F9F9; padding:0  20px; position: relative;display: flex;flex-direction: column;gap: 80px;align-content: space-evenly; width: 50%;">
                     <form action="#">
                         <div class="form-row" style="display: flex;margin-top: 30px; gap: 20px;">
                             <div class="input-group">
                                 <label for="first-name" style="color: #2E2E2E;">First Name</label>
-                                <input type="text" 
-                                style="height: 20px;" id="first-name" name="first-name" required>
+                                <input type="text" style="height: 20px;" id="first-name" name="first-name" required>
                             </div>
                             <div class="input-group">
                                 <label for="last-name" style="color: #2E2E2E;">Last Name</label>
@@ -562,4 +761,5 @@
         </div>
     </main>
 </body>
+
 </html>

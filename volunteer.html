@@ -54,6 +54,11 @@
             justify-content: space-evenly;
             align-items: center;
         }
+        a{
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
 
         .menu-bar2 {
             display: flex;
@@ -330,25 +335,31 @@
             margin-bottom: 0;
 
         }
+
+        select {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+}
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="menu-bar">
-            <div class="menu-bar1">
-                <div class="charitease">CharitEase</div>
-                <a href="index.html"><div>Home</div></a>
-                <a href="volunteer.html"><div>Connect</div></a>
-                <a href="communities.html"><div>Communities</div></a>
-                <a href="events.html"><div>Events</div></a>
-            </div>
-            <div class="menu-bar2">
-                <a href="contactus.html"><div>Contact</div></a>
-                <a href="login.html"><div class="login-btn">Login</div></a>
-            </div>
+    <div class="menu-bar">
+        <div class="menu-bar1">
+            <div class="charitease">CharitEase</div>
+            <a href="index.html"><div>Home</div></a>
+            <a href="volunteer.html"><div>Connect</div></a>
+            <a href="communities.html"><div>Communities</div></a>
+            <a href="events.html"><div>Events</div></a>
         </div>
-    </header>
+        <div class="menu-bar2">
+            <a href="contactus.html"><div>Contact</div></a>
+            <a href="login.html"><div class="login">Login</div></a>
+        </div>
+    </div>
 
     <main>
         <div class="left-container">
@@ -386,12 +397,17 @@
                             <input type="text" id="preferred-role" name="preferred-role" required>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="input-full">
+                    <div class="input-full">
                             <label for="event">Event/Community</label>
-                            <input type="text" id="event" name="event" required>
+                            <select id="event" name="event" required>
+                                <option value=" "></option>
+                                <option value="Green Earth Society">Ek Pedh Maa Ke Naam</option>
+                                <option value="Hands on India">Mind Your Bin</option>
+                                <option value="Chetna Cry">Education Drive</option>
+                                <option value="Chetna NGO">Badhte Kadam</option>
+                                <option value="CARE">Ek Bacha Aapka</option>
+                            </select>
                         </div>
-                    </div>
                     <div class="form-row">
                         <div class="input-full">
                             <label for="date">Date</label>

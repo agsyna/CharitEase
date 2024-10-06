@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,45 +25,62 @@
             justify-content: center;
         }
 
-        .navbar {
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
             display: flex;
             justify-content: space-between;
-            align-content: center;
-            align-items: center;
-            background: #D1CCCC;
-            height: 81px;
-            padding: 0 20px;
-        }
-
-        .logo {
-            font-size: 23px;
-            font-weight: 900;
-            font-family: Poppins;
-            color: #173B45;
-            margin-right: 20px;
-            text-decoration: none;
-        }
-
-        .menu-item {
-            margin-right: 20px;
-            font-family: "Poppins";
             font-size: 14px;
-            font-weight: 800;
-            color: #173B45;
-            text-decoration: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+
+        }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+            align-content: center;
         }
 
         .login {
             border: 2px solid #B43F3F;
             padding: 10px 20px;
-            font-family: "Poppins";
+            font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 16px;
             font-weight: 800;
             color: #B43F3F;
             text-decoration: none;
         }
 
-      
+        a {
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
+
         .main-container {
             width: 70%;
             height: 60%;
@@ -146,8 +164,8 @@
 
         .events-container {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            margin: 0px 0px;
+            padding: 20px;
         }
 
         .tabs {
@@ -164,14 +182,16 @@
             cursor: pointer;
         }
 
-        .tab + .tab {
+        .tab+.tab {
             background-color: #ccc;
         }
 
         .events-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            gap: 40px;
+            margin-top: 0px;
+            margin-left: 0px;
         }
 
         .card {
@@ -180,11 +200,11 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             display: flex;
-            flex-direction: row;
+            width: 600px;
         }
 
         .card img {
-            width: 50%;
+            width: 40%;
             height: 100%;
             object-fit: cover;
         }
@@ -233,6 +253,308 @@
         }
 
         .card-footer button {
+            padding: 10px 15px;
+            border: 2px solid #173B45;
+            background-color: #173B45;
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-footer button.more-info {
+            background-color: white;
+            color: #173B45;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pagination button.active {
+            background-color: #173B45;
+            color: white;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f2f2f2;
+            padding: 0;
+            height: 100%;
+            margin: 0 5%;
+            padding-top: 100px;
+            color: #173B45;
+        }
+
+
+        .mains {
+
+            display: block;
+            justify-content: center;
+        }
+
+
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+
+        }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+            align-content: center;
+        }
+
+        .login {
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+
+        .content {
+            padding-top: 80px;
+        }
+
+        .carousel {
+            background-color: #E3EBED;
+            height: 600px;
+            z-index: 20;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            background: #D1CCCC;
+            height: 81px;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 900;
+            font-family: Poppins;
+            color: #173B45;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            font-family: "Poppins";
+            font-size: 14px;
+            font-weight: 800;
+            color: #173B45;
+            text-decoration: none;
+        }
+
+        .login {
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+
+
+        .main-container {
+            max-width: 1200px;
+            margin: 10px auto;
+            background-color: rgba(255, 255, 255, 0.594);
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-container img {
+            width: 100%;
+            margin: auto;
+            border-radius: 12px;
+            padding: 0px 0%;
+        }
+
+        .events-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            height: 20px;
+        }
+
+
+        .search-filter-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #F6F6F6;
+            border: 1px solid #E0E0E0;
+
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            outline: none;
+            background-color: #F6F6F6;
+            font-size: 16px;
+            padding-left: 5px;
+            width: 400px;
+        }
+
+        .search-bar input[type="text"]::placeholder {
+            color: #9E9E9E;
+        }
+
+        .search-bar i {
+            color: #9E9E9E;
+        }
+
+        .filter-button {
+            display: flex;
+            align-items: end;
+            padding: 12px 20px;
+            background-color: #103841;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .filter-button i {
+            margin-left: 10px;
+        }
+
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            width: 600px;
+        }
+
+        .card img {
+            width: 40%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 900;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #FF7D00;
+            margin: 5px 0;
+            font-size: 12px;
+            gap: 10px;
+        }
+
+        .card-content .location {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .card-content .volunteer-count {
+            display: flex;
+            align-items: center;
+            color: #28a745;
+            font-size: 10px;
+        }
+
+        .card-content .volunteer-count i {
+            margin-right: 5px;
+            /* gap: 20px; */
+        }
+
+        .card-footer {
+            gap: 20px;
+
+        }
+
+        .card-footer button {
             padding: 10px 20px;
             border: 2px solid #173B45;
             background-color: #173B45;
@@ -268,69 +590,234 @@
             color: white;
         }
 
+        .filter-button {
+            margin-left: 60%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
+
+        .mains h2 {
+            margin-right: 40px;
 
 
+        }
+
+        .mains div input[type="text"] {
+            margin-left: 40px;
+            margin-top: 10px;
+            border: 1px grey solid;
+            width: 300px;
+            height: 40px;
+            border-radius: 8px;
+
+        }
+
+        .footer {
+            background-color: #232323;
+            color: white;
+            height: 360px;
+            display: flex;
+
+        }
+
+        .leftfooter {
+
+            width: 40%;
+            margin: 0px auto;
+
+
+        }
+
+        .midfooter {
+
+            width: 28%;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+        }
+
+        .midfooter div {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .footericons {
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 0px auto;
+            gap: 20px;
+            padding-right: 40px;
+        }
+
+        .footertext {
+            color: #9B9B9B;
+            font-size: 10px;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+        }
+
+        .footertext1 {
+            color: #9B9B9B;
+            font-size: 10px;
+            font-weight: 400;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .footerheadings {
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+        }
+
+        .rightfooter {
+            width: 30%;
+            margin: 0 auto;
+            display: block;
+            gap: 40px;
+
+
+
+        }
+
+        .registernow {
+            margin: 10% auto;
+            font-weight: 900;
+            font-size: 24px;
+
+        }
+
+        .subscribenow {
+            background-color: #000000a4;
+            border-radius: 8px;
+            width: 100%;
+            margin-right: 10px;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px
+        }
+
+        .subscribenow input {
+            width: 70%;
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        .subscribenow input ::placeholder {
+            padding-left: 100px;
+        }
+
+        .subscribenow button {
+            background-color: #173B45;
+            color: #f2f2f2;
+            border: 2px #173B45 solid;
+            border-radius: 8px;
+            height: 40px;
+            font-family: 'Poppins';
+            font-weight: 800;
+            min-width: 20%;
+            font-size: 90%;
+            margin-bottom: 0;
+        }
+
+        button.volunteer:hover {
+            background-color: #d0e5effe;
+            color: #122e36;
+        }
+
+        button.more-info:hover {
+            background-color: #d0e5effe;
+            color: #122e36;
+
+        }
     </style>
 </head>
+
 <body>
-    <header class="header">
-        <div class="navbar">
-            <div class="navbar-left">
-                <span class="logo">CharltEase</span>
-                <a class="menu-item" href="">Home</a>
-                <a class="menu-item" href="">Connect</a>
-                <a class="menu-item" href="">Communities</a>
-                <a class="menu-item" href="">Events</a>
-            </div>
-            <div class="navbar-right">
-                <a class="menu-item" href="">Contact</a>
-                <a class="login" href="">Login</a>
-            </div>
+    <div class="menu-bar">
+        <div class="menu-bar1">
+            <div class="charitease">CharitEase</div>
+            <a href="index.html">
+                <div>Home</div>
+            </a>
+            <a href="volunteer.html">
+                <div>Connect</div>
+            </a>
+            <a href="communities.html">
+                <div>Communities</div>
+            </a>
+            <a href="events.html">
+                <div>Events</div>
+            </a>
         </div>
-
-        
-    </header>
-
-    <main>
-
-        <h4>Choose Your Location</h4>
-
-        <div class="main-container">
-            <img src="map.png" alt="CharItEase Logo">
-        </div>
-    </main>
-
-
-    <div class="events-header">
-        <h1>Events</h1>
-        <div class="search-filter-container">
-
-            <div class="search-bar">
-                <i class="fa fa-search"></i>
-                <input type="text" placeholder="Search">
-            </div>
-
-            <button class="filter-button">
-                Filter
-                <i class="fa fa-caret-down"></i>
-            </button>
+        <div class="menu-bar2">
+            <a href="contactus.html">
+                <div>Contact</div>
+            </a>
+            <a href="login.html">
+                <div class="login">Login</div>
+            </a>
         </div>
     </div>
 
 
-    
+    <div class="mains">
+        <div style="display: flex; justify-content:space-between">
+            <h2 class="h4" style="align-self: center;">Choose Your Location</h2>
+            <input type="text" name="locationsearch" id="" placeholder="Choose A Location">
+
+        </div>
+
+
+        <div class="main-container">
+            <img src="assets/map.png" alt="CharItEase Logo">
+        </div>
+    </div>
+
+
+
+    <div class="events-header">
+        <div style="margin-bottom: 0px;">
+            <h2 class="h4" style="align-self: center; margin-top:10px">Events</h2>
+        </div>
+        <div class="search-filter-container">
+
+            <div class="search-bar">
+                <i class="fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+
     <div class="events-container">
-        
+
         <div class="tabs">
             <div class="tab active">Ongoing Events</div>
             <div class="tab">Upcoming Events</div>
         </div>
 
-        
+
         <div class="events-grid">
-            
+
             <div class="card">
-                <img src="poor kids.png" alt="Event Image">
+                <img src="assets/poor kids.png" alt="Event Image">
                 <div class="card-content">
                     <h3>Education Drive</h3>
                     <p>CHETNA | Savera</p>
@@ -339,15 +826,15 @@
                         <div class="volunteer-count">
                             <i class="fas fa-user-check"></i> 500+ volunteers enrolled
                         </div>
-                        <button class="volunteer">Volunteer</button>
-                        <button class="more-info">More info</button>
+                        <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
+                       <a href="educationdrive.html"><button class="more-info">Explore</button></a>
                     </div>
                 </div>
             </div>
 
-            
+
             <div class="card">
-                <img src="yellow kids.png" alt="Event Image">
+                <img src="assets/yellow kids.png" alt="Event Image">
                 <div class="card-content">
                     <h3>BADHTE KADAM</h3>
                     <p>CHETNA | CRY</p>
@@ -356,15 +843,15 @@
                         <div class="volunteer-count">
                             <i class="fas fa-user-check"></i> 200+ volunteers enrolled
                         </div>
-                        <button class="volunteer">Volunteer</button>
-                        <button class="more-info">More info</button>
+                        <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
+                       <a href="educationdrive.html"><button class="more-info">Explore</button></a>
                     </div>
                 </div>
             </div>
 
-            
+
             <div class="card">
-                <img src="dog kid.png" alt="Event Image">
+                <img src="assets/dog kid.png" alt="Event Image">
                 <div class="card-content">
                     <h3>Ek Bacha Aapka</h3>
                     <p>UNICEF | PETA India</p>
@@ -373,15 +860,15 @@
                         <div class="volunteer-count">
                             <i class="fas fa-user-check"></i> 40 volunteers enrolled
                         </div>
-                        <button class="volunteer">Volunteer</button>
-                        <button class="more-info">More info</button>
+                        <a href="volunteer.html"><a href="volunteer.html"><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a></a>
+                       <a href="ekbachaapka.html"><button class="more-info">Explore</button></a>
                     </div>
                 </div>
             </div>
 
-            
+
             <div class="card">
-                <img src="women brooms.png" alt="Event Image">
+                <img src="assets/women brooms.png" alt="Event Image">
                 <div class="card-content">
                     <h3>Mind Your Bin</h3>
                     <p>The Hands India</p>
@@ -390,15 +877,15 @@
                         <div class="volunteer-count">
                             <i class="fas fa-user-check"></i> 100+ volunteers enrolled
                         </div>
-                        <button class="volunteer">Volunteer</button>
-                        <button class="more-info">More info</button>
+                        <a href="volunteer.html"><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a>
+                       <a href="swatch.html"><button class="more-info">Explore</button></a>
                     </div>
                 </div>
             </div>
 
-            
+
             <div class="card">
-                <img src="yogi ji.png" alt="Event Image">
+                <img src="assets/yogi ji.png" alt="Event Image">
                 <div class="card-content">
                     <h3>Tree Plantation Drive</h3>
                     <p>Green Earth Society</p>
@@ -407,15 +894,15 @@
                         <div class="volunteer-count">
                             <i class="fas fa-user-check"></i> 4 volunteers enrolled
                         </div>
-                        <button class="volunteer">Volunteer</button>
-                        <button class="more-info">More info</button>
+                        <a href="volunteer.html">><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a>
+                       <a href="ekpedmakenam.html"><button class="more-info">Explore</button></a>
                     </div>
                 </div>
             </div>
 
-            
+
             <div class="card">
-                <img src="papa ji.png" alt="Event Image">
+                <img src="assets/papa ji.png" alt="Event Image">
                 <div class="card-content">
                     <h3>Health Awareness Camp</h3>
                     <p>Community Health Foundation</p>
@@ -424,8 +911,8 @@
                         <div class="volunteer-count">
                             <i class="fas fa-user-check"></i> 4 volunteers enrolled
                         </div>
-                        <button class="volunteer">Volunteer</button>
-                        <button class="more-info">More info</button>
+                        <a href="volunteer.html">><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a>
+                        <a href="educationdrive.html"><button class="more-info">Explore</button></a>
                     </div>
                 </div>
             </div>
@@ -438,6 +925,7 @@
     </div>
 
 
-    
+
 </body>
+
 </html>
