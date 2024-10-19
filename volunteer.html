@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Sign-up Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/bg vol.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+
+        main {
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        a {
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 900;
+            font-family: Poppins;
+            color: #173B45;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            color: #173B45;
+            text-decoration: none;
+        }
+
+        .login-btn {
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+
+        .left-container {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: black;
+        }
+
+        .left-container h1 {
+            margin-top: 0;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            margin-left: 20%;
+        }
+
+        .left-container img {
+            width: 50%;
+            border-radius: 60px;
+            margin-left: 55%;
+        }
+
+        .right-container {
+            margin-top: 0;
+            width: 40%;
+            background-color: white;
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding-bottom: 8%;            
+        }
+
+        .right-container h2 {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            align-content: space-evenly;
+            height: 100%;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            
+        }
+
+        .input-group input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+
+        .input-full {
+            display: flex;
+            flex-direction: column;
+            width: 99%;
+        }
+
+        .input-full label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            
+        }
+
+        .input-full input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+
+        .submit-container input[type="submit"] {
+            background-color: #00474f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 500px;
+            font-weight: 800;
+        }
+
+        .submit-container input[type="submit"]:hover {
+            background-color: #003f46;
+        }
+        .footer{
+            background-color: #232323;
+            color: white;
+            height: 360px;
+            display: flex;
+            
+        }
+        .leftfooter{
+            
+            width: 40%;  
+            margin: 0px auto;
+            
+            
+        }
+        .midfooter{
+            
+            width: 28%;
+            margin: auto;
+            display: flex;
+            gap:40px;
+        }
+        .midfooter div {
+            display: flex;
+            flex-direction: column;
+
+        }
+        .footericons{
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            width: 40%;  
+            margin: 0px auto;
+            gap:20px;
+            padding-right: 40px;
+        }
+        .footertext{
+            color: #9B9B9B;
+            font-size: 10px;
+            width: 40%;  
+            margin: 12px auto;
+            background-color: #232323;     
+        }
+        .footertext1{
+            color: #9B9B9B;
+            font-size: 10px;
+            font-weight: 400;
+            width: 40%;  
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .footerheadings{
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            width: 40%;  
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+        }
+        .rightfooter{
+           width: 30%;
+           margin: 0 auto;
+            display: block;
+            gap:40px;
+            
+           
+
+        }
+        .registernow{
+            margin: 10% auto;
+            font-weight: 900;
+            font-size: 24px;
+
+        }
+        .subscribenow{
+            background-color: #000000a4;
+            border-radius: 8px;
+            width: 100%;
+            margin-right: 10px;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:4px
+        }
+        .subscribenow input{
+            width: 70%;
+            height: 40px;
+            border-radius: 8px;
+        }
+        .subscribenow input ::placeholder{
+            padding-left: 100px;
+        }
+        .subscribenow button{
+            background-color: #173B45 ;
+            color: #f2f2f2;
+            border: 2px #173B45 solid;
+            border-radius: 8px;
+            height: 40px;
+            font-family: 'Poppins';
+            font-weight: 800;
+            min-width: 20%;
+            font-size: 90%;
+            margin-bottom: 0;
+
+        }
+
+        select {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+}
+    </style>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <div class="menu-bar1">
+            <div class="charitease">CharitEase</div>
+            <a href="index.html"><div>Home</div></a>
+            <a href="volunteer.html"><div>Connect</div></a>
+            <a href="communities.html"><div>Communities</div></a>
+            <a href="events.html"><div>Events</div></a>
+        </div>
+        <div class="menu-bar2">
+            <a href="contactus.html"><div>Contact</div></a>
+            <a href="login.html"><div class="login">Login</div></a>
+        </div>
+    </div>
+
+    <main>
+        <div class="left-container">
+            <h1>Empowering Communities,<br> One Volunteer at a Time.</h1>
+            <img src="assets/vol logo.png" alt="Volunteers Image" style="max-height:800px;">
+        </div> 
+
+        <div class="right-container">
+            <h2>Volunteer Sign up Form</h2>
+            <div class="form-container">
+                <form action="index.html">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-full">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="phone">Phone No</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="preferred-role">Preferred Role</label>
+                            <input type="text" id="preferred-role" name="preferred-role" required>
+                        </div>
+                    </div>
+                    <div class="input-full">
+                            <label for="event">Event/Community</label>
+                            <select id="event" name="event" required>
+                                <option value=" "></option>
+                                <option value="Green Earth Society">Ek Pedh Maa Ke Naam</option>
+                                <option value="Hands on India">Mind Your Bin</option>
+                                <option value="Chetna Cry">Education Drive</option>
+                                <option value="Chetna NGO">Badhte Kadam</option>
+                                <option value="CARE">Ek Bacha Aapka</option>
+                            </select>
+                        </div>
+                    <div class="form-row">
+                        <div class="input-full">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="submit-container">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+<!-- 
+<div class="footer" style="margin: -100px;">
+    <div class="leftfooter" >
+        <div> <img src="assets/chariteaselogo.png" alt="" style="margin: 12% 16%"></div>
+        <div class="footericons">
+            <a href="https://in.linkedin.com/#:~:text=1%20billion%20members%20|%20Manage%20your%20professional%20identity.%20Build%20and"><img src="assets/linkedin.png" alt=""></a>
+        <a href="https://x.com/?lang=en-in&mx=2">
+            <img src="assets/twitter.png" alt="">
+        </a>
+    </div>
+    <div class="footertext">
+        Copyright 2024 CharitEase. All rights reserved
+    </div>
+
+    </div>
+    <div class="midfooter">
+        <div>
+        <div class="footerheadings">Communities</div>
+        <div class="footertext1">NGOS</div>
+        <div class="footertext1">Old Age Home</div>
+        <div class="footertext1">Children</div>
+        <div class="footertext1">Animal</div>
+        <div class="footertext1">Cleanliness</div>
+        <div class="footertext1">Student Clubs</div>
+        </div>
+        <div>
+            <div class="footerheadings">Facilities</div>
+            <div class="footertext1">Donate</div>
+            <div class="footertext1">Volunteer</div>
+            <div class="footertext1">Connect</div>
+            <div class="footertext1">Register With Us</div>
+        </div>
+        <div>
+            <div class="footerheadings">Contact</div>
+            <div class="footertext1">Gallery</div>
+            <div class="footertext1">Achievements</div>
+            <div class="footertext1">Testimonials</div>
+            <div class="footertext1">Founders</div>
+        </div>
+        <div>
+            <hr style="margin-left:10px; height:100%">
+        </div>
+        
+
+
+        
+    </div>
+    
+    <div class="rightfooter">
+        <div class="registernow">
+            Register Now So You Don't Miss Our Events
+        </div>
+        <div class="subscribenow">
+            <input type="email" placeholder="example@fg.com" >
+            <button type="submit">Subscribe Now</button>
+        </div>
+
+    </div>
+
+</div> -->
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communities</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f2f2f2;
+            padding: 0;
+            height: 100%;
+            margin: 0 5%;
+            padding-top: 100px;
+            color: #173B45;
+        }
+
+
+        .mains {
+
+            display: block;
+            justify-content: center;
+        }
+
+
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+
+        }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+            align-content: center;
+        }
+
+        .login {
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+
+        .content {
+            padding-top: 80px;
+        }
+
+        .carousel {
+            background-color: #E3EBED;
+            height: 600px;
+            z-index: 20;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            background: #D1CCCC;
+            height: 81px;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 900;
+            font-family: Poppins;
+            color: #173B45;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            font-family: "Poppins";
+            font-size: 14px;
+            font-weight: 800;
+            color: #173B45;
+            text-decoration: none;
+        }
+
+        .login {
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+
+
+        .main-container {
+            max-width: 1200px;
+            margin: 10px auto;
+            background-color: rgba(255, 255, 255, 0.594);
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-container img {
+            width: 100%;
+            margin: auto;
+            border-radius: 12px;
+            padding: 0px 0%;
+        }
+
+        .events-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            height: 20px;
+        }
+
+
+        .search-filter-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #F6F6F6;
+            border: 1px solid #E0E0E0;
+
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            outline: none;
+            background-color: #F6F6F6;
+            font-size: 16px;
+            padding-left: 5px;
+            width: 400px;
+        }
+
+        .search-bar input[type="text"]::placeholder {
+            color: #9E9E9E;
+        }
+
+        .search-bar i {
+            color: #9E9E9E;
+        }
+
+        .filter-button {
+            display: flex;
+            align-items: end;
+            padding: 12px 20px;
+            background-color: #103841;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .filter-button i {
+            margin-left: 10px;
+        }
+
+
+        .events-container {
+            max-width: 1200px;
+            padding: 40px 0px;
+            margin-left: 20px;
+        }
+
+        .tabs {
+            display: flex;
+        }
+
+        .tab {
+            padding: 8px 10px;
+            background-color: #FF7D00;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 0px;
+            margin-left: 20px;
+
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            width: 600px;
+        }
+
+        .card img {
+            width: 40%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 900;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #FF7D00;
+            margin: 5px 0;
+            font-size: 12px;
+            gap: 10px;
+        }
+
+        .card-content .location {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .card-content .volunteer-count {
+            display: flex;
+            align-items: center;
+            color: #28a745;
+            font-size: 10px;
+        }
+
+        .card-content .volunteer-count i {
+            margin-right: 5px;
+            /* gap: 20px; */
+        }
+
+        .card-footer {
+            gap: 20px;
+
+        }
+
+        .card-footer button {
+            padding: 10px 20px;
+            border: 2px solid #173B45;
+            background-color: #173B45;
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-footer button.more-info {
+            background-color: white;
+            color: #173B45;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pagination button.active {
+            background-color: #173B45;
+            color: white;
+        }
+
+        .filter-button {
+            margin-left: 60%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #173B45;
+            cursor: pointer;
+        }
+
+        .mains h2 {
+            margin-right: 40px;
+
+
+        }
+
+        .mains div input[type="text"] {
+            margin-left: 40px;
+            margin-top: 10px;
+            border: 1px grey solid;
+            width: 300px;
+            height: 40px;
+            border-radius: 8px;
+
+        }
+
+        .footer {
+            background-color: #232323;
+            color: white;
+            height: 360px;
+            display: flex;
+
+        }
+
+        .leftfooter {
+
+            width: 40%;
+            margin: 0px auto;
+
+
+        }
+
+        .midfooter {
+
+            width: 28%;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+        }
+
+        .midfooter div {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .footericons {
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 0px auto;
+            gap: 20px;
+            padding-right: 40px;
+        }
+
+        .footertext {
+            color: #9B9B9B;
+            font-size: 10px;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+        }
+
+        .footertext1 {
+            color: #9B9B9B;
+            font-size: 10px;
+            font-weight: 400;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .footerheadings {
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            width: 40%;
+            margin: 12px auto;
+            background-color: #232323;
+            cursor: pointer;
+        }
+
+        .rightfooter {
+            width: 30%;
+            margin: 0 auto;
+            display: block;
+            gap: 40px;
+
+
+
+        }
+
+        .registernow {
+            margin: 10% auto;
+            font-weight: 900;
+            font-size: 24px;
+
+        }
+
+        .subscribenow {
+            background-color: #000000a4;
+            border-radius: 8px;
+            width: 100%;
+            margin-right: 10px;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px
+        }
+
+        .subscribenow input {
+            width: 70%;
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        .subscribenow input ::placeholder {
+            padding-left: 100px;
+        }
+
+        .subscribenow button {
+            background-color: #173B45;
+            color: #f2f2f2;
+            border: 2px #173B45 solid;
+            border-radius: 8px;
+            height: 40px;
+            font-family: 'Poppins';
+            font-weight: 800;
+            min-width: 20%;
+            font-size: 90%;
+            margin-bottom: 0;
+        }
+
+        button.volunteer:hover {
+            background-color: #d0e5effe;
+            color: #122e36;
+        }
+
+        button.more-info:hover {
+            background-color: #d0e5effe;
+            color: #122e36;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <div class="menu-bar1">
+            <div class="charitease">CharitEase</div>
+            <a href="index.html">
+                <div>Home</div>
+            </a>
+            <a href="volunteer.html">
+                <div>Connect</div>
+            </a>
+            <a href="communities.html">
+                <div>Communities</div>
+            </a>
+            <a href="events.html">
+                <div>Events</div>
+            </a>
+        </div>
+        <div class="menu-bar2">
+            <a href="contactus.html">
+                <div>Contact</div>
+            </a>
+            <a href="login.html">
+                <div class="login">Login</div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="mains">
+        <div style="display: flex; justify-content:space-between">
+            <h2 class="h4" style="align-self: center;">Choose Your Location</h2>
+            <input type="text" name="locationsearch" id="" placeholder="Choose A Location">
+
+        </div>
+
+
+        <div class="main-container">
+            <img src="assets/map.png" alt="CharItEase Logo">
+        </div>
+    </div>
+
+
+
+    <div class="events-header">
+        <div style="margin-bottom: 0px;">
+            <h2 class="h4" style="align-self: center; margin-top:10px">Communities</h2>
+        </div>
+        <div class="search-filter-container">
+
+            <div class="search-bar">
+                <i class="fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="events-container">
+
+        <div class="tabs" style="display: flex; justify-content:space-between">
+            <div style="display: flex;">
+                <div class="tab active">NGOS</div>
+                <div class="tab">TRUSTS</div>
+                <div class="tab">CLUBS</div>
+
+            </div>
+
+            <button class="filter-button">
+                Filter
+                <i class="fa-filter-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="events-grid">
+
+        <div class="card">
+            <img src="assets/yellow kids.png" alt="Event Image">
+            <div class="card-content">
+                <h3>Chetna NGO</h3>
+                <p class="location">Sector-36, Jaipur</p>
+                <div class="volunteer-count">
+                    <i class="fas fa-user-check"> 200+ volunteers enrolled</i>
+                </div>
+                <br>
+                <div class="card-footer">
+                    <a href="volunteer.html">><button class="volunteer">Volunteer</button></a>
+                    <a href="educationdrive.html"> <a href="educationdrive.html"> <a href="educationdrive.html"><button
+                                    class="more-info">More info</button></a></a></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assets/poor kids.png" alt="Event Image">
+            <div class="card-content">
+                <h3>Diya Foundation</h3>
+                <p class="location">Chandani Chowk, Delhi </p>
+                <div class="volunteer-count">
+                    <i class="fa-user"> 4 volunteers enrolled </i>
+                </div>
+                <br>
+                <div class="card-footer">
+
+                    <a href="volunteer.html">><button class="volunteer">Volunteer</button></a>
+                    <a href="ekpedmakenam.html"> <a href="educationdrive.html"><button class="more-info">More
+                                info</button></a></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assets/papa ji.png" alt="Event Image">
+            <div class="card-content">
+                <h3>FMCH Help</h3>
+                <p class="location">Janakpuri, Delhi</p>
+                <div class="volunteer-count">
+                    <i class="fa-user"> 4 volunteers enrolled</i>
+                </div>
+                <br>
+                <div class="card-footer">
+
+                    <a href="volunteer.html">><button class="volunteer">Volunteer</button></a>
+                    <a href="swatch.html"> <a href="educationdrive.html"><button class="more-info">More
+                                info</button></a></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assets/disabled.png" alt="Event Image">
+            <div class="card-content">
+                <h3>Asha Kiran</h3>
+                <p class="location">Hawa Mahal, Jaipur</p>
+                <div class="volunteer-count">
+                    <i class="fa-user"> 4 volunteers enrolled </i>
+                </div>
+                <br>
+                <div class="card-footer">
+
+                    <a href="volunteer.html">><button class="volunteer">Volunteer</button></a>
+                    <a href="educationdrive.html"> <a href="educationdrive.html"><button class="more-info">More
+                                info</button></a></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assets/women brooms.png" alt="Event Image">
+            <div class="card-content">
+                <h3>Atree</h3>
+                <p class="location">Gov. School, Panchgaon</p>
+                <div class="volunteer-count">
+                    <i class="fa-user"></i> 100+ volunteers enrolled
+                </div>
+                <br>
+                <div class="card-footer">
+                    <a href="volunteer.html">><button class="volunteer">Volunteer</button></a>
+                    <a href="swactch.html"> <a href="educationdrive.html"><button class="more-info">More
+                                info</button></a></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assets/dog kid.png" alt="Event Image">
+            <div class="card-content">
+                <h3>CARE</h3>
+                <p class="location">Patel Chowk,Delhi</p>
+                <div class="volunteer-count">
+                    <i class="fa-user"></i> 40 volunteers enrolled
+                </div>
+                <br>
+                <div class="card-footer">
+
+                    <a href="volunteer.html">><button class="volunteer">Volunteer</button></a>
+                    <a href="educationdrive.html"><button class="more-info">More info</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pagination">
+        <button class="active">1</button>
+        <button>2</button>
+    </div>
+    </div>
+
+
+
+</body>
+<div style="height: 200px;"></div>
+
+<div class="footer" style="margin: -100px;">
+    <div class="leftfooter">
+        <div> <img src="assets/chariteaselogo.png" alt="" style="margin: 12% 16%"></div>
+        <div class="footericons">
+            <a
+                href="https://in.linkedin.com/#:~:text=1%20billion%20members%20|%20Manage%20your%20professional%20identity.%20Build%20and"><img
+                    src="assets/linkedin.png" alt=""></a>
+            <a href="https://x.com/?lang=en-in&mx=2">
+                <img src="assets/twitter.png" alt="">
+            </a>
+        </div>
+        <div class="footertext">
+            Copyright 2024 CharitEase. All rights reserved
+        </div>
+
+    </div>
+    <div class="midfooter">
+        <div>
+            <a href="communities.html">
+                <div class="footerheadings">Communities</div>
+                <div class="footertext1">NGOS</div>
+                <div class="footertext1">Old Age Home</div>
+                <div class="footertext1">Children</div>
+                <div class="footertext1">Animal</div>
+                <div class="footertext1">Cleanliness</div>
+                <div class="footertext1">Student Clubs</div>
+            </a>
+        </div>
+        <div>
+            <a href="volunteer.html">
+                <div class="footerheadings">Facilities</div>
+                <div class="footertext1">Donate</div>
+                <div class="footertext1">Volunteer</div>
+                <div class="footertext1">Connect</div>
+                <div class="footertext1">Register With Us</div>
+            </a>
+        </div>
+        <div>
+            <a href="contactsus.html">
+                <div class="footerheadings">Contact</div>
+                <div class="footertext1">Gallery</div>
+                <div class="footertext1">Achievements</div>
+                <div class="footertext1">Testimonials</div>
+                <div class="footertext1">Founders</div>
+            </a>
+        </div>
+        <div>
+            <hr style="margin-left:10px; height:100%">
+        </div>
+
+
+
+
+    </div>
+
+    <div class="rightfooter">
+        <div class="registernow">
+            Register Now So You Don't Miss Our Events
+        </div>
+        <div class="subscribenow">
+            <input type="email" placeholder="example@fg.com">
+            <button type="submit">Subscribe Now</button>
+        </div>
+
+    </div>
+
+</div>
+
+</html>

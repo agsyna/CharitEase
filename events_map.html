@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Poppins";
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        main {
+            padding-top: 80px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-bar {
+            padding: 20px;
+            text-align: center;
+            color: #173B45;
+            background-color: #D1CCCC;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            
+        }
+
+        .menu-bar1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu-bar2 {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .charitease {
+            font-size: 24px;
+            font-weight: bolder;
+            align-content: center;
+        }
+        .login {
+            border: 2px solid #B43F3F;
+            padding: 10px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: #B43F3F;
+            text-decoration: none;
+        }
+      
+        .main-container {
+            width: 70%;
+            height: 60%;
+            background-color: rgba(255, 255, 255, 0.594);
+            border-radius: 10px;
+            padding: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-container img {
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            padding: 0px 0%;
+        }
+
+        .events-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .events-header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            color: #39404E;
+        }
+
+        .search-filter-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #F6F6F6;
+            border: 1px solid #E0E0E0;
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            outline: none;
+            background-color: #F6F6F6;
+            font-size: 16px;
+            padding-left: 5px;
+        }
+
+        .search-bar input[type="text"]::placeholder {
+            color: #9E9E9E;
+        }
+
+        .search-bar i {
+            color: #9E9E9E;
+        }
+
+        .filter-button {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #103841;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .filter-button i {
+            margin-left: 10px;
+        }
+
+
+        .events-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #FF7D00;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .tab + .tab {
+            background-color: #ccc;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+
+        }
+        .h4{
+            margin-top: -20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+        }
+
+        .card img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 900;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #FF7D00;
+            margin: 5px 0;
+            font-size: 12px;
+            gap: 10px;
+        }
+
+        .card-content .location {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .card-content .volunteer-count {
+            display: flex;
+            align-items: center;
+            color: #28a745;
+            font-size: 10px;
+        }
+
+        .card-content .volunteer-count i {
+            margin-right: 5px;
+            /* gap: 20px; */
+        }
+        .card-footer{
+            gap: 20px;
+
+        }
+        .card-footer button {
+            padding: 10px 20px;
+            border: 2px solid #173B45;
+            background-color: #173B45;
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-footer button.more-info {
+            background-color: white;
+            color: #173B45;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pagination button.active {
+            background-color: #173B45;
+            color: white;
+        }
+        .filter-button{
+            margin-left: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-bar1">
+            <div class="charitease">CharitEase</div>
+            <a href="index.html"><div>Home</div></a>
+            <a href="volunteer.html"><div>Connect</div></a>
+            <a href="communities.html"><div>Communities</div></a>
+            <a href="events.html"><div>Events</div></a>
+        </div>
+        <div class="menu-bar2">
+            <a href="contactus.html"><div>Contact</div></a>
+            <a href="login.html"><div class="login">Login</div></a>
+        </div>
+    </div>
+
+    <main>
+
+        <h4 class="h4">Choose Your Location</h4>
+
+        <div class="main-container">
+            <img src="assets/map.png" alt="CharItEase Logo">
+        </div>
+    </main>
+
+
+    <div class="events-header">
+        <h1>Events</h1>
+        <div class="search-filter-container">
+
+            <div class="search-bar">
+                <i class="fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="events-container">
+        
+        <div class="tabs">
+            <div class="tab active">Ongoing Events</div>
+            <div class="tab">Upcoming Events</div>
+            <button class="filter-button">
+                Filter
+                <i class="fa-filter-down"></i>
+            </button>
+        </div>
+
+        <br><br>
+        <div class="events-grid">
+            
+            <div class="card">
+                <img src="assets/poor kids.png" alt="Event Image">
+                <div class="card-content">
+                    <h3>Education Drive</h3>
+                    <p>CHETNA | Savera</p>
+                    <p class="location">Sector-36, Jaipur<br>Tuesday, 23rd Sept</p>
+                    <div class="volunteer-count">
+                        <i class="fas fa-user-check"> 500+ volunteers enrolled</i>
+                    </div>
+                    <br>
+                    <div class="card-footer">
+                        <button class="volunteer">Volunteer</button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="assets/yellow kids.png" alt="Event Image">
+                <div class="card-content">
+                    <h3>BADHTE KADAM</h3>
+                    <p>CHETNA | CRY</p>
+                    <p class="location">Gov. School, Rewari<br>Tuesday, 31st Sept</p>
+                    <div class="volunteer-count">
+                        <i class="fa-user"></i> 200+ volunteers enrolled
+                    </div>
+                    <br>
+                    <div class="card-footer">
+                        
+                        <button class="volunteer">Volunteer</button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="assets/dog kid.png" alt="Event Image">
+                <div class="card-content">
+                    <h3>Ek Bacha Aapka</h3>
+                    <p>UNICEF | PETA India</p>
+                    <p class="location">Sector-12, Jaipur<br>Tuesday, 23rd Sept</p>
+                    <div class="volunteer-count">
+                        <i class="fa-user"></i> 40 volunteers enrolled
+                    </div>
+                    <br>
+                    <div class="card-footer">
+   
+                        <button class="volunteer">Volunteer</button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="assets/women brooms.png" alt="Event Image">
+                <div class="card-content">
+                    <h3>Mind Your Bin</h3>
+                    <p>The Hands India</p>
+                    <p class="location">Hawa Mahal, Jaipur<br>Tuesday, 23rd Sept</p>
+                    <div class="volunteer-count">
+                        <i class="fa-user"></i> 100+ volunteers enrolled
+                    </div>
+                    <br>
+                    <div class="card-footer">
+              
+                        <button class="volunteer">Volunteer</button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="assets/yogi ji.png" alt="Event Image">
+                <div class="card-content">
+                    <h3>Tree Plantation Drive</h3>
+                    <p>Green Earth Society</p>
+                    <p class="location">Rajasthan University, Jaipur<br>Friday, 26th Sept</p>
+                    <div class="volunteer-count">
+                        <i class="fa-user"></i> 4 volunteers enrolled
+                    </div>
+                    <br>
+                    <div class="card-footer">
+                        <button class="volunteer">Volunteer</button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="assets/papa ji.png" alt="Event Image">
+                <div class="card-content">
+                    <h3>Health Awareness Camp</h3>
+                    <p>Community Health Foundation</p>
+                    <p class="location">City Center, Jaipur<br>Wednesday, 24th Sept</p>
+                    <div class="volunteer-count">
+                        <i class="fa-user"></i> 4 volunteers enrolled
+                    </div>
+                    <div class="card-footer">
+                        
+                        <button class="volunteer">Volunteer</button>
+                        <button class="more-info">More info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="active">1</button>
+            <button>2</button>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
+
+
+
+
