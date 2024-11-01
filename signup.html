@@ -153,21 +153,53 @@
             font-size: 14px;
         }
 
-        input[type="name"],
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
         input[type="email"],
-        input[type="password"] {
-            width: 80%;
-            padding: 12px;
-            margin: 8px 0;
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px; 
             color: #ccc;
             background-color: black;
-            box-sizing: border-box;
             border: 1px solid #ccc;
-            border-radius: 8px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            margin-bottom: 10px; 
+            appearance: none; 
+            height: 48px; 
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            background-color: #FF7D00; 
+            border-radius: 50%; 
+            padding: 5px; 
+        }
+
+        input[type="date"]:hover::-webkit-calendar-picker-indicator {
+            background-color: #FF7D00; 
         }
 
         input[type="submit"] {
-            width: 80%;
+            width: 100%;
             padding: 12px;
             background-color: #FF7D00;
             border: none;
@@ -350,81 +382,37 @@
     <div class="Signup-container">
         <h1>Get Started Now</h1>
         <form action="index.html">
-            <input type="name" name="name" placeholder="Enter your name" required>
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <input type="password" name="password" placeholder="Password" required>
+            <div class="form-row">
+                <div class="input-group">
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                </div>
+            </div>
+
+            <input type="email" name="email" placeholder="Enter your email" required> 
+            <div class="form-row">
+                <div class="input-group">
+                    <input type="text" id="govt-id" name="govt-id" placeholder="Enter your Govt. ID (12 digits)" required pattern="\d{12}" maxlength="12" title="Please enter a 12-digit government ID number">
+                </div>
+                <div class="input-group">
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </div>
+
+            <input type="password" name="password" placeholder="Password" required> 
+            
             <input type="submit" value="Sign-up">
         </form>
         <p>Have an account? <a href="login.html" class="Login-link">Login</a></p>
     </div>
-
     <div class="logo-container">
         <img src="assets/logo.png" alt="CharItEase Logo">
         <h2>CharltEase</h2>
     </div>
 </div>
 </main>
+<script src="index.js"></script>
 </body>
-<div style="height: 200px;"></div>
-
-</div>
-<div class="footer" style="margin: -100px;">
-    <div class="leftfooter" >
-        <div> <img src="assets/chariteaselogo.png" alt="" style="margin: 12% 16%"></div>
-        <div class="footericons">
-            <a href="https://in.linkedin.com/#:~:text=1%20billion%20members%20|%20Manage%20your%20professional%20identity.%20Build%20and"><img src="assets/linkedin.png" alt=""></a>
-        <a href="https://x.com/?lang=en-in&mx=2">
-            <img src="assets/twitter.png" alt="">
-        </a>
-    </div>
-    <div class="footertext">
-        Copyright 2024 CharitEase. All rights reserved
-    </div>
-
-    </div>
-    <div class="midfooter">
-        <div>
-        <div class="footerheadings">Communities</div>
-        <div class="footertext1">NGOS</div>
-        <div class="footertext1">Old Age Home</div>
-        <div class="footertext1">Children</div>
-        <div class="footertext1">Animal</div>
-        <div class="footertext1">Cleanliness</div>
-        <div class="footertext1">Student Clubs</div>
-        </div>
-        <div>
-            <div class="footerheadings">Facilities</div>
-            <div class="footertext1">Donate</div>
-            <div class="footertext1">Volunteer</div>
-            <div class="footertext1">Connect</div>
-            <div class="footertext1">Register With Us</div>
-        </div>
-        <div>
-            <div class="footerheadings">Contact</div>
-            <div class="footertext1">Gallery</div>
-            <div class="footertext1">Achievements</div>
-            <div class="footertext1">Testimonials</div>
-            <div class="footertext1">Founders</div>
-        </div>
-        <div>
-            <hr style="margin-left:10px; height:100%">
-        </div>
-        
-
-
-        
-    </div>
-    
-    <div class="rightfooter">
-        <div class="registernow">
-            Register Now So You Don't Miss Our Events
-        </div>
-        <div class="subscribenow">
-            <input type="email" placeholder="example@fg.com" >
-            <button type="submit">Subscribe Now</button>
-        </div>
-
-    </div>
-
-</div>
 </html>
