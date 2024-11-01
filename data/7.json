@@ -1,0 +1,30 @@
+{
+    "uid": 2,
+    "type": "NGO",
+    "name": "Diya Foundation",
+    "logo": "image.link",
+    "image": "http://127.0.0.1:55745/assets/chetna.png",
+    "members": 16,
+    "government_id":"",
+    "about_us": " QWERY OGN SGJS OG",
+    "why_join_us": "Why join dHDFHDFBS",
+    "gallery": ["", "", "", "", "", ""],
+  
+    "events": [
+      {
+        "community_name":"Diya Foundation",
+        "event_name": "Ek Bacha Apka",
+        "theme": "Hardware & Software",
+        "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+        "eligibility": "Open to all",
+        "no_of_volunteers_required": 100,
+        "no_of_volunteers_registered": 20,
+        "date": "October 2, 2024",
+        "time": "",
+        "place": "",
+        "about": "qn qkrh qri qrb",
+  
+        "perks": ["Certificates", "Snacks", "Free-Wifi"]
+      }
+    ]
+  }

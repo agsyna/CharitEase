@@ -1,0 +1,31 @@
+{
+    "uid": 4,
+    "type": "NGO",
+    "name": "C.A.R.E.",
+    "logo": "image.link",
+    "image": "http://127.0.0.1:55745/assets/care.png",
+    "members": 24,
+    "government_id":"",
+    "tagline":"Charlie's Animal Rescue Centre",
+    "about_us": " QWERY OGN SGJS OG",
+    "why_join_us": "Why join dHDFHDFBS",
+    "gallery": ["", "", "", "", "", ""],
+  
+    "events": [
+      {
+        "community_name":"C.A.R.E.",
+        "event_name": "Ek Ped Ma Ke Naam",
+        "theme": "Hardware & Software",
+        "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+        "eligibility": "Open to all",
+        "no_of_volunteers_required": 100,
+        "no_of_volunteers_registered": 40,
+        "date": "January 2, 2024",
+        "time": "",
+        "place": "",
+        "about": "qn qkrh qri qrb",
+  
+        "perks": ["Certificates", "Snacks", "Free-Wifi"]
+      }
+    ]
+  }

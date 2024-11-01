@@ -1,0 +1,48 @@
+{
+    "uid": 1,
+    "type": "NGO",
+    "name": "CHETNA",
+    "logo": "image.link",
+    "image": "http://127.0.0.1:55745/assets/chetna.png",
+    "members": 250,
+    "government_id":"",
+    "tagline":"An NGO currently benefitting more than 300,000 underpriviled children.",
+    "about_us": " QWERY OGN SGJS OG",
+    "why_join_us": "Why join dHDFHDFBS",
+    "gallery": ["", "", "", "", "", ""],
+  
+    "events": [
+      {
+        "community_name":"Chetna",
+        "event_name": "Education Drive",
+        "theme": "Hardware & Software",
+        "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+        "eligibility": "Open to all",
+        "no_of_volunteers_required": 100,
+        "no_of_volunteers_registered": 10,
+        "date": "November 2, 2024",
+        "time": "",
+        "place": "",
+        "about": "qn qkrh qri qrb",
+
+  
+        "perks": ["Certificates", "Snacks", "Free-Wifi"]
+      },
+      {
+        "community_name":"Chetna",
+        "event_name": "Education Drive",
+        "theme": "Hardware & Software",
+        "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+        "eligibility": "Open to all",
+        "no_of_volunteers_required": 100,
+        "no_of_volunteers_registered": 10,
+        "date": "November 2, 2024",
+        "time": "",
+        "place": "",
+        "about": "qn qkrh qri qrb",
+
+  
+        "perks": ["Certificates", "Snacks", "Free-Wifi"]
+      }
+    ]
+  }
