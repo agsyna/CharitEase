@@ -1,0 +1,282 @@
+.star1 {
+    margin: 0;
+    width: 100%;
+
+}
+
+.login {
+    border: 2px solid #B43F3F;
+    padding: 10px 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #B43F3F;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9fb;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0 5%;
+}
+
+.menu-bar {
+    padding: 20px;
+    text-align: center;
+    color: #173B45;
+    background-color: #D1CCCC;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+}
+
+.menu-bar1 {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-bar2 {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+}
+
+.charitease {
+    font-size: 24px;
+    font-weight: bolder;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #173B45;
+    cursor: pointer;
+}
+
+
+.hr1 {
+    background-color: #c7600c2b;
+    margin: 5% 5%;
+    border: 1px solid rgba(0, 0, 0, 0.122);
+
+}
+
+.heading {
+    text-align: center;
+    color: #173B45;
+
+}
+
+.serviceslist {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.servicesbox {
+    max-height: 280px;
+    max-width: 20%;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 8px;
+    padding: 0 10px;
+    transition: ease 0.5s;
+
+}
+
+.servicesbox:hover {
+    box-shadow: 2px 2px 5px 1px #173B45;
+}
+
+.workngoslist {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    flex-wrap: wrap;
+    margin: 30px auto;
+
+}
+
+.workngos {
+    max-height: 76px;
+    margin-right: 12px;
+}
+
+
+.projectslist {
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+
+.project {
+    max-width: 20%;
+    margin-right: 10px;
+    max-height: 40%;
+    border-radius: 8px;
+    height: 320px;
+    z-index: 200;
+    padding: 10px 10px;
+    transition: ease 0.6sec;
+}
+
+.project:hover {
+    box-shadow: 2px 4px 10px 3px black;
+}
+
+.proflist {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.projectext {
+    color: white;
+    font-size: 12px;
+}
+
+
+.footer {
+    background-color: #232323;
+    color: white;
+    height: 360px;
+    display: flex;
+
+}
+
+.leftfooter {
+
+    width: 40%;
+    margin: 0px auto;
+
+
+}
+
+.midfooter {
+
+    width: 28%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.midfooter div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footericons {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0px auto;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+.footertext {
+    color: #9B9B9B;
+    font-size: 10px;
+    width: 40%;
+    margin: 12px auto;
+    background-color: #232323;
+}
+
+.footertext1 {
+    color: #9B9B9B;
+    font-size: 10px;
+    font-weight: 400;
+    width: 40%;
+    margin: 12px auto;
+    background-color: #232323;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.footerheadings {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    width: 40%;
+    margin: 12px auto;
+    background-color: #232323;
+    cursor: pointer;
+}
+
+.rightfooter {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+    gap: 40px;
+
+
+
+}
+
+.registernow {
+    margin: 10% auto;
+    font-weight: 900;
+    font-size: 24px;
+
+}
+
+.subscribenow {
+    background-color: #000000a4;
+    border-radius: 8px;
+    width: 100%;
+    margin-right: 10px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px
+}
+
+.subscribenow input {
+    width: 70%;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.subscribenow input ::placeholder {
+    padding-left: 100px;
+}
+
+.subscribenow button {
+    background-color: #173B45;
+    color: #f2f2f2;
+    border: 2px #173B45 solid;
+    border-radius: 8px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    min-width: 20%;
+    font-size: 90%;
+    margin-bottom: 0;
+
+}

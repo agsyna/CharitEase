@@ -30,17 +30,6 @@
         "link":"https://www.nanhikali.org"
       },
       {
-        "community_name":"H.O.P.E.",
-        "event_name": "Education Drive",
-        "theme": "Hardware & Software",
-        "image": "http://127.0.0.1:55745/assets/starsoftheweek4.png",
-        "eligibility": "Open to all",
-        "no_of_volunteers_registered": 10,
-        "about": "qn qkrh qri qrb",  
-        "perks": ["Certificates", "Snacks", "Free-Wifi"],
-         "link":"https://www.hope-foundation.in/"
-      },
-      {
         "community_name":"Cancer Society",
         "event_name": "Education Drive",
         "theme": "Hardware & Software",
@@ -52,7 +41,7 @@
          "link":"https://www.indiancancersociety.org/"
       },
       {
-        "community_name":"Akshaya Patra",
+        "community_name":"H.O.P.E.",
         "event_name": "Education Drive",
         "theme": "Hardware & Software",
         "image": "http://127.0.0.1:55745/assets/starsoftheweek4.png",
@@ -60,7 +49,7 @@
         "no_of_volunteers_registered": 10,
         "about": "qn qkrh qri qrb",  
         "perks": ["Certificates", "Snacks", "Free-Wifi"],
-        "link":"JG5BhBZEiwAt7JR68TishcjplpYISL_qgtJll2JcxfVTpjjXxRIZcS1nqlJCh4mZJzMsBoCmHsQAvD_BwE"
+         "link":"https://www.hope-foundation.in/"
       },
       {
         "community_name":"Ramanujan Trust",

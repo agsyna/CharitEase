@@ -44,8 +44,6 @@ async function geteventsdata() {
 
 async function consolecheck(params) {
   ongoing();
-  await fetchcommunitiesdata();
-
 }
 
 consolecheck();
@@ -74,9 +72,9 @@ async function getreveventsdata() {
 function renderEvents(eventsarr) {
   const elements = document.querySelectorAll(".educationdrive");
 
-  console.log(elements.length);
-  console.log(eventsarr.length);
-  console.log(elements.length);
+  // console.log(elements.length);
+  // console.log(eventsarr.length);
+  // console.log(elements.length);
 
   eventsarr.forEach((event, index) => {
     if (elements[index]) {
@@ -121,7 +119,7 @@ function renderEvents(eventsarr) {
       detailsDiv.appendChild(dateDiv);
       eventDiv.appendChild(detailsDiv);
 
-      console.log(elements[index]);
+      // console.log(elements[index]);
       elements[index] = [];
 
       // elements[index].appendChild(eventDiv);
@@ -136,7 +134,7 @@ function renderEvents(eventsarr) {
       ).innerText = `${event.no_of_volunteers_registered} + volunteers enrolled`;
       elements[index]
         .querySelector(".moreinfo_atag")
-        .setAttribute("href", `${event.community_name}.html`);
+        .setAttribute("href", `${event.event_name}.html`);
     }
   });
 }
@@ -178,10 +176,10 @@ async function fetchcommunitiesdata() {
     }
 
     const jsonData = await response.json();
-    console.log(jsonData.name);
-    console.log(jsonData.image);
-    console.log(jsonData.members);
-    console.log(jsonData.tagline);
+    // console.log(jsonData.name);
+    // console.log(jsonData.image);
+    // console.log(jsonData.members);
+    // console.log(jsonData.tagline);
 
     const elements = document.querySelectorAll(".indicommunity");
 
@@ -237,16 +235,17 @@ async function fetchcommunitiesdata() {
   } 
 }
 catch (error) {
-    console.log(error, "in fetching files");
-  }
+  console.log(error, "in fetching files");
 }
+}
+
+fetchcommunitiesdata();
+
 
 
 
 async function fetchstarsoftheweek()
 {
-
-    // const star_name=[];
     try{
         const response = await fetch("data/starsoftheweek.json");
         if (!response.ok) {
@@ -258,7 +257,7 @@ async function fetchstarsoftheweek()
         star_names.forEach((star_name,index)  =>{
 
 
-            console.log("Star Name: " + star_name.community_name);
+            // console.log("Star Name: " + star_name.community_name);
 
             const star_div = document.createElement("div");
             star_div.classList.add('starsoftheweek-item');
@@ -279,7 +278,7 @@ async function fetchstarsoftheweek()
 
             star_div_atag.appendChild(star_div_image);
             star_div.appendChild(star_div_atag);
-            console.log(star_div);
+            // console.log(star_div);
             const elements = document.getElementById("starsoftheweek");
             elements.appendChild(star_div);
 
@@ -291,5 +290,133 @@ async function fetchstarsoftheweek()
     }
 
 }
-
 fetchstarsoftheweek();
+
+
+async function fetchngopage()
+{
+    try{
+        const response = await fetch("data/data.json");
+        if (!response.ok) {
+            throw new Error("Network response was not ok " + response.statusText);
+          }
+      
+        const jsonData = await response.json();
+      for(i = 0; i < jsonData.length; i++){
+        if(jsonData[i].name === document.getElementById("ngo_name").innerText){
+          console.log(jsonData[i].name);
+          const aboutus = document.getElementById("aboutus");
+          aboutus.innerText = jsonData[i].about_us;
+          const joinus = document.getElementById("join_us");
+          joinus.innerText = jsonData[i].why_join_us;
+          for(j = 0; j < jsonData[i].gallery.length; j++){
+            document.getElementById(`img${j+1}`).src = jsonData[i].gallery[j];
+          }
+        }
+      }
+
+    }
+    catch(error){
+        console.log(error,"in loading data")
+    }
+
+}
+fetchngopage();
+
+
+function changetologin(){
+  const login = document.querySelector(".login-container");
+  login.style.removeProperty("display");
+  const signup = document.querySelector(".Signup-container");
+  signup.style.display = "none";
+}
+
+function changetosignup(){
+  const login = document.querySelector(".login-container");
+  login.style.display = "none";
+  const signup = document.querySelector(".Signup-container");
+  signup.style.removeProperty("display");;
+}
+
+const signup = document.querySelector(".Signup-container");
+signup.style.display = "none";
+
+
+/////////////
+document.addEventListener("DOMContentLoaded", function() {
+  const subscribeButton = document.querySelector(".subscribenow button");
+  const emailInput = document.querySelector(".subscribenow input[type='email']");
+
+  subscribeButton.addEventListener("click", function(event) {
+      const email = emailInput.value.trim();
+      const validDomains = ["@gmail.com", "@yahoo.in", "@outlook.in", "@bmu.edu.in"];
+      const isValidEmail = validDomains.some(domain => email.endsWith(domain));
+
+      if (email && isValidEmail) {
+          showCustomAlert("Thank you for subscribing!! Email: " + email);
+          emailInput.value = ""; 
+      } else {
+          showCustomAlert("Please enter a valid email address.");
+      }
+  });
+});
+
+
+function showCustomAlert(message) {
+   
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = "0";
+  overlay.style.left = "0";
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  overlay.style.display = "flex";
+  overlay.style.alignItems = "flex-start";  
+  overlay.style.justifyContent = "center";
+  overlay.style.zIndex = "1000";
+  overlay.style.paddingTop = "20px"; 
+
+  
+  const alertBox = document.createElement("div");
+  alertBox.style.backgroundColor = "#ffffff"; 
+  alertBox.style.color = "#173B45"; 
+  alertBox.style.padding = "20px";
+  alertBox.style.borderRadius = "8px";
+  alertBox.style.width = "50%"; 
+  alertBox.style.maxWidth = "500px"; 
+  alertBox.style.textAlign = "center";
+  alertBox.style.fontFamily = "Poppins";
+
+
+  const title = document.createElement("div");
+  title.innerText = "CharitEase says";
+  title.style.fontWeight = "bold";
+  title.style.marginBottom = "10px";
+  title.style.fontSize = "1.2em";
+
+  const messageText = document.createElement("p");
+  messageText.innerText = message;
+
+  
+  const closeButton = document.createElement("button");
+  closeButton.innerText = "OK";
+  closeButton.style.backgroundColor = "#173B45";
+  closeButton.style.color = "#ffffff";
+  closeButton.style.padding = "10px 20px";
+  closeButton.style.border = "none";
+  closeButton.style.borderRadius = "5px";
+  closeButton.style.cursor = "pointer";
+  closeButton.style.marginTop = "10px";
+
+  closeButton.addEventListener("click", function() {
+      document.body.removeChild(overlay);
+  });
+
+  alertBox.appendChild(title);
+  alertBox.appendChild(messageText);
+  alertBox.appendChild(closeButton);
+
+  overlay.appendChild(alertBox);
+  document.body.appendChild(overlay);
+}

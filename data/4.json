@@ -1,7 +1,7 @@
 {
     "uid": 4,
     "type": "NGO",
-    "name": "C.A.R.E.",
+    "name": "C A R E",
     "logo": "image.link",
     "image": "http://127.0.0.1:55745/assets/care.png",
     "members": 24,
@@ -9,8 +9,7 @@
     "tagline":"Charlie's Animal Rescue Centre",
     "about_us": " QWERY OGN SGJS OG",
     "why_join_us": "Why join dHDFHDFBS",
-    "gallery": ["", "", "", "", "", ""],
-  
+    "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
     "events": [
       {
         "community_name":"C.A.R.E.",

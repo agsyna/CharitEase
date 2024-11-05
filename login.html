@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,7 +126,7 @@
         .transparent-container {
             margin-top: 60px;
             width: 70%;
-            height: 60%;
+            /* min-height: 80%; */
             background-color: rgba(16, 15, 15, 0.594); 
             backface-visibility:visible;
             border-radius: 10px;
@@ -154,8 +154,7 @@
             font-size: 14px;
         }
 
-        input[type="email"],
-        input[type="password"] {
+#email,#password{
             width: 80%;
             padding: 12px;
             margin: 8px 0;
@@ -167,7 +166,7 @@
             margin-top: 20px;
         }
 
-        input[type="submit"] {
+        #submit{
             width: 80%;
             padding: 12px;
             background-color: #FF7D00;
@@ -225,117 +224,103 @@
             font-weight: bolder;
             margin: 10px 0;
         }
-        .footer{
-            background-color: #232323;
+
+        .Signup-container {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+            height: 80%;
+            border-radius: 10px;
+            text-align: center;
+            width: 500px;
             color: white;
-            height: 360px;
+        }
+
+        .form-row {
             display: flex;
-            
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
         }
-        .leftfooter{
-            
-            width: 40%;  
-            margin: 0px auto;
-            
-            
-        }
-        .midfooter{
-            
-            width: 28%;
-            margin: auto;
-            display: flex;
-            gap:40px;
-        }
-        .midfooter div {
+
+        .input-group {
             display: flex;
             flex-direction: column;
+            width: 48%;
+        }
 
-        }
-        .footericons{
-            margin-top: 0;
-            display: flex;
-            justify-content: center;
-            width: 40%;  
-            margin: 0px auto;
-            gap:20px;
-            padding-right: 40px;
-        }
-        .footertext{
-            color: #9B9B9B;
-            font-size: 10px;
-            width: 40%;  
-            margin: 12px auto;
-            background-color: #232323;     
-        }
-        .footertext1{
-            color: #9B9B9B;
-            font-size: 10px;
-            font-weight: 400;
-            width: 40%;  
-            margin: 12px auto;
-            background-color: #232323;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-        .footerheadings{
-            color: white;
-            font-weight: 700;
+        .input-group label {
             font-size: 14px;
-            width: 40%;  
-            margin: 12px auto;
-            background-color: #232323;
-            cursor: pointer;
+            color: #ccc;
+            margin-bottom: 5px;
         }
-        .rightfooter{
-           width: 30%;
-           margin: 0 auto;
-            display: block;
-            gap:40px;
-            
-           
 
-        }
-        .registernow{
-            margin: 10% auto;
-            font-weight: 900;
-            font-size: 24px;
-
-        }
-        .subscribenow{
-            background-color: #000000a4;
-            border-radius: 8px;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
             width: 100%;
-            margin-right: 10px;
-            height: 15%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap:4px
+            padding: 12px; 
+            color: #ccc;
+            background-color: black;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-sizing: border-box;
+            margin-bottom: 10px; 
+            appearance: none; 
+            height: 48px; 
         }
-        .subscribenow input{
-            width: 70%;
-            height: 40px;
-            border-radius: 8px;
-        }
-        .subscribenow input ::placeholder{
-            padding-left: 100px;
-        }
-        .subscribenow button{
-            background-color: #173B45 ;
-            color: #f2f2f2;
-            border: 2px #173B45 solid;
-            border-radius: 8px;
-            height: 40px;
-            font-family: 'Poppins';
-            font-weight: 800;
-            min-width: 20%;
-            font-size: 90%;
-            margin-bottom: 0;
 
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            background-color: #FF7D00; 
+            border-radius: 50%; 
+            padding: 5px; 
+        }
+
+        input[type="date"]:hover::-webkit-calendar-picker-indicator {
+            background-color: #FF7D00; 
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF7D00;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #df8021d4;
+        }
+
+        .forgot-password {
+            color: #FF7D00;
+            font-size: 12px;
+            text-align: right;
+            display: block;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            padding-right: 10%;
+        }
+
+        .Login-link {
+            color: #FF7D00;
+            text-decoration: none;
+        }
+
+        .Login-link:hover {
+            text-decoration: underline;
+        }
+        button{
+            background-color: transparent;
+            /* opacity: 1.0; */
+            border: none;
         }
     </style>
 </head>
-<script src="index.js"></script>
 <body>
     
        <div class="menu-bar">
@@ -358,12 +343,38 @@
         <h1>Welcome back!</h1>
         <p>Enter your credentials to access your account</p>
         <form action="index.html">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <input type="password" name="password" placeholder="Password" required>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            <input id="password" type="password" name="password" placeholder="Password" required>
             <a href="#" class="forgot-password">Forgot Password</a>
-            <input type="submit" value="Login">
+            <input id="submit" type="submit" value="Login">
         </form>
-        <p>Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
+        <p>Don't have an account? <button onclick="changetosignup()" class="signup-link">Sign Up</button></p>
+    </div>
+    <div class="Signup-container">
+        <h1>Get Started Now</h1>
+        <form id="signup-form" action="index.html" onsubmit="submitForm(event)">
+            <div class="form-row">
+                <div class="input-group">
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            <input type="email" name="email" placeholder="Enter your email" required> 
+            <div class="form-row">
+                <div class="input-group">
+                    <input type="text" id="govt-id" name="govt-id" placeholder="Enter your Govt. ID (12 digits)" required pattern="\d{12}" maxlength="12">
+                </div>
+                <div class="input-group">
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </div>
+            <input type="password" name="password" placeholder="Password" required> 
+            <input type="submit" value="Sign-up">
+        </form>
+        
+        <p>Have an account? <button onclick="changetologin()" class="Login-link">Login</button></p>
     </div>
 
     <div class="logo-container">
@@ -372,67 +383,6 @@
     </div>
 </div>
 </main>
+<script src="index.js"></script>
 </body>
-<div style="height: 200px;"></div>
-
-</div>
-<div class="footer" style="margin: -100px;">
-    <div class="leftfooter" >
-        <div> <img src="assets/chariteaselogo.png" alt="" style="margin: 12% 16%"></div>
-        <div class="footericons">
-            <a href="https://in.linkedin.com/#:~:text=1%20billion%20members%20|%20Manage%20your%20professional%20identity.%20Build%20and"><img src="assets/linkedin.png" alt=""></a>
-        <a href="https://x.com/?lang=en-in&mx=2">
-            <img src="assets/twitter.png" alt="">
-        </a>
-    </div>
-    <div class="footertext">
-        Copyright 2024 CharitEase. All rights reserved
-    </div>
-
-    </div>
-    <div class="midfooter">
-        <div>
-        <div class="footerheadings">Communities</div>
-        <div class="footertext1">NGOS</div>
-        <div class="footertext1">Old Age Home</div>
-        <div class="footertext1">Children</div>
-        <div class="footertext1">Animal</div>
-        <div class="footertext1">Cleanliness</div>
-        <div class="footertext1">Student Clubs</div>
-        </div>
-        <div>
-            <div class="footerheadings">Facilities</div>
-            <div class="footertext1">Donate</div>
-            <div class="footertext1">Volunteer</div>
-            <div class="footertext1">Connect</div>
-            <div class="footertext1">Register With Us</div>
-        </div>
-        <div>
-            <div class="footerheadings">Contact</div>
-            <div class="footertext1">Gallery</div>
-            <div class="footertext1">Achievements</div>
-            <div class="footertext1">Testimonials</div>
-            <div class="footertext1">Founders</div>
-        </div>
-        <div>
-            <hr style="margin-left:10px; height:100%">
-        </div>
-        
-
-
-        
-    </div>
-    
-    <div class="rightfooter">
-        <div class="registernow">
-            Register Now So You Don't Miss Our Events
-        </div>
-        <div class="subscribenow">
-            <input type="email" placeholder="example@fg.com" >
-            <button type="submit">Subscribe Now</button>
-        </div>
-
-    </div>
-
-</div>
 </html>
