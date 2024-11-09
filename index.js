@@ -21,6 +21,12 @@ let firstfourevents = [];
 let lastfourevents = [];
 let eventsarr = [];
 
+
+MediaQueryList
+
+let numberofevents=0;
+let numberofcommunities=0;
+
 async function geteventsdata() {
   firstfourevents = [];
   for (let i = 0; i < 4; i++) {
@@ -339,7 +345,7 @@ function changetosignup(){
 }
 
 const signup = document.querySelector(".Signup-container");
-signup.style.display = "none";
+// signup.style.display = "none";
 
 
 /////////////

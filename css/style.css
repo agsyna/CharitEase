@@ -321,7 +321,7 @@ padding-top: 10px;
 .jointhenetwork{
     margin-top: 4%;
     min-height: 600px;
-    background-image: url('../assets/jointhenetwork.png');
+    /* background-image: url('../assets/jointhenetwork.png'); */
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
