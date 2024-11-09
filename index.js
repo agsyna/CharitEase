@@ -345,7 +345,7 @@ function changetosignup(){
 }
 
 const signup = document.querySelector(".Signup-container");
-// signup.style.display = "none";
+signup.style.display = "none";
 
 
 /////////////
