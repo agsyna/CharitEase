@@ -73,7 +73,7 @@ a {
     flex-direction: column;
 }
 
-.img1 {
+#bgimg {
     background: black;
     color: black;
     width: 100%;
@@ -86,7 +86,7 @@ a {
     gap: 10px;
 }
 
-.Ngo_logo {
+#ngo_logo {
     padding: 5px;
     width: 40%;
 }
@@ -107,7 +107,7 @@ a {
     align-content: center;
 }
 
-.volun {
+#volun {
     margin-top: 10px;
     font-size: 0.9rem;
     color: #F68C35;
@@ -287,6 +287,18 @@ a {
     padding-top: 10px;
 }
 
+.volunteerbutton1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    min-width: 104px;
+    background-color: #173B45;
+    color: #f2f2f2;
+    border-radius: 8px;
+    font-size: 90%;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
 .volunteerbutton {
     font-family: 'Poppins';
     font-weight: 500;
@@ -298,6 +310,10 @@ a {
     font-size: 90%;
     margin-bottom: 0;
     margin-right: 10px;
+}
+
+.volunteerbutton:hover {
+    background-color: #386d7c;
 }
 
 .moreinfobutton {

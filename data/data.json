@@ -1,12 +1,16 @@
 [
     {
         "uid": 1,
-        "type": "NGO",
+        "type": "NGOS",
         "name": "CHETNA NGO",
         "logo": "http://127.0.0.1:55745/assets/chetna_logo.png",
         "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
         "members": 250,
+        "enrolled":"2500+ volunteers enrolled",
+        "ratings" : 633,
         "government_id":"",
+        "address":"Sector-36, Jaipur",
         "tagline":"An NGO currently benefitting more than 300,000 underpriviled children.",
         "about_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
         "why_join_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
@@ -49,12 +53,16 @@
       },
       {
         "uid": 2,
-        "type": "NGO",
+        "type": "NGOS",
         "name": "Diya Foundation",
-        "logo": "image.link",
+        "logo": "http://127.0.0.1:55745/assets/diya_logo.png",
         "image": "http://127.0.0.1:55745/assets/diyafoundation.png",
+        "bgimage": "http://127.0.0.1:55745/assets/diya_img.png",
+        "enrolled":"1000+ volunteers enrolled",
         "members": 160,
+        "ratings" : 745,
         "government_id":"",
+        "address":"Chandani Chowk, Delhi",
         "tagline":"A happy inclusive environment for the especially abled",
         "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
         "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
@@ -79,12 +87,16 @@
       },
       {
         "uid": 3,
-        "type": "NGO",
+        "type": "NGOS",
         "name": "Asha Kiran",
         "logo": "image.link",
         "image": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
         "members": 20,
+        "enrolled":"100+ volunteers enrolled",
+        "ratings" : 340,
         "government_id":"",
+        "address":"Janakpuri, Delhi",
         "tagline":"Be the ASHA to someone's basic human rights",
         "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
         "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
@@ -109,12 +121,16 @@
       },
       {
         "uid": 4,
-        "type": "NGO",
+        "type": "NGOS",
         "name": "C A R E",
-        "logo": "image.link",
+        "logo": "http://127.0.0.1:55745/assets/image%2093.png",
         "image": "http://127.0.0.1:55745/assets/care.png",
+        "bgimage": "http://127.0.0.1:55745/assets/care_img.png",
         "members": 24,
+        "enrolled":"500+ volunteers enrolled",
+        "ratings" : 65,
         "government_id":"",
+        "address":"Hawa Mahal, Jaipur",
         "tagline":"Charlie's Animal Rescue Centre",
         "about_us": " Charlies Animal Rescue Centre-CARE is an animal shelter established in January 2013, with the aim of providing timely medical aid to injured and ill animals of the street in Bangalore city.<br> No animal left behind is our motto.CARE is also home to many dogs,cats, rabbits,ducks, hens, pigs, guinea pigs, birds and terrapins. <br>The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.",
         "why_join_us": "Join CARE to make a tangible difference in the lives of animals. Be part of a compassionate community dedicated to providing love, care, and medical aid to those in need. Gain valuable experience in animal care and rescue operations, and help educate the community about animal welfare. Your efforts will directly impact the well-being of injured, ill, and abandoned animals, giving them a second chance at happiness. At CARE, every day is an opportunity to make a positive difference and inspire others to take action. Together, we can create a better world for our furry friends. 🐾",
@@ -139,12 +155,16 @@
       },
       {
         "uid": 5,
-        "type": "NGO",
+        "type": "NGOS",
         "name": "Smile Foundation",
         "logo": "image.link",
         "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
         "members": 200,
+        "enrolled":"1400+ volunteers enrolled",
+        "ratings" : 863,
         "government_id":"",
+        "address":"Gov. School, Panchgaon",
         "tagline":"MY SMILE, YOUR SMILE, OUR SMILE",
         "about_us": " QWERY OGN SGJS OG",
         "why_join_us": "Why join dHDFHDFBS",
@@ -159,6 +179,1768 @@
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 40,
             "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 6,
+        "type": "NGOS",
+        "name": "FMCH Help",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/papa%20ji.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"300+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Patel Chowk,Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 7,
+        "type": "NGOS",
+        "name": "Atree",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/women%20brooms.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"150+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Alwar,Rajisthan",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 8,
+        "type": "NGOS",
+        "name": "Bal Raksha Bharat",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/balraksha.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"3000+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Kapriwas,Haryana",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 9,
+        "type": "NGOS",
+        "name": "CRY",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/cry.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"700+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Shanti Niketan, KarolBagh",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+
+
+      
+      {
+        "uid": 10,
+        "type": "TRUSTS",
+        "name": "CRY",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/cry.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"700+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Shanti Niketan, KarolBagh",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+          
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 11,
+        "type": "TRUSTS",
+        "name": "C A R E",
+        "logo": "http://127.0.0.1:55745/assets/image%2093.png",
+        "image": "http://127.0.0.1:55745/assets/care.png",
+        "bgimage": "http://127.0.0.1:55745/assets/care_img.png",
+        "members": 24,
+        "enrolled":"500+ volunteers enrolled",
+        "ratings" : 65,
+        "government_id":"",
+        "address":"Hawa Mahal, Jaipur",
+        "tagline":"Charlie's Animal Rescue Centre",
+        "about_us": " Charlies Animal Rescue Centre-CARE is an animal shelter established in January 2013, with the aim of providing timely medical aid to injured and ill animals of the street in Bangalore city.<br> No animal left behind is our motto.CARE is also home to many dogs,cats, rabbits,ducks, hens, pigs, guinea pigs, birds and terrapins. <br>The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.",
+        "why_join_us": "Join CARE to make a tangible difference in the lives of animals. Be part of a compassionate community dedicated to providing love, care, and medical aid to those in need. Gain valuable experience in animal care and rescue operations, and help educate the community about animal welfare. Your efforts will directly impact the well-being of injured, ill, and abandoned animals, giving them a second chance at happiness. At CARE, every day is an opportunity to make a positive difference and inspire others to take action. Together, we can create a better world for our furry friends. 🐾",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 12,
+        "type": "TRUSTS",
+        "name": "CHETNA NGO",
+        "logo": "http://127.0.0.1:55745/assets/chetna_logo.png",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 250,
+        "enrolled":"2500+ volunteers enrolled",
+        "ratings" : 633,
+        "government_id":"",
+        "address":"Sector-36, Jaipur",
+        "tagline":"An NGO currently benefitting more than 300,000 underpriviled children.",
+        "about_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "why_join_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],
+      
+        "events": [
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",    
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          },
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 13,
+        "type": "TRUSTS",
+        "name": "Diya Foundation",
+        "logo": "http://127.0.0.1:55745/assets/diya_logo.png",
+        "image": "http://127.0.0.1:55745/assets/diyafoundation.png",
+        "bgimage": "http://127.0.0.1:55745/assets/diya_img.png",
+        "enrolled":"1000+ volunteers enrolled",
+        "members": 160,
+        "ratings" : 745,
+        "government_id":"",
+        "address":"Chandani Chowk, Delhi",
+        "tagline":"A happy inclusive environment for the especially abled",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Diya Foundation",
+            "event_name": "Ek Bacha Apka",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 20,
+            "date": "October 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 14,
+        "type": "TRUSTS",
+        "name": "Bal Raksha Bharat",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/balraksha.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"3000+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Kapriwas,Haryana",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 15,
+        "type": "TRUSTS",
+        "name": "Smile Foundation",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 200,
+        "enrolled":"1400+ volunteers enrolled",
+        "ratings" : 863,
+        "government_id":"",
+        "address":"Gov. School, Panchgaon",
+        "tagline":"MY SMILE, YOUR SMILE, OUR SMILE",
+        "about_us": " QWERY OGN SGJS OG",
+        "why_join_us": "Why join dHDFHDFBS",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 16,
+        "type": "TRUSTS",
+        "name": "Asha Kiran",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"100+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Janakpuri, Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 17,
+        "type": "TRUSTS",
+        "name": "FMCH Help",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/papa%20ji.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"300+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Patel Chowk,Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 18,
+        "type": "TRUSTS",
+        "name": "Atree",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/women%20brooms.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"150+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Alwar,Rajisthan",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+
+
+      {
+        "uid": 19,
+        "type": "CLUBS",
+        "name": "FMCH Help",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/papa%20ji.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"300+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Patel Chowk,Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 20,
+        "type": "CLUBS",
+        "name": "Asha Kiran",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"100+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Janakpuri, Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 21,
+        "type": "CLUBS",
+        "name": "Diya Foundation",
+        "logo": "http://127.0.0.1:55745/assets/diya_logo.png",
+        "image": "http://127.0.0.1:55745/assets/diyafoundation.png",
+        "bgimage": "http://127.0.0.1:55745/assets/diya_img.png",
+        "enrolled":"1000+ volunteers enrolled",
+        "members": 160,
+        "ratings" : 745,
+        "government_id":"",
+        "address":"Chandani Chowk, Delhi",
+        "tagline":"A happy inclusive environment for the especially abled",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Diya Foundation",
+            "event_name": "Ek Bacha Apka",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 20,
+            "date": "October 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      
+      
+      {
+        "uid": 22,
+        "type": "CLUBS",
+        "name": "CHETNA NGO",
+        "logo": "http://127.0.0.1:55745/assets/chetna_logo.png",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 250,
+        "enrolled":"2500+ volunteers enrolled",
+        "ratings" : 633,
+        "government_id":"",
+        "address":"Sector-36, Jaipur",
+        "tagline":"An NGO currently benefitting more than 300,000 underpriviled children.",
+        "about_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "why_join_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],
+      
+        "events": [
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+    
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          },
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+    
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 23,
+        "type": "CLUBS",
+        "name": "Smile Foundation",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 200,
+        "enrolled":"1400+ volunteers enrolled",
+        "ratings" : 863,
+        "government_id":"",
+        "address":"Gov. School, Panchgaon",
+        "tagline":"MY SMILE, YOUR SMILE, OUR SMILE",
+        "about_us": " QWERY OGN SGJS OG",
+        "why_join_us": "Why join dHDFHDFBS",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 24,
+        "type": "CLUBS",
+        "name": "C A R E",
+        "logo": "http://127.0.0.1:55745/assets/image%2093.png",
+        "image": "http://127.0.0.1:55745/assets/care.png",
+        "bgimage": "http://127.0.0.1:55745/assets/care_img.png",
+        "members": 24,
+        "enrolled":"500+ volunteers enrolled",
+        "ratings" : 65,
+        "government_id":"",
+        "address":"Hawa Mahal, Jaipur",
+        "tagline":"Charlie's Animal Rescue Centre",
+        "about_us": " Charlies Animal Rescue Centre-CARE is an animal shelter established in January 2013, with the aim of providing timely medical aid to injured and ill animals of the street in Bangalore city.<br> No animal left behind is our motto.CARE is also home to many dogs,cats, rabbits,ducks, hens, pigs, guinea pigs, birds and terrapins. <br>The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.",
+        "why_join_us": "Join CARE to make a tangible difference in the lives of animals. Be part of a compassionate community dedicated to providing love, care, and medical aid to those in need. Gain valuable experience in animal care and rescue operations, and help educate the community about animal welfare. Your efforts will directly impact the well-being of injured, ill, and abandoned animals, giving them a second chance at happiness. At CARE, every day is an opportunity to make a positive difference and inspire others to take action. Together, we can create a better world for our furry friends. 🐾",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 25,
+        "type": "CLUBS",
+        "name": "Bal Raksha Bharat",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/balraksha.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"3000+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Kapriwas,Haryana",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 26,
+        "type": "CLUBS",
+        "name": "CRY",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/cry.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"700+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Shanti Niketan, KarolBagh",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 27,
+        "type": "CLUBS",
+        "name": "Atree",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/women%20brooms.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"150+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Alwar,Rajisthan",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 1,
+        "type": "NGOS",
+        "name": "CHETNA NGO",
+        "logo": "http://127.0.0.1:55745/assets/chetna_logo.png",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 250,
+        "enrolled":"2500+ volunteers enrolled",
+        "ratings" : 633,
+        "government_id":"",
+        "address":"Sector-36, Jaipur",
+        "tagline":"An NGO currently benefitting more than 300,000 underpriviled children.",
+        "about_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "why_join_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],
+      
+        "events": [
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+    
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          },
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+    
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 2,
+        "type": "NGOS",
+        "name": "Diya Foundation",
+        "logo": "http://127.0.0.1:55745/assets/diya_logo.png",
+        "image": "http://127.0.0.1:55745/assets/diyafoundation.png",
+        "bgimage": "http://127.0.0.1:55745/assets/diya_img.png",
+        "enrolled":"1000+ volunteers enrolled",
+        "members": 160,
+        "ratings" : 745,
+        "government_id":"",
+        "address":"Chandani Chowk, Delhi",
+        "tagline":"A happy inclusive environment for the especially abled",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Diya Foundation",
+            "event_name": "Ek Bacha Apka",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 20,
+            "date": "October 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 3,
+        "type": "NGOS",
+        "name": "Asha Kiran",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"100+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Janakpuri, Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 4,
+        "type": "NGOS",
+        "name": "C A R E",
+        "logo": "http://127.0.0.1:55745/assets/image%2093.png",
+        "image": "http://127.0.0.1:55745/assets/care.png",
+        "bgimage": "http://127.0.0.1:55745/assets/care_img.png",
+        "members": 24,
+        "enrolled":"500+ volunteers enrolled",
+        "ratings" : 65,
+        "government_id":"",
+        "address":"Hawa Mahal, Jaipur",
+        "tagline":"Charlie's Animal Rescue Centre",
+        "about_us": " Charlies Animal Rescue Centre-CARE is an animal shelter established in January 2013, with the aim of providing timely medical aid to injured and ill animals of the street in Bangalore city.<br> No animal left behind is our motto.CARE is also home to many dogs,cats, rabbits,ducks, hens, pigs, guinea pigs, birds and terrapins. <br>The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.",
+        "why_join_us": "Join CARE to make a tangible difference in the lives of animals. Be part of a compassionate community dedicated to providing love, care, and medical aid to those in need. Gain valuable experience in animal care and rescue operations, and help educate the community about animal welfare. Your efforts will directly impact the well-being of injured, ill, and abandoned animals, giving them a second chance at happiness. At CARE, every day is an opportunity to make a positive difference and inspire others to take action. Together, we can create a better world for our furry friends. 🐾",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 5,
+        "type": "NGOS",
+        "name": "Smile Foundation",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 200,
+        "enrolled":"1400+ volunteers enrolled",
+        "ratings" : 863,
+        "government_id":"",
+        "address":"Gov. School, Panchgaon",
+        "tagline":"MY SMILE, YOUR SMILE, OUR SMILE",
+        "about_us": " QWERY OGN SGJS OG",
+        "why_join_us": "Why join dHDFHDFBS",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 6,
+        "type": "NGOS",
+        "name": "FMCH Help",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/papa%20ji.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"300+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Patel Chowk,Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 7,
+        "type": "NGOS",
+        "name": "Atree",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/women%20brooms.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"150+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Alwar,Rajisthan",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 8,
+        "type": "NGOS",
+        "name": "Bal Raksha Bharat",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/balraksha.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"3000+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Kapriwas,Haryana",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 9,
+        "type": "NGOS",
+        "name": "CRY",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/cry.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"700+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Shanti Niketan, KarolBagh",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+
+
+      
+      {
+        "uid": 10,
+        "type": "TRUSTS",
+        "name": "CRY",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/cry.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"700+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Shanti Niketan, KarolBagh",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+          
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 11,
+        "type": "TRUSTS",
+        "name": "C A R E",
+        "logo": "http://127.0.0.1:55745/assets/image%2093.png",
+        "image": "http://127.0.0.1:55745/assets/care.png",
+        "bgimage": "http://127.0.0.1:55745/assets/care_img.png",
+        "members": 24,
+        "enrolled":"500+ volunteers enrolled",
+        "ratings" : 65,
+        "government_id":"",
+        "address":"Hawa Mahal, Jaipur",
+        "tagline":"Charlie's Animal Rescue Centre",
+        "about_us": " Charlies Animal Rescue Centre-CARE is an animal shelter established in January 2013, with the aim of providing timely medical aid to injured and ill animals of the street in Bangalore city.<br> No animal left behind is our motto.CARE is also home to many dogs,cats, rabbits,ducks, hens, pigs, guinea pigs, birds and terrapins. <br>The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.",
+        "why_join_us": "Join CARE to make a tangible difference in the lives of animals. Be part of a compassionate community dedicated to providing love, care, and medical aid to those in need. Gain valuable experience in animal care and rescue operations, and help educate the community about animal welfare. Your efforts will directly impact the well-being of injured, ill, and abandoned animals, giving them a second chance at happiness. At CARE, every day is an opportunity to make a positive difference and inspire others to take action. Together, we can create a better world for our furry friends. 🐾",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 12,
+        "type": "TRUSTS",
+        "name": "CHETNA NGO",
+        "logo": "http://127.0.0.1:55745/assets/chetna_logo.png",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 250,
+        "enrolled":"2500+ volunteers enrolled",
+        "ratings" : 633,
+        "government_id":"",
+        "address":"Sector-36, Jaipur",
+        "tagline":"An NGO currently benefitting more than 300,000 underpriviled children.",
+        "about_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "why_join_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],
+      
+        "events": [
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",    
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          },
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 13,
+        "type": "TRUSTS",
+        "name": "Diya Foundation",
+        "logo": "http://127.0.0.1:55745/assets/diya_logo.png",
+        "image": "http://127.0.0.1:55745/assets/diyafoundation.png",
+        "bgimage": "http://127.0.0.1:55745/assets/diya_img.png",
+        "enrolled":"1000+ volunteers enrolled",
+        "members": 160,
+        "ratings" : 745,
+        "government_id":"",
+        "address":"Chandani Chowk, Delhi",
+        "tagline":"A happy inclusive environment for the especially abled",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Diya Foundation",
+            "event_name": "Ek Bacha Apka",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 20,
+            "date": "October 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 14,
+        "type": "TRUSTS",
+        "name": "Bal Raksha Bharat",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/balraksha.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"3000+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Kapriwas,Haryana",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 15,
+        "type": "TRUSTS",
+        "name": "Smile Foundation",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 200,
+        "enrolled":"1400+ volunteers enrolled",
+        "ratings" : 863,
+        "government_id":"",
+        "address":"Gov. School, Panchgaon",
+        "tagline":"MY SMILE, YOUR SMILE, OUR SMILE",
+        "about_us": " QWERY OGN SGJS OG",
+        "why_join_us": "Why join dHDFHDFBS",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 16,
+        "type": "TRUSTS",
+        "name": "Asha Kiran",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"100+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Janakpuri, Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 17,
+        "type": "TRUSTS",
+        "name": "FMCH Help",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/papa%20ji.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"300+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Patel Chowk,Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 18,
+        "type": "TRUSTS",
+        "name": "Atree",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/women%20brooms.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"150+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Alwar,Rajisthan",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+
+
+      {
+        "uid": 19,
+        "type": "CLUBS",
+        "name": "FMCH Help",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/papa%20ji.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"300+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Patel Chowk,Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 20,
+        "type": "CLUBS",
+        "name": "Asha Kiran",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"100+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Janakpuri, Delhi",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 21,
+        "type": "CLUBS",
+        "name": "Diya Foundation",
+        "logo": "http://127.0.0.1:55745/assets/diya_logo.png",
+        "image": "http://127.0.0.1:55745/assets/diyafoundation.png",
+        "bgimage": "http://127.0.0.1:55745/assets/diya_img.png",
+        "enrolled":"1000+ volunteers enrolled",
+        "members": 160,
+        "ratings" : 745,
+        "government_id":"",
+        "address":"Chandani Chowk, Delhi",
+        "tagline":"A happy inclusive environment for the especially abled",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Diya Foundation",
+            "event_name": "Ek Bacha Apka",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 20,
+            "date": "October 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      
+      
+      {
+        "uid": 22,
+        "type": "CLUBS",
+        "name": "CHETNA NGO",
+        "logo": "http://127.0.0.1:55745/assets/chetna_logo.png",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 250,
+        "enrolled":"2500+ volunteers enrolled",
+        "ratings" : 633,
+        "government_id":"",
+        "address":"Sector-36, Jaipur",
+        "tagline":"An NGO currently benefitting more than 300,000 underpriviled children.",
+        "about_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "why_join_us": "At Chetna NGO, we are passionately committed to transforming the lives of street and working children in India. Since our inception in 2002, we have focused on providing education, vocational training, and healthcare to empower these vulnerable children. Our mission is to ensure that every child we reach can realize their full potential, live with dignity, and enjoy the rights they deserve. Through our efforts, we aim to create lasting change in their lives and in the communities they come from.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],
+      
+        "events": [
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+    
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          },
+          {
+            "community_name":"Chetna",
+            "event_name": "Education Drive",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 10,
+            "date": "November 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+    
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 23,
+        "type": "CLUBS",
+        "name": "Smile Foundation",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/chetna.png",
+        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
+        "members": 200,
+        "enrolled":"1400+ volunteers enrolled",
+        "ratings" : 863,
+        "government_id":"",
+        "address":"Gov. School, Panchgaon",
+        "tagline":"MY SMILE, YOUR SMILE, OUR SMILE",
+        "about_us": " QWERY OGN SGJS OG",
+        "why_join_us": "Why join dHDFHDFBS",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 24,
+        "type": "CLUBS",
+        "name": "C A R E",
+        "logo": "http://127.0.0.1:55745/assets/image%2093.png",
+        "image": "http://127.0.0.1:55745/assets/care.png",
+        "bgimage": "http://127.0.0.1:55745/assets/care_img.png",
+        "members": 24,
+        "enrolled":"500+ volunteers enrolled",
+        "ratings" : 65,
+        "government_id":"",
+        "address":"Hawa Mahal, Jaipur",
+        "tagline":"Charlie's Animal Rescue Centre",
+        "about_us": " Charlies Animal Rescue Centre-CARE is an animal shelter established in January 2013, with the aim of providing timely medical aid to injured and ill animals of the street in Bangalore city.<br> No animal left behind is our motto.CARE is also home to many dogs,cats, rabbits,ducks, hens, pigs, guinea pigs, birds and terrapins. <br>The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.",
+        "why_join_us": "Join CARE to make a tangible difference in the lives of animals. Be part of a compassionate community dedicated to providing love, care, and medical aid to those in need. Gain valuable experience in animal care and rescue operations, and help educate the community about animal welfare. Your efforts will directly impact the well-being of injured, ill, and abandoned animals, giving them a second chance at happiness. At CARE, every day is an opportunity to make a positive difference and inspire others to take action. Together, we can create a better world for our furry friends. 🐾",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"C.A.R.E.",
+            "event_name": "Ek Ped Ma Ke Naam",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 40,
+            "date": "January 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 25,
+        "type": "CLUBS",
+        "name": "Bal Raksha Bharat",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/balraksha.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"3000+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Kapriwas,Haryana",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 26,
+        "type": "CLUBS",
+        "name": "CRY",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/cry.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"700+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Shanti Niketan, KarolBagh",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
+            "time": "",
+            "place": "",
+            "about": "qn qkrh qri qrb",
+      
+            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+          }
+        ]
+      },
+      {
+        "uid": 27,
+        "type": "CLUBS",
+        "name": "Atree",
+        "logo": "image.link",
+        "image": "http://127.0.0.1:55745/assets/women%20brooms.png",
+        "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
+        "members": 20,
+        "enrolled":"150+ volunteers enrolled",
+        "ratings" : 340,
+        "government_id":"",
+        "address":"Alwar,Rajisthan",
+        "tagline":"Be the ASHA to someone's basic human rights",
+        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
+        "events": [
+          {
+            "community_name":"Asha-Kiran",
+            "event_name": "Swach Abhiyan",
+            "theme": "Hardware & Software",
+            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "eligibility": "Open to all",
+            "no_of_volunteers_required": 100,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
