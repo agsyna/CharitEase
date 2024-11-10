@@ -73,7 +73,6 @@
         <div class="search-filter-container">
 
             <div class="search-bar">
-                <!-- <i class="fa-search"></i> -->
                 <input type="text" placeholder="Search">
             </div>
         </div>
@@ -84,24 +83,29 @@
     <div class="events-container">
 
             <div style="display: flex;">
-                <div class="tabactive">NGOS</div>
-                <div class="tab">TRUSTS</div>
-                <div class="tab">CLUBS</div>
-
+                <div class="tabactive" id="option1" onclick="getlist(1)">NGOS</div>
+                <div class="tab" id="option2" onclick="getlist(2)">TRUSTS</div>
+                <div class="tab" id="option3" onclick="getlist(3)">CLUBS</div>
             </div>
             <div>
 
-            
-            <button class="filter-button">
-                Filter
-                <!-- <i class="fa-filter-down"></i> -->
-            </button>
+            <div>
+                <button id="filterButton" class="filter-button" onclick="toggleDropdown()">
+                    Filter
+                </button>
+                <div id="filterDropdown" class="dropdown">
+                    <a >Ratings</a>
+                    <a >Amazon</a>
+                    <a >Option A</a>
+                    <a >Option B</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <hr>
     <div class="events-grid">
-
+<!-- 
         <div class="card">
             <img src="assets/yellow kids.png" alt="Event Image">
             <div class="card-content">
@@ -266,289 +270,14 @@
                                 info</button></a></a>
                 </div>
             </div>
-        </div>
-
-
-        <div class="card">
-            <img src="assets/women brooms.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Atree</h3>
-                <p class="location">Gov. School, Panchgaon</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"></i> 100+ volunteers enrolled
-                </div>
-                
-                <div class="card-footer">
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="swactch.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="assets/papa ji.png" alt="Event Image">
-            <div class="card-content">
-                <h3>FMCH Help</h3>
-                <p class="location">Janakpuri, Delhi</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled</i>
-                </div>
-            
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="swatch.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="assets/dog kid.png" alt="Event Image">
-            <div class="card-content">
-                <h3>CARE</h3>
-                <p class="location">Patel Chowk,Delhi</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"></i> 40 volunteers enrolled
-                </div>
-            
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="educationdrive.html"><button class="more-info">More info</button></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="assets/yellow kids.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Chetna NGO</h3>
-                <p class="location">Sector-36, Jaipur</p>
-                <div class="volunteer-count">
-                    <i class="fas fa-user-check"> 200+ volunteers enrolled</i>
-                </div>
-                <div class="card-footer">
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="educationdrive.html"> <a href="educationdrive.html"> <a href="educationdrive.html">
-                        <button class="more-info">More info</button></a></a></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="assets/poor kids.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Diya Foundation</h3>
-                <p class="location">Chandani Chowk, Delhi </p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled </i>
-                </div>
-           
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="ekpedmakenam.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="assets/papa ji.png" alt="Event Image">
-            <div class="card-content">
-                <h3>FMCH Help</h3>
-                <p class="location">Janakpuri, Delhi</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled</i>
-                </div>
-            
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="swatch.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="assets/disabled.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Asha Kiran</h3>
-                <p class="location">Hawa Mahal, Jaipur</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled </i>
-                </div>
-                
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="educationdrive.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="assets/women brooms.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Atree</h3>
-                <p class="location">Gov. School, Panchgaon</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"></i> 100+ volunteers enrolled
-                </div>
-                
-                <div class="card-footer">
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="swactch.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="assets/poor kids.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Diya Foundation</h3>
-                <p class="location">Chandani Chowk, Delhi </p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled </i>
-                </div>
-           
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="ekpedmakenam.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-
-       
-
-
-        <!-- <div class="card">
-            <img src="assets/dog kid.png" alt="Event Image">
-            <div class="card-content">
-                <h3>CARE</h3>
-                <p class="location">Patel Chowk,Delhi</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"></i> 40 volunteers enrolled
-                </div>
-                <br>
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="educationdrive.html"><button class="more-info">More info</button></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="assets/papa ji.png" alt="Event Image">
-            <div class="card-content">
-                <h3>FMCH Help</h3>
-                <p class="location">Janakpuri, Delhi</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled</i>
-                </div>
-            
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="swatch.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="assets/disabled.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Asha Kiran</h3>
-                <p class="location">Hawa Mahal, Jaipur</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled </i>
-                </div>
-                
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="educationdrive.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div> -->
-
-
-        <!-- <div class="card">
-            <img src="assets/women brooms.png" alt="Event Image">
-            <div class="card-content">
-                <h3>Atree</h3>
-                <p class="location">Gov. School, Panchgaon</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"></i> 100+ volunteers enrolled
-                </div>
-                
-                <div class="card-footer">
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="swactch.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="card">
-            <img src="assets/papa ji.png" alt="Event Image">
-            <div class="card-content">
-                <h3>FMCH Help</h3>
-                <p class="location">Janakpuri, Delhi</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"> 4 volunteers enrolled</i>
-                </div>
-            
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="swatch.html"> <a href="educationdrive.html"><button class="more-info">More
-                                info</button></a></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="assets/dog kid.png" alt="Event Image">
-            <div class="card-content">
-                <h3>CARE</h3>
-                <p class="location">Patel Chowk,Delhi</p>
-                <div class="volunteer-count">
-                    <i class="fa-user"></i> 40 volunteers enrolled
-                </div>
-            
-                <div class="card-footer">
-
-                    <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                    <a href="educationdrive.html"><button class="more-info">More info</button></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
+        </div>-->
+    </div>
 
     <div class="pagination">
-        <button class="active">1</button>
-        <button>2</button>
+        <button class="activepage" id="page1" onclick="pagechange(1)">1</button>
+        <button class="page" id="page2" onclick="pagechange(2)">2</button>
     </div>
-    </div>
+        
     <script src="index.js"></script>
 
 

@@ -50,6 +50,7 @@ async function geteventsdata() {
 
 async function consolecheck(params) {
   ongoing();
+  getcommunityoptions("NGOS");
 }
 
 consolecheck();
@@ -182,11 +183,6 @@ async function fetchcommunitiesdata() {
     }
 
     const jsonData = await response.json();
-    // console.log(jsonData.name);
-    // console.log(jsonData.image);
-    // console.log(jsonData.members);
-    // console.log(jsonData.tagline);
-
     const elements = document.querySelectorAll(".indicommunity");
 
     // eventsarr.forEach((event, cpunt) => {
@@ -315,11 +311,18 @@ async function fetchngopage()
         if (!response.ok) {
             throw new Error("Network response was not ok " + response.statusText);
           }
-      
         const jsonData = await response.json();
       for(i = 0; i < jsonData.length; i++){
         if(jsonData[i].name === document.getElementById("ngo_name").innerText){
           console.log(jsonData[i].name);
+          const bgimg = document.getElementById("bgimg");
+          bgimg.src= jsonData[i].bgimage;
+          const logo = document.getElementById("ngo_logo");
+          logo.src= jsonData[i].logo;
+          const enrolled = document.getElementById("volun");
+          volun.innerText = jsonData[i].enrolled;
+          const ratings = document.getElementById("rating_nos");
+          ratings.innerHTML = `(${jsonData[i].ratings} reviews)`;
           const aboutus = document.getElementById("aboutus");
           aboutus.innerText = jsonData[i].about_us;
           const joinus = document.getElementById("join_us");
@@ -435,3 +438,113 @@ function showCustomAlert(message) {
   overlay.appendChild(alertBox);
   document.body.appendChild(overlay);
 }
+
+function getlist(a) {
+  for (let i = 1; i <= 3; i++) {
+    let currOption = document.querySelector(`#option${i}`);
+    if (i === a) {
+      currOption.className = "tabactive";
+      pagechange(1);
+      getcommunityoptions(currOption.innerHTML);
+    } else {
+      currOption.className = "tab";
+    }
+  }
+}
+function pagechange(a) {
+  for (let i = 1; i <= 2; i++) {
+    let currOption = document.querySelector(`#page${i}`);
+    if (i === a) {
+      currOption.className = "activepage";
+      if(a===1){
+        getcommunityoptions("NGOS");
+      }else{
+        getcommunityoptions("TRUSTS");
+      }
+    } else {
+      currOption.className = "page";
+    }
+  }
+}
+
+
+async function getcommunityoptions(a) {
+  try {
+    const response = await fetch("data/data.json");
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const jsonData = await response.json();
+    const eventsgrid = document.querySelector(".events-grid");
+    eventsgrid.innerHTML = "";
+
+    for (let i = 0; i < jsonData.length; i++) {
+      if (jsonData[i].type === a) {
+        const carddiv = document.createElement("div");
+        const eventimg = document.createElement("img");
+        const cardcontent = document.createElement("div");
+        const h3 = document.createElement("h3");
+        const p = document.createElement("p");
+        const volunteercount = document.createElement("div");
+        const itag = document.createElement("i");
+        const cardfooter = document.createElement("div");
+        const anchor1 = document.createElement("a");
+        const anchor2 = document.createElement("a");
+        const button1 = document.createElement("button");
+        const button2 = document.createElement("button");
+
+        carddiv.className = "card";
+        eventimg.src = jsonData[i].image;
+        eventimg.alt = "Event Image";
+        cardcontent.className = "card-content";
+        h3.innerHTML = jsonData[i].name;
+        p.className = "location";
+        p.innerHTML = jsonData[i].address;
+        volunteercount.className = "volunteer-count";
+        volunteercount.appendChild(itag);
+        itag.innerHTML = jsonData[i].enrolled;
+        cardfooter.className = "card-footer";
+        cardfooter.appendChild(anchor1);
+        cardfooter.appendChild(anchor2);
+        anchor1.href = "volunteer.html";
+        anchor1.appendChild(button1);
+        button1.className = "volunteer";
+        button1.innerHTML = "Volunteer";
+        anchor2.href = `${jsonData[i].name}.html`;
+        anchor2.appendChild(button2);
+        button2.className = "more-info";
+        button2.innerHTML = "More info";
+
+        carddiv.appendChild(eventimg);
+        cardcontent.appendChild(h3);
+        cardcontent.appendChild(p);
+        cardcontent.appendChild(volunteercount);
+        cardcontent.appendChild(cardfooter);
+        carddiv.appendChild(cardcontent);
+        eventsgrid.appendChild(carddiv);
+      }
+    }
+  } catch (error) {
+    console.log(error, "in loading data");
+  }
+}
+
+
+function toggleDropdown() {
+  document.getElementById("filterDropdown").classList.toggle("show");
+}
+
+// window.onclick = function(event) {
+//   // if (!event.target.matches('.filter-button')) {
+//   //   var dropdowns = document.getElementById("filterDropdown");
+//   //   dropdowns.classList.toggle("show"); 
+//   // }
+//   // console.log("Clicked at coordinates: ", event.clientX, event.clientY);
+//   // console.log(event.target);
+// }
+
+document.addEventListener("click", function(event) {
+  // Handle the click event
+  console.log("Clicked at coordinates: ", event.clientX, event.clientY);
+console.log(event.target);
+});
