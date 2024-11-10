@@ -29,7 +29,7 @@ let numberofcommunities=0;
 
 async function geteventsdata() {
   firstfourevents = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     try {
       const response = await fetch("data/" + (i + 1) + ".json");
 
@@ -57,7 +57,7 @@ consolecheck();
 async function getreveventsdata() {
   lastfourevents = [];
   let j = 0;
-  for (let i = 4; i > 0; i--) {
+  for (let i = 5; i > 0; i--) {
     try {
       const response = await fetch("data/" + i + ".json");
 
@@ -204,18 +204,18 @@ async function fetchcommunitiesdata() {
           communitiestext.style.display = "flex";
           communitiestext.style.flexDirection = "column";
           communitiestext.style.justifyContent = "start";
-          communitiestext.style.paddingLeft = "8px";
+          communitiestext.style.paddingLeft = "6px";
 
           const communitiestext1 = document.createElement("div");
 
           communitiestext1.style.paddingTop = "10px";
           communitiestext1.style.fontWeight = "800";
-          communitiestext1.style.fontSize = "20px";
+          communitiestext1.style.fontSize = "16px";
           communitiestext1.innerHTML = `${jsonData.name}`;
 
           const communitiestext2 = document.createElement("div");
           communitiestext2.style.fontWeight = "700";
-          communitiestext2.style.fontSize = "14px";
+          communitiestext2.style.fontSize = "12px";
           communitiestext2.style.color = "#667479b3";
           communitiestext2.innerHTML = "Members: "+`${jsonData.members}`;
 
@@ -277,14 +277,23 @@ async function fetchstarsoftheweek()
             const star_div_image = document.createElement("img");
             star_div_image.src= star_name.image;
 
-            const star_title = document.createElement("h3");
-            star_title.textContent = star_name.community_name;
+            const star_community_name = document.createElement("h3");
+            star_community_name.textContent = star_name.community_name;
+            star_div_atag.appendChild(star_community_name);
+
+            const star_title = document.createElement("h4");
+            star_title.textContent = star_name.title;
             star_div_atag.appendChild(star_title);
+
+            const star_reason = document.createElement("h5");
+            star_reason.textContent = star_name.reason;
+            star_div_atag.appendChild(star_reason);
+            // star_div_atag.classList.add("startext");
 
 
             star_div_atag.appendChild(star_div_image);
             star_div.appendChild(star_div_atag);
-            // console.log(star_div);
+            console.log(star_div);
             const elements = document.getElementById("starsoftheweek");
             elements.appendChild(star_div);
 
@@ -345,7 +354,7 @@ function changetosignup(){
 }
 
 const signup = document.querySelector(".Signup-container");
-// signup.style.display = "none";
+signup.style.display = "none";
 
 
 /////////////

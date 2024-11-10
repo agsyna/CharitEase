@@ -12,17 +12,18 @@
     "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
     "events": [
       {
-        "community_name":"C.A.R.E.",
-        "event_name": "Ek Ped Ma Ke Naam",
+        "community_name":"Chetna",
+        "event_name": "Education Drive",
         "theme": "Hardware & Software",
-        "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+        "image": "http://127.0.0.1:55745/assets/educationdrive.png",
         "eligibility": "Open to all",
         "no_of_volunteers_required": 100,
-        "no_of_volunteers_registered": 40,
-        "date": "January 2, 2024",
+        "no_of_volunteers_registered": 10,
+        "date": "November 2, 2024",
         "time": "",
         "place": "",
         "about": "qn qkrh qri qrb",
+
   
         "perks": ["Certificates", "Snacks", "Free-Wifi"]
       }

@@ -16,7 +16,9 @@
         "no_of_volunteers_registered": 10,
         "about": "qn qkrh qri qrb",  
         "perks": ["Certificates", "Snacks", "Free-Wifi"],
-        "link":"https://www.bmu.edu.in"
+        "link":"https://www.bmu.edu.in",
+        "reason":"Conducted 10 Successful Events",
+        "title":"Most Active Community"
       },
       {
         "community_name":"Nanhi Kali",
@@ -27,18 +29,9 @@
         "no_of_volunteers_registered": 10,
         "about": "qn qkrh qri qrb",  
         "perks": ["Certificates", "Snacks", "Free-Wifi"],
-        "link":"https://www.nanhikali.org"
-      },
-      {
-        "community_name":"Cancer Society",
-        "event_name": "Education Drive",
-        "theme": "Hardware & Software",
-        "image": "http://127.0.0.1:55745/assets/starsoftheweek1.png",
-        "eligibility": "Open to all",
-        "no_of_volunteers_registered": 10,
-        "about": "qn qkrh qri qrb",  
-        "perks": ["Certificates", "Snacks", "Free-Wifi"],
-         "link":"https://www.indiancancersociety.org/"
+        "link":"https://www.nanhikali.org",
+               "reason":"Conducted 10 Successful Events",
+        "title":"Small Rising Award"
       },
       {
         "community_name":"H.O.P.E.",
@@ -49,8 +42,24 @@
         "no_of_volunteers_registered": 10,
         "about": "qn qkrh qri qrb",  
         "perks": ["Certificates", "Snacks", "Free-Wifi"],
-         "link":"https://www.hope-foundation.in/"
+         "link":"https://www.hope-foundation.in/",
+        "reason":"Conducted 100+ Successful Events",
+        "title":"Most Active Community"
       },
+      {
+        "community_name":"Cancer Society",
+        "event_name": "Education Drive",
+        "theme": "Hardware & Software",
+        "image": "http://127.0.0.1:55745/assets/starsoftheweek1.png",
+        "eligibility": "Open to all",
+        "no_of_volunteers_registered": 10,
+        "about": "qn qkrh qri qrb",  
+        "perks": ["Certificates", "Snacks", "Free-Wifi"],
+         "link":"https://www.indiancancersociety.org/",
+        "reason":"Collaborated with 4+ Communities",
+        "title":"Most Active Community"
+      },
+      
       {
         "community_name":"Ramanujan Trust",
         "event_name": "Education Drive",
@@ -60,7 +69,9 @@
         "no_of_volunteers_registered": 10,
         "about": "qn qkrh qri qrb",  
         "perks": ["Certificates", "Snacks", "Free-Wifi"],
-        "link":"https://www.indiancancersociety.org/"
+        "link":"https://www.indiancancersociety.org/",
+        "reason":"Colleted 1L+ Funds",
+        "title":"Fund Hero Of the Month"
       },
       {
         "community_name":"Sita Foundation",
@@ -71,7 +82,9 @@
         "no_of_volunteers_registered": 10,
         "about": "qn qkrh qri qrb",  
         "perks": ["Certificates", "Snacks", "Free-Wifi"],
-        "link":"https://www.sita-foundation.org/"
+        "link":"https://www.sita-foundation.org/",
+        "reason":"Most Loved Club",
+        "title":"Gained The Most No. Of Likes"
       }
 
     ]
