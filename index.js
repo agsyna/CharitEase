@@ -1,35 +1,73 @@
 //carousel
+
+
 const carouselSlide = document.querySelector(".carousel-slide");
 const images = document.querySelectorAll(".carousel-slide img");
 let currentIndex = 0;
 const intervalTime = 2000;
+
+
 function showNextImage() {
   const imageWidth = images[0].clientWidth;
   currentIndex += 1;
+
   if (currentIndex >= images.length) {
     currentIndex = 0;
-  }
+  } 
+  //resets value to 0 - everytime it tries to go beyond 2 (2 is the images length)
+
+  console.log("currentIndex : " + currentIndex);
   carouselSlide.style.transform =
     "translateX(" + -currentIndex * imageWidth + "px)";
 }
+
 setInterval(showNextImage, intervalTime);
+
+
+
 
 //events-homepage
 
-let firstfourevents = [];
+let firstfiveevents = [];
 
-let lastfourevents = [];
+let lastfiveevents = [];
 let eventsarr = [];
 
 
-MediaQueryList
+let numberofevents=5;
 
-let numberofevents=0;
-let numberofcommunities=0;
+
+//console check
+
+async function consolecheck(params) {
+  ongoing();
+  getcommunityoptions("NGOS");
+  geteventsoptions(0,9,1);
+  document.onclick = function(event) {
+    if (!event.target.matches('.filter-button')) {
+      var dropdowns = document.getElementsByClassName("dropdown");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  };
+
+  updateCountdown();
+  const timer = setInterval(updateCountdown, 1000);
+}
+
+consolecheck();
+
+
+//events-homepage continue
 
 async function geteventsdata() {
-  firstfourevents = [];
-  for (let i = 0; i < 5; i++) {
+  firstfiveevents = [];
+  for (let i = 0; i < numberofevents; i++) {
     try {
       const response = await fetch("data/" + (i + 1) + ".json");
 
@@ -39,7 +77,7 @@ async function geteventsdata() {
       const jsonData = await response.json();
 
       const event = jsonData.events[0];
-      firstfourevents[i] = event;
+      firstfiveevents[i] = event;
 
       //   renderEvents(jsonData);
     } catch (error) {
@@ -48,17 +86,10 @@ async function geteventsdata() {
   }
 }
 
-async function consolecheck(params) {
-  ongoing();
-  getcommunityoptions("NGOS");
-}
-
-consolecheck();
-
 async function getreveventsdata() {
-  lastfourevents = [];
+  lastfiveevents = [];
   let j = 0;
-  for (let i = 5; i > 0; i--) {
+  for (let i = numberofevents; i > 0; i--) {
     try {
       const response = await fetch("data/" + i + ".json");
 
@@ -68,7 +99,7 @@ async function getreveventsdata() {
       const jsonData = await response.json();
 
       const event = jsonData.events[0];
-      lastfourevents[j] = event;
+      lastfiveevents[j] = event;
       j++;
     } catch (error) {
       console.error("Error fetching JSON:", error);
@@ -148,7 +179,7 @@ function renderEvents(eventsarr) {
 
 async function ongoing() {
   await geteventsdata();
-  renderEvents(firstfourevents);
+  renderEvents(firstfiveevents);
   console.log(document.getElementsByClassName("evb"));
   const temp = document.getElementsByClassName("evb");
   // temp.setAttribute('style', 'background-color: #f47c19;color: #eeeded;')
@@ -160,7 +191,7 @@ async function ongoing() {
 
 async function upcoming() {
   await getreveventsdata();
-  renderEvents(lastfourevents);
+  renderEvents(lastfiveevents);
   const temp = document.getElementsByClassName("evb");
   // temp.setAttribute('style', 'background-color: #f47c19;color: #eeeded;')
   temp[1].style.backgroundColor = "#f47c19"; // Ongoing button
@@ -171,10 +202,13 @@ async function upcoming() {
 
 //communities-homepage
 
+
+let numberofcommunities=6;
+
 async function fetchcommunitiesdata() {
   let count = 1;
   try {
-    while(count<6)
+    while(count<numberofcommunities)
     {
     const response = await fetch("data/" + count + ".json");
 
@@ -244,7 +278,7 @@ catch (error) {
 fetchcommunitiesdata();
 
 
-
+//stars of the week
 
 async function fetchstarsoftheweek()
 {
@@ -304,6 +338,8 @@ async function fetchstarsoftheweek()
 fetchstarsoftheweek();
 
 
+//Indivisual Ngo page
+
 async function fetchngopage()
 {
     try{
@@ -342,6 +378,8 @@ async function fetchngopage()
 fetchngopage();
 
 
+// Login -> Signup
+
 function changetologin(){
   const login = document.querySelector(".login-container");
   login.style.removeProperty("display");
@@ -360,7 +398,9 @@ const signup = document.querySelector(".Signup-container");
 signup.style.display = "none";
 
 
-/////////////
+// Suscribe Now pop up
+
+
 document.addEventListener("DOMContentLoaded", function() {
   const subscribeButton = document.querySelector(".subscribenow button");
   const emailInput = document.querySelector(".subscribenow input[type='email']");
@@ -439,6 +479,9 @@ function showCustomAlert(message) {
   document.body.appendChild(overlay);
 }
 
+
+//Listing for communities
+
 function getlist(a) {
   for (let i = 1; i <= 3; i++) {
     let currOption = document.querySelector(`#option${i}`);
@@ -451,6 +494,23 @@ function getlist(a) {
     }
   }
 }
+
+// listing for events
+function getlist(a,b,c) {
+  for (let i = 1; i <= 2; i++) {
+    let currOption = document.querySelector(`#option${i}`);
+    if (i === c) {
+      currOption.className = "tabactive";
+      // pagechange(1);
+      geteventsoptions(a,b);
+    } else {
+      currOption.className = "tab";
+    }
+  }
+}
+
+//Page changer for both events and communities
+
 function pagechange(a) {
   for (let i = 1; i <= 2; i++) {
     let currOption = document.querySelector(`#page${i}`);
@@ -458,8 +518,18 @@ function pagechange(a) {
       currOption.className = "activepage";
       if(a===1){
         getcommunityoptions("NGOS");
+        if(document.querySelector(".tabactive").innerText==="Ongoing Events"){
+          geteventsoptions(0,9);
+        }else{
+          geteventsoptions(3,7);
+        }
       }else{
         getcommunityoptions("TRUSTS");
+        if(document.querySelector(".tabactive").innerText==="Upcoming Events"){
+          geteventsoptions(9,0);
+        }else{
+          geteventsoptions(8,2);
+        }
       }
     } else {
       currOption.className = "page";
@@ -467,6 +537,8 @@ function pagechange(a) {
   }
 }
 
+
+//get communities
 
 async function getcommunityoptions(a) {
   try {
@@ -527,24 +599,162 @@ async function getcommunityoptions(a) {
   } catch (error) {
     console.log(error, "in loading data");
   }
-}
+};
 
+
+//Filter Dropdown
 
 function toggleDropdown() {
   document.getElementById("filterDropdown").classList.toggle("show");
+};
+
+
+//Counter
+
+function updateCountdown() {
+  const eventDate = new Date("2025-02-18T00:00:00").getTime();
+  const now = new Date().getTime();
+  const timeLeft = eventDate - now;
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+  document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+  document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+  if (timeLeft < 0) {
+      clearInterval(timer);
+      document.querySelector(".countdown").textContent = "Event Started!";
+  }
 }
 
-// window.onclick = function(event) {
-//   // if (!event.target.matches('.filter-button')) {
-//   //   var dropdowns = document.getElementById("filterDropdown");
-//   //   dropdowns.classList.toggle("show"); 
-//   // }
-//   // console.log("Clicked at coordinates: ", event.clientX, event.clientY);
-//   // console.log(event.target);
-// }
 
-document.addEventListener("click", function(event) {
-  // Handle the click event
-  console.log("Clicked at coordinates: ", event.clientX, event.clientY);
-console.log(event.target);
-});
+//Get events for events page
+
+async function geteventsoptions(a,b) {
+  try {
+    const response = await fetch("data/data.json");
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const jsonData = await response.json();
+    const eventsgrid = document.querySelector(".events-grid1");
+    eventsgrid.innerHTML = "";
+    
+    for (let i = a; i < b; i++) {
+      // let jsonData[i]. = jsonData[i];
+      for(let j = 0;j<jsonData[i].events.length;j++){
+        const carddiv = document.createElement("div");
+        const eventimg = document.createElement("img");
+        const cardcontent = document.createElement("div");
+        const h3 = document.createElement("h3");
+        const p1 = document.createElement("p");
+        const p2 = document.createElement("p");
+        const p3 = document.createElement("p");
+        const volunteercount = document.createElement("div");
+        const itag = document.createElement("i");
+        const cardfooter = document.createElement("div");
+        const anchor1 = document.createElement("a");
+        const anchor2 = document.createElement("a");
+        const button1 = document.createElement("button");
+        const button2 = document.createElement("button");
+
+        carddiv.className = "cards";
+        eventimg.src = jsonData[i].events[j].image;
+        eventimg.alt = "Event Image";
+        cardcontent.className = "card-content";
+        h3.innerHTML = jsonData[i].events[j].event_name;
+        p1.innerHTML = jsonData[i].events[j].community_name;
+        p2.innerHTML = jsonData[i].events[j].place;
+        p3.innerHTML = jsonData[i].events[j].date;
+        p2.className = "location";
+        p3.className = "location";
+        volunteercount.className = "volunteer-count";
+        volunteercount.appendChild(itag);
+        itag.innerHTML =`${jsonData[i].events[j].no_of_volunteers_registered} volunteers enrolled`;
+        cardfooter.className = "card-footer";
+        cardfooter.appendChild(anchor1);
+        cardfooter.appendChild(anchor2);
+        anchor1.href = "volunteer.html";
+        anchor1.appendChild(button1);
+        button1.className = "volunteer";
+        button1.innerHTML = "Volunteer";
+        anchor2.href = `${jsonData[i].events[j].name}.html`;
+        anchor2.appendChild(button2);
+        button2.className = "more-info";
+        button2.innerHTML = "Explore";
+
+        carddiv.appendChild(eventimg);
+        cardcontent.appendChild(h3);
+        cardcontent.appendChild(p1);
+        cardcontent.appendChild(p2);
+        cardcontent.appendChild(p3);
+        cardcontent.appendChild(volunteercount);
+        cardcontent.appendChild(cardfooter);
+        carddiv.appendChild(cardcontent);
+        eventsgrid.appendChild(carddiv);
+      }
+    }
+    for (let i = a-1; i >= b; i--) {
+      for(let j = 0;j<jsonData[i].events.length;j++){
+        const carddiv = document.createElement("div");
+        const eventimg = document.createElement("img");
+        const cardcontent = document.createElement("div");
+        const h3 = document.createElement("h3");
+        const p1 = document.createElement("p");
+        const p2 = document.createElement("p");
+        const p3 = document.createElement("p");
+        const volunteercount = document.createElement("div");
+        const itag = document.createElement("i");
+        const cardfooter = document.createElement("div");
+        const anchor1 = document.createElement("a");
+        const anchor2 = document.createElement("a");
+        const button1 = document.createElement("button");
+        const button2 = document.createElement("button");
+
+        carddiv.className = "cards";
+        eventimg.src = jsonData[i].events[j].image;
+        eventimg.alt = "Event Image";
+        cardcontent.className = "card-content";
+        h3.innerHTML = jsonData[i].events[j].event_name;
+        p1.innerHTML = jsonData[i].events[j].community_name;
+        p2.innerHTML = jsonData[i].events[j].place;
+        p3.innerHTML = jsonData[i].events[j].date;
+        p2.className = "location";
+        p3.className = "location";
+        volunteercount.className = "volunteer-count";
+        volunteercount.appendChild(itag);
+        itag.innerHTML =`${jsonData[i].events[j].no_of_volunteers_registered} volunteers enrolled`;
+        cardfooter.className = "card-footer";
+        cardfooter.appendChild(anchor1);
+        cardfooter.appendChild(anchor2);
+        anchor1.href = "volunteer.html";
+        anchor1.appendChild(button1);
+        button1.className = "volunteer";
+        button1.innerHTML = "Volunteer";
+        anchor2.href = `${jsonData[i].events[j].name}.html`;
+        anchor2.appendChild(button2);
+        button2.className = "more-info";
+        button2.innerHTML = "Explore";
+
+        carddiv.appendChild(eventimg);
+        cardcontent.appendChild(h3);
+        cardcontent.appendChild(p1);
+        cardcontent.appendChild(p2);
+        cardcontent.appendChild(p3);
+        cardcontent.appendChild(volunteercount);
+        cardcontent.appendChild(cardfooter);
+        carddiv.appendChild(cardcontent);
+        eventsgrid.appendChild(carddiv);
+      }
+    }
+  } catch (error) {
+    console.log(error, "in loading data");
+  }
+};
+
+

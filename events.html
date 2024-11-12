@@ -43,28 +43,36 @@
 
 
     <div class="mains">
-        <div style="display: flex; justify-content:space-between">
-            <h2 class="h4" style="align-self: center;">Choose Your Location</h2>
-            <input type="text" name="locationsearch" id="" placeholder="Choose A Location">
+        <div style="display: flex;margin:0px">
+            <p style="align-self: center;font-size: 16px;margin-right: 20px;">Choose Your Location</p>
+            <div>
+                <input type="text" name="locationsearch" id="" placeholder="Choose A Location" >
+
+            </div>  
+
 
         </div>
 
 
         <div class="main-container">
-            <img src="assets/map.png" alt="CharItEase Logo">
+            <!-- <img src="assets/map.png" alt="CharItEase Logo"> -->
+             <!-- <center> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14058.063155231894!2d76.81474560000001!3d28.252373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1730910652439!5m2!1sen!2sin" width="90%" height="440px" style="border:0;margin:0 auto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+             <!-- </center> -->
         </div>
     </div>
-
+    <hr>
 
 
     <div class="events-header">
-        <div style="margin-bottom: 0px;">
-            <h2 class="h4" style="align-self: center; margin-top:10px">Events</h2>
+        <div>
+            <h2 style="align-self: center;font-size: 24px;font-weight:800;">Events</h2>
         </div>
         <div class="search-filter-container">
 
             <div class="search-bar">
-                <i class="fa-search"></i>
                 <input type="text" placeholder="Search">
             </div>
         </div>
@@ -72,124 +80,97 @@
 
     <div class="events-container">
 
-        <div class="tabs">
-            <div class="tab active">Ongoing Events</div>
-            <div class="tab">Upcoming Events</div>
-        </div>
-
-
-        <div class="events-grid">
-
-            <div class="card">
-                <img src="assets/poor kids.png" alt="Event Image">
-                <div class="card-content">
-                    <h3>Education Drive</h3>
-                    <p>CHETNA | Savera</p>
-                    <p class="location">Sector-36, Jaipur<br>Tuesday, 23rd Sept</p>
-                    <div class="card-footer">
-                        <div class="volunteer-count">
-                            <i class="fas fa-user-check"></i> 500+ volunteers enrolled
-                        </div>
-                        <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                       <a href="educationdrive.html"><button class="more-info">Explore</button></a>
-                    </div>
-                </div>
+            <div style="display: flex;">
+                <div class="tabactive" id="option1" onclick="getlist(0, 9,1)">Ongoing Events</div>
+                <div class="tab" id="option2" onclick="getlist(9, 0 ,2)">Upcoming Events</div>
             </div>
+            <div>
 
-
-            <div class="card">
-                <img src="assets/yellow kids.png" alt="Event Image">
-                <div class="card-content">
-                    <h3>BADHTE KADAM</h3>
-                    <p>CHETNA | CRY</p>
-                    <p class="location">Gov. School, Rewari<br>Tuesday, 31st Sept</p>
-                    <div class="card-footer">
-                        <div class="volunteer-count">
-                            <i class="fas fa-user-check"></i> 200+ volunteers enrolled
-                        </div>
-                        <a href="volunteer.html"><button class="volunteer">Volunteer</button></a>
-                       <a href="educationdrive.html"><button class="more-info">Explore</button></a>
-                    </div>
-                </div>
+            <div>
             </div>
-
-
-            <div class="card">
-                <img src="assets/dog kid.png" alt="Event Image">
-                <div class="card-content">
-                    <h3>Ek Bacha Aapka</h3>
-                    <p>UNICEF | PETA India</p>
-                    <p class="location">Sector-12, Jaipur<br>Tuesday, 23rd Sept</p>
-                    <div class="card-footer">
-                        <div class="volunteer-count">
-                            <i class="fas fa-user-check"></i> 40 volunteers enrolled
-                        </div>
-                        <a href="volunteer.html"><a href="volunteer.html"><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a></a>
-                       <a href="ekbachaapka.html"><button class="more-info">Explore</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="assets/women brooms.png" alt="Event Image">
-                <div class="card-content">
-                    <h3>Mind Your Bin</h3>
-                    <p>The Hands India</p>
-                    <p class="location">Hawa Mahal, Jaipur<br>Tuesday, 23rd Sept</p>
-                    <div class="card-footer">
-                        <div class="volunteer-count">
-                            <i class="fas fa-user-check"></i> 100+ volunteers enrolled
-                        </div>
-                        <a href="volunteer.html"><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a>
-                       <a href="swatch.html"><button class="more-info">Explore</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="assets/yogi ji.png" alt="Event Image">
-                <div class="card-content">
-                    <h3>Tree Plantation Drive</h3>
-                    <p>Green Earth Society</p>
-                    <p class="location">Rajasthan University, Jaipur<br>Friday, 26th Sept</p>
-                    <div class="card-footer">
-                        <div class="volunteer-count">
-                            <i class="fas fa-user-check"></i> 4 volunteers enrolled
-                        </div>
-                        <a href="volunteer.html">><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a>
-                       <a href="ekpedmakenam.html"><button class="more-info">Explore</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="assets/papa ji.png" alt="Event Image">
-                <div class="card-content">
-                    <h3>Health Awareness Camp</h3>
-                    <p>Community Health Foundation</p>
-                    <p class="location">City Center, Jaipur<br>Wednesday, 24th Sept</p>
-                    <div class="card-footer">
-                        <div class="volunteer-count">
-                            <i class="fas fa-user-check"></i> 4 volunteers enrolled
-                        </div>
-                        <a href="volunteer.html">><a href="volunteer.html"><button class="volunteer">Volunteer</button></a></a>
-                        <a href="educationdrive.html"><button class="more-info">Explore</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pagination">
-            <button class="active">1</button>
-            <button>2</button>
         </div>
     </div>
 
+    <hr>
+    <div class="events-grid1"></div>
+
+    <div class="pagination">
+        <button class="activepage" id="page1" onclick="pagechange(1)" >1</button>
+        <button class="page" id="page2" onclick="pagechange(2)" >2</button>
+    </div>
+        
     <script src="index.js"></script>
 
+
 </body>
+<div style="height: 200px;"></div>
+
+<div class="footer" style="margin: -100px;">
+    <div class="leftfooter">
+        <div> <img src="assets/chariteaselogo.png" alt="" style="margin: 12% 16%"></div>
+        <div class="footericons">
+            <a
+                href="https://in.linkedin.com/#:~:text=1%20billion%20members%20|%20Manage%20your%20professional%20identity.%20Build%20and"><img
+                    src="assets/linkedin.png" alt=""></a>
+            <a href="https://x.com/?lang=en-in&mx=2">
+                <img src="assets/twitter.png" alt="">
+            </a>
+        </div>
+        <div class="footertext">
+            Copyright 2024 CharitEase. All rights reserved
+        </div>
+
+    </div>
+    <div class="midfooter">
+        <div>
+            <a href="communities.html">
+                <div class="footerheadings">Communities</div>
+                <div class="footertext1">NGOS</div>
+                <div class="footertext1">Old Age Home</div>
+                <div class="footertext1">Children</div>
+                <div class="footertext1">Animal</div>
+                <div class="footertext1">Cleanliness</div>
+                <div class="footertext1">Student Clubs</div>
+            </a>
+        </div>
+        <div>
+            <a href="volunteer.html">
+                <div class="footerheadings">Facilities</div>
+                <div class="footertext1">Donate</div>
+                <div class="footertext1">Volunteer</div>
+                <div class="footertext1">Connect</div>
+                <div class="footertext1">Register With Us</div>
+            </a>
+        </div>
+        <div>
+            <a href="contactsus.html">
+                <div class="footerheadings">Contact</div>
+                <div class="footertext1">Gallery</div>
+                <div class="footertext1">Achievements</div>
+                <div class="footertext1">Testimonials</div>
+                <div class="footertext1">Founders</div>
+            </a>
+        </div>
+        <div>
+            <hr style="margin-left:10px; height:100%">
+        </div>
+
+
+
+
+    </div>
+
+    <div class="rightfooter">
+        <div class="registernow">
+            Register Now So You Don't Miss Our Events
+        </div>
+        <div class="subscribenow">
+            <input type="email" placeholder="example@fg.com">
+            <button type="submit">Subscribe Now</button>
+        </div>
+
+    </div>
+
+</div>
 
 </html>

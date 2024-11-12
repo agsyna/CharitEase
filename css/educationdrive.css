@@ -139,7 +139,7 @@ a {
     gap: 35px;
 }
 
-.timer p {
+.timer div {
     font-family: 'Poppins';
     font-size: 30px;
     font-weight: bold;
