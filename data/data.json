@@ -19,9 +19,10 @@
         "events": [
           {
             "community_name":"Chetna|Savera",
-            "event_name": "Education Drive",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
@@ -29,6 +30,9 @@
             "time": "00:00:00",
             "place": "Sector-36, Jaipur",
             "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           },
           {
@@ -36,6 +40,7 @@
             "event_name": "BADHTE KADAM",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/yellow%20kids.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 23,
@@ -43,6 +48,9 @@
             "time": "",
             "place": "Gov. School, Rewari",
             "about": "qn qkrh qri qrb",    
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -69,13 +77,18 @@
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 40,
             "date": "January 2, 2024",
             "time": "",
             "place": "",
+
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -103,6 +116,7 @@
             "event_name": "Mind Your Bin",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -110,6 +124,9 @@
             "time": "",
             "place": "Hawa Mahal, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -137,6 +154,7 @@
             "event_name": "Ek Bacha Apka",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekbachaapkamain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 20,
@@ -144,45 +162,15 @@
             "time": "",
             "place": "Sector-12, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
       },
-      {
-        "uid": 5,
-        "type": "NGOS",
-        "name": "Smile Foundation",
-        "logo": "image.link",
-        "image": "http://127.0.0.1:55745/assets/chetna.png",
-        "bgimage": "http://127.0.0.1:55745/assets/chetna%20copy.png",
-        "members": 200,
-        "enrolled":"1400+ volunteers enrolled",
-        "ratings" : 863,
-        "government_id":"",
-        "address":"Gov. School, Panchgaon",
-        "tagline":"MY SMILE, YOUR SMILE, OUR SMILE",
-        "about_us": " QWERY OGN SGJS OG",
-        "why_join_us": "Why join dHDFHDFBS",
-        "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
-        "events": [
-          {
-            "community_name":"C.A.R.E.",
-            "event_name": "Ek Ped Ma Ke Naam",
-            "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
-            "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
-            "time": "",
-            "place": "Prayagraj, U.P",
-            "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
-          }
-        ]
-      },
+    
       {
         "uid": 6,
         "type": "NGOS",
@@ -190,27 +178,31 @@
         "logo": "image.link",
         "image": "http://127.0.0.1:55745/assets/papa%20ji.png",
         "bgimage": "http://127.0.0.1:55745/assets/ashakiran.png",
-        "members": 20,
+        "members": 500,
         "enrolled":"300+ volunteers enrolled",
         "ratings" : 340,
         "government_id":"",
         "address":"Patel Chowk,Delhi",
-        "tagline":"Be the ASHA to someone's basic human rights",
-        "about_us": " Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
-        "why_join_us": "Join Diya Foundation to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
+        "tagline":"Help The Needy",
+        "about_us": " FMCH is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. DIYA provides adults and young adults facing intellectual challenges and disabilities with vocational and life skills, making them employment-ready. We equip them to become valuable contributors to society. DIYA is part of the transformational stories of over 200 such unique individuals over the past 20 years.",
+        "why_join_us": "Join our HELP to make a meaningful impact in the lives of differently-abled adults. Be part of a compassionate community dedicated to providing vocational training and life skills,  empowering individuals to achieve self-dependence and dignity. Your efforts will help transform lives, enhance self-esteem, and promote inclusion. Gain valuable experience, support community awareness, and contribute to a mission that enriches the quality of life for those with intellectual challenges. Together, we can create a more inclusive and supportive society for everyone.",
         "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
         "events": [
           {
             "community_name":"Asha-Kiran",
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "image":"http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
             "time": "",
             "place": "",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "about": "qn qkrh qri qrb",
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
@@ -246,6 +238,9 @@
             "time": "",
             "place": "Rajasthan University, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -273,6 +268,7 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -280,6 +276,9 @@
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -344,6 +343,7 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -351,8 +351,9 @@
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-          
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ]
           }
         ]
       },
@@ -377,16 +378,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -409,31 +411,39 @@
       
         "events": [
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",    
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           },
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -456,17 +466,21 @@
         "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
         "events": [
           {
-            "community_name":"Diya Foundation",
+            "community_name":"UNICEF | PETA India",
             "event_name": "Ek Bacha Apka",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekbachaapkamain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 20,
-            "date": "October 2, 2024",
+            "date": "Tuesday, 23rd Sept",
             "time": "",
-            "place": "",
+            "place": "Sector-12, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -494,6 +508,7 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -527,16 +542,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -562,6 +578,7 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -596,6 +613,7 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -630,6 +648,7 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -666,6 +685,7 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
@@ -700,14 +720,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -730,17 +753,21 @@
         "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
         "events": [
           {
-            "community_name":"Diya Foundation",
+            "community_name":"UNICEF | PETA India",
             "event_name": "Ek Bacha Apka",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekbachaapkamain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 20,
-            "date": "October 2, 2024",
+            "date": "Tuesday, 23rd Sept",
             "time": "",
-            "place": "",
+            "place": "Sector-12, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -767,35 +794,39 @@
       
         "events": [
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-    
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           },
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-    
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -821,16 +852,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -855,16 +887,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -889,15 +922,18 @@
             "community_name":"Asha-Kiran",
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "image": "http://127.0.0.1:55745/assets/image 109.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -923,15 +959,18 @@
             "community_name":"Asha-Kiran",
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "image": "http://127.0.0.1:55745/assets/image 109.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -958,14 +997,18 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
+
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -989,35 +1032,39 @@
       
         "events": [
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-    
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           },
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-    
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1040,17 +1087,21 @@
         "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
         "events": [
           {
-            "community_name":"Diya Foundation",
+            "community_name":"UNICEF | PETA India",
             "event_name": "Ek Bacha Apka",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekbachaapkamain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 20,
-            "date": "October 2, 2024",
+            "date": "Tuesday, 23rd Sept",
             "time": "",
-            "place": "",
+            "place": "Sector-12, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -1078,14 +1129,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1111,16 +1165,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -1145,16 +1200,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -1180,14 +1236,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1214,14 +1273,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1248,14 +1310,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1282,14 +1347,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1319,14 +1387,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-          
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1352,16 +1423,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -1384,31 +1456,39 @@
       
         "events": [
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",    
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           },
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1431,17 +1511,21 @@
         "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
         "events": [
           {
-            "community_name":"Diya Foundation",
+            "community_name":"UNICEF | PETA India",
             "event_name": "Ek Bacha Apka",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekbachaapkamain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 20,
-            "date": "October 2, 2024",
+            "date": "Tuesday, 23rd Sept",
             "time": "",
-            "place": "",
+            "place": "Sector-12, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -1469,14 +1553,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1502,16 +1589,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -1537,14 +1625,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1571,14 +1662,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1605,14 +1699,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1641,14 +1738,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
-            "eligibility": "Open to all",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
+                        "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1675,14 +1775,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1705,17 +1808,21 @@
         "gallery": ["http://127.0.0.1:55745/assets/IMG_0400-1-150x150%201.png", "http://127.0.0.1:55745/assets/IMG_0306-150x150%201.png", "http://127.0.0.1:55745/assets/image%2096.png", "http://127.0.0.1:55745/assets/image%2098.png", "http://127.0.0.1:55745/assets/image%2097.png", "http://127.0.0.1:55745/assets/WhatsApp-Image-2024-01-11-at-4.44.35-PM-150x150%201.png","http://127.0.0.1:55745/assets/image%2095.png"],  
         "events": [
           {
-            "community_name":"Diya Foundation",
+            "community_name":"UNICEF | PETA India",
             "event_name": "Ek Bacha Apka",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/ekbachaapka.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekbachaapkamain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 20,
-            "date": "October 2, 2024",
+            "date": "Tuesday, 23rd Sept",
             "time": "",
-            "place": "",
+            "place": "Sector-12, Jaipur",
             "about": "qn qkrh qri qrb",
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
       
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
@@ -1742,35 +1849,39 @@
       
         "events": [
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-    
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           },
           {
-            "community_name":"Chetna",
-            "event_name": "Education Drive",
+            "community_name":"Chetna|Savera",
+            "event_name": "EDUCATION DRIVE",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/educationdrive.png",
+            "bg_image":"http://127.0.0.1:55745/assets/educationdrivemain.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 10,
             "date": "November 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-    
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1796,16 +1907,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -1830,16 +1942,17 @@
             "community_name":"C.A.R.E.",
             "event_name": "Ek Ped Ma Ke Naam",
             "theme": "Hardware & Software",
-            "image": "http://127.0.0.1:55745/assets/ekpedmakenam.png",
+            "bg_image":"http://127.0.0.1:55745/assets/ekpedmakenammain.png",
             "eligibility": "Open to all",
-            "no_of_volunteers_required": 100,
-            "no_of_volunteers_registered": 40,
-            "date": "January 2, 2024",
+            "no_of_volunteers_required": 10,
+            "no_of_volunteers_registered": 30,
+            "date": "December 2, 2024",
             "time": "",
             "place": "",
             "about": "qn qkrh qri qrb",
-      
-            "perks": ["Certificates", "Snacks", "Free-Wifi"]
+            "features_title":["Cleanliness","Waste","Awareness"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Promoting clean spaces to enhance health and community responsibility. Cleanliness reflectscollective responsibility and enhances community well-being.","Implementing effective waste management through reduction, reuse, and recycling. Effective wastemanagement helps minimize pollution and preserve the environment.","Educating communities on cleanliness and sustainability for long-term impact. Raising awarenessensures active participation and lasting positive change." ]
           }
         ]
       },
@@ -1865,14 +1978,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1899,14 +2015,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]
@@ -1933,14 +2052,17 @@
             "event_name": "Swach Abhiyan",
             "theme": "Hardware & Software",
             "image": "http://127.0.0.1:55745/assets/swachabhiyan.png",
+            "bg_image":"http://127.0.0.1:55745/assets/image%20109.png",
             "eligibility": "Open to all",
             "no_of_volunteers_required": 100,
             "no_of_volunteers_registered": 30,
             "date": "December 2, 2024",
-            "time": "",
-            "place": "",
-            "about": "qn qkrh qri qrb",
-      
+            "time": "00:00:00",
+            "place": "Sector-36, Jaipur",
+            "about": "qn qkrh qri qrb",      
+            "features_title":["Community-Centered Learning","Mentorship and Guidance","Inclusive Curriculum"],
+            "features_img":["http://127.0.0.1:55745/assets/event_logo1.png","http://127.0.0.1:55745/assets/event_logo2.png","http://127.0.0.1:55745/assets/event_logo3.png"],
+            "features":["Engage with local communities to offer accessible educational programs tailored to their needs.","Connect students with mentors who can provide personalized guidance, fostering a sense ofresponsibility and growth.","Create a flexible and inclusive curriculum that accommodates diverse learning styles and skilllevels" ],
             "perks": ["Certificates", "Snacks", "Free-Wifi"]
           }
         ]

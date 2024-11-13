@@ -10,8 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ek Ped Ma Ke Naam</title>
-    <link rel="stylesheet" href="css/ekped.css">
+    <title>Education Drive</title>
+    <link rel="stylesheet" href="css/educationdrive.css">
 </head>
 
 <body>
@@ -39,15 +39,15 @@
                 <div class="login">Login</div>
             </a>
         </div>
-        </div>
+    </div>
 
-        <main>
-            <div class="main-img">
-                <img src="assets/event_bg.png" style="height:828px;">
-                <img class="event_pic"
-                    style="margin:auto; margin-top:100px; position: absolute; z-index:100; width:80%;height:80%"
-                    src="assets/ekpedmakenammain.png" />
-                <div class="SwachAbhiyan" style=" 
+    <main>
+        <div class="main-img" id="event-page">
+            <img src="assets/event_bg.png" style="height:828px;">
+            <img class="event_pic" id="event_pic"
+                style="margin:auto; margin-top:100px; position: absolute; z-index:100; width:80%;height:80%"
+                />
+            <div class="SwachAbhiyan" style=" 
             margin-top:20%;
             display:flex;
             justify-content:center;
@@ -56,59 +56,34 @@
             font-size: 300%; 
             font-family: 'Poppins'; 
             font-weight: 900; 
-            z-index:200;">
-                    EK PED MAA KE NAAM
-                </div>
+            z-index:200;" id="eventname-head">
+            Ek Ped Ma Ke Naam
             </div>
+        </div>
 
-            <div class="countdown">
-                <h2>STARTS IN</h2>
-                <div class="timer">
-                    <p>98<br>DAYS</p>
-                    <p>11<br>HOURS</p>
-                    <p>05<br>MINUTES</p>
-                    <p>01<br>SECONDS</p>
-                </div>
-                <a href="volunteer.html" class="volunteer-btn">VOLUNTEER</a>
-            </div>
+        <div class="countdown" id="countdown">
+        </div>
 
-            <div class="features">
-                <div class="feature">
-                    <img src="assets/event_logo1.png" alt="Cleanliness icon">
-                    <h3>Cleanliness</h3>
-                    <p>Promoting clean spaces to enhance health and community responsibility. Cleanliness reflects
-                        collective responsibility and enhances community well-being.</p>
-                </div>
-                <div class="feature">
-                    <img src="assets/event_logo2.png" alt="Waste icon">
-                    <h3>Waste</h3>
-                    <p>Implementing effective waste management through reduction, reuse, and recycling. Effective waste
-                        management helps minimize pollution and preserve the environment.</p>
-                </div>
-                <div class="feature">
-                    <img src="assets/event_logo3.png" alt="Awareness icon">
-                    <h3>Awareness</h3>
-                    <p>Educating communities on cleanliness and sustainability for long-term impact. Raising awareness
-                        ensures active participation and lasting positive change.</p>
-                </div>
-            </div>
+        <div class="features" id = "features">
+        
+        </div>
 
-            <div class="footer-links" style="margin-left: -150px; margin-right:-150px;">
-                <div style="display: inline; justify-content:center">
-                    <h3>Perks</h3>
-                    <p>Snacks along with Volunteer Certificates</p>
-                </div>
-                <div>
-                    <h3>Community</h3>
-                    <p>Connect with like minded people</p>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <p>For more info saveraj@bmu.edu.in</p>
-                </div>
+        <div class="footer-links" style="margin-left: -150px; margin-right:-150px;">
+            <div style="display: inline; justify-content:center">
+                <h3>Perks</h3>
+                <p>Snacks along with Volunteer Certificates</p>
             </div>
-        </main>
-        <script src="index.js"></script>
+            <div>
+                <h3>Community</h3>
+                <p>Connect with like minded people</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>For more info saveraj@bmu.edu.in</p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
