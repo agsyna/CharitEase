@@ -99,6 +99,7 @@ async function geteventsdata() {
   }
 }
 
+
 //events-homepage -- for upcoming events
 
 async function getreveventsdata() {
