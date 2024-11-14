@@ -91,9 +91,9 @@ a {
 }
 
 .title {
-    font-size: 3em;
+    font-size: 24px;
     font-weight: bold;
-    margin-left: 5%;
+    margin-left: 20px;
     margin-top: 20px;
     margin-bottom: -10px;
     color: white;
@@ -220,67 +220,92 @@ a {
     width: 99%;
 }
 
-.events {
-    font-family: 'Poppins';
-    font-weight: 900;
-    color: #173B45;
-    font-size: 20px;
+.community{
+    margin: 4px 20px;
+    color: #E4E4E4;
+}
+
+.date{
+    margin: 4px 20px;
+    color: #E4E4E4;
 }
 
 .eventsbuttons {
     margin: 2% 0;
     display: flex;
     gap: 20px;
-
-
 }
 
-.evb {
-    background-color: #f47c19;
-    color: #f2f2f2;
+.evb{
     font-family: 'Poppins';
     border-radius: 24px;
     border: none;
-    width: 100px;
-    height: 30px;
-    font-weight: 500;
+    width: 112px;
+    height: 36px;
+    font-weight: 800;
+    border: 2px solid rgb(200, 200, 200);
+    color: #f47c19;
+    background-color: #eeeded;
+   
+}
+.evb-active{
+    font-family: 'Poppins';
+    border-radius: 24px;
+    border: none;
+    width: 112px;
+    height: 36px;
+    font-weight: 800;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: #f47c19;
+    color: #eeeded;
+   
+}
+
+.evb:hover{
+    opacity: 0.8;
+    color: black;
+    box-shadow: #2323231f 4px 4px 12px 2px ;
 }
 
 .eventslist {
-    min-height: 250px;
-    padding-left: 0;
+    min-height: 240px;
+    margin:0 1%;
+    padding-left:0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 0px;
-    gap: 40px;
+    flex-wrap: wrap;
     transition: box-shadow .5s;
-
 }
 
 
 .educationdrive {
     min-height: 200px;
-    max-height: 300px;
+    max-height: 280px;
+    max-width: 9%;
     min-width: 18%;
-    max-width: 25%;
     border-radius: 8px;
     overflow: hidden;
     background-repeat: no-repeat;
     transition: ease 0.4s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    position: relative;
 }
 
-.educationdrive:hover {
-    z-index: 200;
+.educationdrive:hover{
+    z-index:200;
     cursor: pointer;
     box-shadow: 4px 4px 16px rgba(36, 36, 36, 0.5);
-
-
 }
 
 .eddownpanel {
     background-color: #E4E4E4;
-    height: 18%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -288,7 +313,9 @@ a {
     padding-top: 4%;
     gap: 24px;
 }
-
+.eventDiv{
+    height: 96%;
+}
 .eventstext {
     color: #f2f2f2d9;
     display: flex;
@@ -318,11 +345,10 @@ a {
     background-color: #173B45;
     color: #f2f2f2;
     border-radius: 8px;
-    height: 72%;
+    height: 92%;
     font-size: 90%;
     margin-bottom: 0;
     margin-right: 10px;
-    transition: ease 0.2s;
 }
 
 .volunteerbutton:hover {
@@ -334,19 +360,13 @@ a {
     color: #173B45;
     border: 2px #173B45 solid;
     border-radius: 8px;
-    height: 72%;
+    height: 92%;
     font-family: 'Poppins';
     font-weight: 500;
     min-width: 100px;
     font-size: 90%;
     margin-bottom: 0;
-    transition: ease 0.2s;
 }
-
-.moreinfobutton:hover {
-    background-color: rgb(198, 199, 201);
-}
-
 .hr2 {
     color: rgba(0, 0, 0, 0.125);
     z-index: 100;
