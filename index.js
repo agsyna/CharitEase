@@ -29,6 +29,9 @@ var numberofevents = 0;
 
 var numberofcommunities = 0;
 
+let timer;
+
+
 //console check - function executing at all times
 
 async function consolecheck(params) {
@@ -47,6 +50,16 @@ async function consolecheck(params) {
   getcommunityoptions("NGOS");
   geteventsoptions(0, 9, 1);
 
+
+  // Clears any existing timer before setting a new one
+  if (timer) 
+    {
+      clearInterval(timer);
+    }
+
+  updateCountdown();
+  timer = setInterval(updateCountdown, 1000);
+
   document.onclick = function (event) {
     if (!event.target.matches(".filter-button")) {
       var dropdowns = document.getElementsByClassName("dropdown");
@@ -60,8 +73,7 @@ async function consolecheck(params) {
     }
   };
 
-  updateCountdown();
-  const timer = setInterval(updateCountdown, 1000);
+
 }
 
 consolecheck();
@@ -110,6 +122,7 @@ async function getreveventsdata() {
 }
 
 //events-homepage -- for rendering data into designed divs
+
 function renderEvents(eventsarr) {
   const elements = document.querySelectorAll(".educationdrive");
 
@@ -170,6 +183,8 @@ function renderEvents(eventsarr) {
   });
 }
 
+//ongoing button - homepage
+
 async function ongoing() {
   await geteventsdata();
   renderEvents(firstfiveevents);
@@ -179,6 +194,8 @@ async function ongoing() {
   const temp = document.getElementById("upcoming-btn");
   temp.className = "evb";
 }
+
+//upcoming button - homepage
 
 async function upcoming() {
   await getreveventsdata();
@@ -190,6 +207,7 @@ async function upcoming() {
 }
 
 //communities-homepage
+
 async function fetchcommunitiesdata() {
   try {
     const response = await fetch("data/data.json");
@@ -242,6 +260,7 @@ async function fetchcommunitiesdata() {
 }
 
 //stars of the week-homepage
+
 async function fetchstarsoftheweek() {
   try {
     const response = await fetch("data/starsoftheweek.json");
@@ -289,6 +308,7 @@ async function fetchstarsoftheweek() {
 }
 
 //Individual Ngo page
+
 async function fetchngopage() {
   try {
     const response = await fetch("data/data.json");
@@ -328,6 +348,38 @@ async function fetchngopage() {
 }
 
 fetchngopage();
+
+
+//countdown for events
+
+function updateCountdown() {
+  const eventDate = new Date("2025-02-18T00:00:00").getTime();
+  const now = new Date().getTime();
+  const timeLeft = eventDate - now;
+
+  const daysElement = document.getElementById("days");
+  const hoursElement = document.getElementById("hours");
+  const minutesElement = document.getElementById("minutes");
+  const secondsElement = document.getElementById("seconds");
+
+  // Check if all days,hours,minutes and seconds div exist
+  if (!daysElement || !hoursElement || !minutesElement || !secondsElement) {
+    console.warn("Countdown elements are missing in the DOM.");
+    return;
+  }
+
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours.toString().padStart(2, "0");
+  document.getElementById("minutes").innerText = minutes.toString().padStart(2, "0");
+  document.getElementById("seconds").innerText = seconds.toString().padStart(2, "0");
+}
+
 
  // load individual events page
 
@@ -379,7 +431,7 @@ fetchngopage();
           const span2 = document.createElement("span");
           span2.id = "hours";
           const span21 = document.createElement("span");
-          span21.innerText="DAYS";
+          span21.innerText="HOURS";
           span2.innerText="00";
 
           div2.appendChild(span2);
@@ -483,6 +535,8 @@ function changetosignup() {
 const signup = document.querySelector(".Signup-container");
 signup.style.display = "none";
 
+
+
 // Suscribe Now pop up
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -492,7 +546,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   subscribeButton.addEventListener("click", function (event) {
-    const email = emailInput.value.trim();
+    const email = emailInput.value.trim(); //trim - to remove white spaces from ends
     const validDomains = [
       "@gmail.com",
       "@yahoo.in",
@@ -509,6 +563,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+//subscribeNow - alert 
 
 function showCustomAlert(message) {
   const overlay = document.createElement("div");
@@ -606,8 +663,11 @@ function pagechange(a) {
           document.querySelector(".tabactive").innerText === "Ongoing Events"
         ) {
           geteventsoptions(0, 9);
+          //start and end index
+
         } else {
           geteventsoptions(3, 7);
+           //start and end index
         }
       } else {
         getcommunityoptions("TRUSTS");
@@ -615,8 +675,11 @@ function pagechange(a) {
           document.querySelector(".tabactive").innerText === "Upcoming Events"
         ) {
           geteventsoptions(9, 0);
+           //start and end index
+
         } else {
           geteventsoptions(8, 2);
+           //start and end index
         }
       }
     } else {
@@ -706,36 +769,7 @@ function toggleDropdown() {
   document.getElementById("filterDropdown").classList.toggle("show");
 }
 
-//Counter
 
-function updateCountdown() {
-  const eventDate = new Date("2025-02-18T00:00:00").getTime();
-  const now = new Date().getTime();
-  const timeLeft = eventDate - now;
-
-  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-  document.getElementById("days").innerText = days;
-  document.getElementById("hours").innerText = hours
-    .toString()
-    .padStart(2, "0");
-  document.getElementById("minutes").innerText = minutes
-    .toString()
-    .padStart(2, "0");
-  document.getElementById("seconds").innerText = seconds
-    .toString()
-    .padStart(2, "0");
-
-  if (timeLeft < 0) {
-    clearInterval(timer);
-    document.querySelector(".countdown").textContent = "Event Started!";
-  }
-}
 
 //Get events for events page
 
