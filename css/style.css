@@ -10,6 +10,7 @@ body {
     padding: 0;
     height: 100%;
     margin:0 5%;
+    overflow-x: hidden;
 }
 
 .menu-bar {
@@ -768,14 +769,13 @@ padding-top: 10px;
     height: 34px;
   }
   
-  /* Hide default HTML checkbox */
+
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* The slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -814,7 +814,7 @@ padding-top: 10px;
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
+  
   .slider.round {
     border-radius: 34px;
   }

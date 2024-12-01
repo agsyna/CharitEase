@@ -81,21 +81,30 @@ consolecheck();
 //events-homepage -- for ongoing events
 
 async function geteventsdata() {
-  firstfiveevents = [];
-  let i = 0;
+  firstfiveevents = []; 
   try {
-    const response = await fetch("data/data.json");
+    const response = await fetch("http://localhost:4000/api/v1/getEvents");
 
     if (!response.ok) {
-      throw new Error("Network response was not ok " + response.statusText);
+      throw new Error("Network response was not ok: " + response.statusText);
     }
+
     const jsonData = await response.json();
-    for (let q = 0; q < numberofevents; q++) {
-      const community = jsonData[q];
-      firstfiveevents[q] = community.events[0];
+
+    console.log("Fetched Events Data:", jsonData);
+
+
+    const events = jsonData.event;
+
+
+    for (let i = 0; i < numberofevents; i++) {
+      firstfiveevents.push(events[i]);
     }
+
+    console.log("Ongoing Events:", firstfiveevents);
+
   } catch (error) {
-    console.error("Error fetching JSON:", error);
+    console.error("Error fetching events data:", error);
   }
 }
 
@@ -103,20 +112,29 @@ async function geteventsdata() {
 //events-homepage -- for upcoming events
 
 async function getreveventsdata() {
-  lastfiveevents = [];
-  let j = 0;
+  lastfiveevents = []; // Reset the array
   try {
     const response = await fetch("data/data.json");
     if (!response.ok) {
-      throw new Error("Network response was not ok " + response.statusText);
+      throw new Error("Network response was not ok: " + response.statusText);
     }
 
     const jsonData = await response.json();
-    for (let q = numberofevents; q > 0; q--) {
-      const community = jsonData[q];
-      lastfiveevents[j] = community.events[0];
-      j++;
+    console.log("Fetched Events Data:", jsonData);
+
+    const events = jsonData.event;
+
+    if (!Array.isArray(events)) {
+      throw new Error("Unexpected data structure: 'event' is not an array");
     }
+
+
+    for (let q = events.length - 1; q >= events.length-7; q--) {
+      lastfiveevents.unshift(events[q]); 
+    }
+
+    console.log("Last 5 Events:", lastfiveevents);
+
   } catch (error) {
     console.error("Error fetching JSON:", error);
   }
@@ -152,10 +170,28 @@ function renderEvents(eventsarr) {
       community.className = "community";
       community.innerText = event.community_name;
 
+      const eventDate = event.date;
+
+      let date1 = '';
+      let time = '';
+      
+      if (eventDate && typeof eventDate === 'string') {
+        [date1, time] = eventDate.split(',');
+      
+        if (date1.includes('T')) {
+          date1 = date1.split('T')[0]; 
+        }
+      }
+      
+      date1 = typeof date1 === 'string' ? date1.trim() : '';
+      
       const dateDiv = document.createElement("div");
       const date = document.createElement("h4");
       date.className = "date";
-      date.innerText = event.date;
+      date.innerText = date1; 
+      
+      dateDiv.appendChild(date);
+      
 
       titleDiv.appendChild(title);
       titleDiv.appendChild(community);

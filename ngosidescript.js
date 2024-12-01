@@ -25,6 +25,23 @@ async function getngodata()
       console.log(`[SYNA] events :`, events);
 
       let clubs = document.querySelector('.events-list');
+
+      
+      const eventDate = event.date;
+
+      let date = '';
+      let time = '';
+
+      if (eventDate && typeof eventDate === 'string') {
+        [date, time] = eventDate.split(',');
+      
+       
+        if (date.includes('T')) {
+          date = date.split('T')[0]; 
+        }
+      }
+
+      date = typeof date === 'string' ? date.trim() : '';
       
       const table = document.createElement('table');
       const tableBody = document.createElement('tbody');
@@ -40,12 +57,11 @@ async function getngodata()
         communityDiv.textContent = event.community_name;
         row.appendChild(communityDiv);
 
-        const eventDate = event.date;
 
-        const [date, time] = eventDate.split('T');
+
         
         const dateDiv = document.createElement('td');
-        dateDiv.textContent = date;
+        dateDiv.innerText = date;
         row.appendChild(dateDiv);
 
         const volunteer1Div = document.createElement('td');
@@ -55,12 +71,36 @@ async function getngodata()
         const volunteerDiv = document.createElement('td');
         volunteerDiv.textContent = event.no_of_volunteers_registered;
         row.appendChild(volunteerDiv);
-        
+
+
+        const edit = document.createElement('img');
+        edit.src = 'http://127.0.0.1:55745/assets/update.png'; 
+        edit.alt = 'Edit';
+        edit.style.cursor = 'pointer'; 
+        edit.style.width = '20px'; 
+        edit.style.height = '20px';
+        edit.onclick = () => updateEvent(event._id); 
+
+        row.appendChild(edit);
+
+
+        const deleteEntry = document.createElement('img');
+        deleteEntry.src = 'http://127.0.0.1:55745/assets/delete.png'; 
+        deleteEntry.alt = 'Delete';
+        deleteEntry.style.cursor = 'pointer'; 
+        deleteEntry.onclick = () => deleteEvent(event._id);
+        deleteEntry.style.width = '20px'; 
+        deleteEntry.style.height = '20px';
+        row.appendChild(deleteEntry);
+
+
         tableBody.appendChild(row);
+
+
       }
   
       table.appendChild(tableBody);
-      clubs.appendChild(table); // Append table to the .events-list container
+      clubs.appendChild(table);
     } else {
       console.log("No events found.");
     }
@@ -71,6 +111,55 @@ async function getngodata()
 
 
   getEvents();
+
+  async function deleteEvent(id){
+    try{
+      console.log(id)
+      const response = await fetch(`http://localhost:4000/api/v1/deleteEvent/${id}`,{
+        method: 'DELETE'
+       })
+       
+       const data = await response.json();
+       
+       console.log(data)
+       
+       window.location.reload();
+     }catch(error){
+       console.log('failed to delete club',error)
+     }
+   }
+
+
+
+
+  function updateEvent(id){
+    localStorage.setItem('eventId', id);
+    window.location.href = 'ngoupdate.html';
+  }
+  
+  
+ async function updateHandler(event){
+  try{
+    event.preventDefault()
+    const id = localStorage.getItem('eventId')
+    const formData = new FormData(event.target)
+    const response  = await fetch(`http://localhost:4000/api/v1/updateEvent/${id}`,{
+      method:'PUT',
+      body: formData
+    })
+
+    const data = await response.json();
+    console.log('[SYNA 1 ] response',data);
+
+    window.location.href = 'ngodashboard.html';
+    localStorage.clear('eventId')
+
+  }catch(error){
+    console.error('Error in updating club:', error.message);
+  }
+ }
+ 
+      
 
 
   addFeatureBtn.addEventListener('click', () => {
@@ -164,10 +253,11 @@ async function createevent(event) {
     }
 
     if (result.success) {
-      showDialog("Event Added Successfully", true);
-      setTimeout(() => {
+      // showDialog("Event Added Successfully", true);
+      // setTimeout(() => {
         window.location.href = "ngodashboard.html";
-      }, 5000);
+      // }, 240);
+
     } else {
       showDialog(result.message, false);
     }

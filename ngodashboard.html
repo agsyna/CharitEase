@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NGO Admin Dashboard</title>
+  <title>NGO Admin</title>
   <style>
-    /* Base Styles */
+
     * {
       margin: 0;
       padding: 0;
@@ -97,12 +97,80 @@
     .add-event a:hover {
       background-color: #173B45;
     }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    
+  
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    
   </style>
 </head>
 <body>
-  <header>NGO Admin Dashboard</header>
+  <header>NGO Dashboard
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+
+  </header>
   <div class="container">
-    <!-- NGO Details -->
+    
     <div class="ngo-details">
       <h2>NGO Details</h2>
       <p><strong>Name:</strong> Savera</p>
@@ -120,31 +188,38 @@
             <th>Community Name</th>
             <th>   &nbsp</th>
             <th>   &nbsp</th>
-            <th>   &nbsp</th>
-            <th>   &nbsp</th>
-            <th>   &nbsp</th>
-            <th>   &nbsp</th>
+
             <th>Date</th>
             <th>   &nbsp</th>
-            <th>   &nbsp</th>
-            <th>   &nbsp</th>
-            <th>   &nbsp</th>
+
             <th>Volunteers Required</th>
             <th>Volunteers Registered</th>
           </tr>
         </thead>
         <tbody>
-          <!-- Rows will be dynamically added here -->
+
+
         </tbody>
       </table>
 
     </div>
 
-    <!-- Add Event Button -->
     <div class="add-event">
       <a href="ngoevent.html">+</a>
     </div>
   </div>
   <script src="ngosidescript.js"></script>
+  <script>
+    const toggle = document.querySelector('.switch input');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('on');
+      setTimeout(()=>{
+        window.location= "/index.html";
+      },1000);
+      
+
+    });
+</script>
 </body>
+
 </html>
