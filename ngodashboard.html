@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Admin Dashboard</title>
+  <style>
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background-color: #5a67d8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .ngo-details {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    .ngo-details h2 {
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .events-list {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .events-list h2 {
+      margin-bottom: 10px;
+      color: #444;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table th, table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    table th {
+      background-color: #5a67d8;
+      color: white;
+    }
+    table tr:hover {
+      background-color: #f2f2f2;
+    }
+    .btn {
+      text-decoration: none;
+      color: white;
+      background-color: #5a67d8;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 5px;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #4c51bf;
+    }
+    .add-event {
+      text-align: right;
+      margin-top: 20px;
+    }
+    .add-event a {
+      text-decoration: none;
+      background-color: #5a67d8;
+      color: white;
+      font-size: 2rem;
+      border-radius: 50%;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    .add-event a:hover {
+      background-color: #4c51bf;
+    }
+  </style>
+</head>
+<body>
+  <header>NGO Admin Dashboard</header>
+  <div class="container">
+    <!-- NGO Details -->
+    <div class="ngo-details">
+      <h2>NGO Details</h2>
+      <p><strong>Name:</strong> Savera</p>
+      <p><strong>Mission:</strong> Empowering communities through education and awareness.</p>
+      <p><strong>Contact:</strong> admin@savera.org</p>
+    </div>
+
+    <!-- Registered Events -->
+    <div class="events-list">
+      <h2>Registered Events</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Community</th>
+            <th>Date</th>
+            <th>Volunteers Registered</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example Event -->
+          <tr>
+            <td>Education Drive</td>
+            <td>Chetna</td>
+            <td>November 2, 2024</td>
+            <td>10</td>
+            <td>
+              <a href="#" class="btn">Update</a>
+              <a href="#" class="btn" style="background-color: #e53e3e;">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Add Event Button -->
+    <div class="add-event">
+      <a href="ngoevent.html">+</a>
+    </div>
+  </div>
+</body>
+</html>
