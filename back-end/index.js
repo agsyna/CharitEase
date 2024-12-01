@@ -9,8 +9,6 @@ const app = express();
 
 
 require("dotenv").config();
-const RegisterRouter = require('./routes/registerroute');
-
 
 
 app.use(express.urlencoded({ extended: true }));
@@ -24,8 +22,6 @@ app.use(
 );
 
 app.use(express.json());
-
-app.use('/App', RegisterRouter)
 
 app.use(
   fileUpload({

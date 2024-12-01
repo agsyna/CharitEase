@@ -1,6 +1,6 @@
 const Fields = require('./../models/registermodel')
 
-exports.registerUser = async (req, res) => {
+const registerUser = async (req, res) => {
     const { fname, lname, email, governmentid, dob, password } = req.body;
 
     // Create a new user
@@ -22,7 +22,7 @@ exports.registerUser = async (req, res) => {
 };
 
 
-exports.login = async (req, res, next) => {
+const login = async (req, res, next) => {
     const { email, password } = req.body;
 
     // Check if both email and password are provided
@@ -54,3 +54,5 @@ exports.login = async (req, res, next) => {
         user: user, // Optionally, return user data without password
     });
 };
+
+module.exports = { login,registerUser};
