@@ -813,123 +813,130 @@ function toggleDropdown() {
 
 
 
-//Get events for events page
+//Get events for events pageasync function 
 
 async function geteventsoptions(a, b) {
   try {
-    const response = await fetch("data/data.json");
+    const response = await fetch("http://localhost:4000/api/v1/getEvents");
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
+
     const jsonData = await response.json();
+    const events = jsonData.event;
     const eventsgrid = document.querySelector(".events-grid1");
     eventsgrid.innerHTML = "";
 
-    for (let i = a; i < b; i++) {
-      for (let j = 0; j < jsonData[i].events.length; j++) {
-        const carddiv = document.createElement("div");
-        const eventimg = document.createElement("img");
-        const cardcontent = document.createElement("div");
-        const h3 = document.createElement("h3");
-        const p1 = document.createElement("p");
-        const p2 = document.createElement("p");
-        const p3 = document.createElement("p");
-        const volunteercount = document.createElement("div");
-        const itag = document.createElement("i");
-        const cardfooter = document.createElement("div");
-        const anchor1 = document.createElement("a");
-        const anchor2 = document.createElement("a");
-        const button1 = document.createElement("button");
-        const button2 = document.createElement("button");
+    for (let i = a; i <= b; i++) {
+      if (!events[i]) continue;
 
-        carddiv.className = "cards";
-        eventimg.src = jsonData[i].events[j].image;
-        eventimg.alt = "Event Image";
-        cardcontent.className = "card-content";
-        h3.innerHTML = jsonData[i].events[j].event_name;
-        p1.innerHTML = jsonData[i].events[j].community_name;
-        p2.innerHTML = jsonData[i].events[j].place;
-        p3.innerHTML = jsonData[i].events[j].date;
-        p2.className = "location";
-        p3.className = "location";
-        volunteercount.className = "volunteer-count";
-        volunteercount.appendChild(itag);
-        itag.innerHTML = `${jsonData[i].events[j].no_of_volunteers_registered} volunteers enrolled`;
-        cardfooter.className = "card-footer";
-        cardfooter.appendChild(anchor1);
-        cardfooter.appendChild(anchor2);
-        anchor1.href = "volunteer.html";
-        anchor1.appendChild(button1);
-        button1.className = "volunteer";
-        button1.innerHTML = "Volunteer";
-        anchor2.href = `${jsonData[i].events[j].event_name}.html`;
-        anchor2.appendChild(button2);
-        button2.className = "more-info";
-        button2.innerHTML = "Explore";
+      const event = events[i];
 
-        carddiv.appendChild(eventimg);
-        cardcontent.appendChild(h3);
-        cardcontent.appendChild(p1);
-        cardcontent.appendChild(p2);
-        cardcontent.appendChild(p3);
-        cardcontent.appendChild(volunteercount);
-        cardcontent.appendChild(cardfooter);
-        carddiv.appendChild(cardcontent);
-        eventsgrid.appendChild(carddiv);
-      }
+      const carddiv = document.createElement("div");
+      const eventimg = document.createElement("img");
+      const cardcontent = document.createElement("div");
+      const h3 = document.createElement("h3");
+      const p1 = document.createElement("p");
+      const p2 = document.createElement("p");
+      const p3 = document.createElement("p");
+      const volunteercount = document.createElement("div");
+      const itag = document.createElement("i");
+      const cardfooter = document.createElement("div");
+      const anchor1 = document.createElement("a");
+      const anchor2 = document.createElement("a");
+      const button1 = document.createElement("button");
+      const button2 = document.createElement("button");
+
+      carddiv.className = "cards";
+      eventimg.src = event.image;
+      eventimg.alt = "Event Image";
+      cardcontent.className = "card-content";
+      h3.innerHTML = event.event_name;
+      p1.innerHTML = event.community_name;
+      p2.innerHTML = event.place;
+      p3.innerHTML = new Date(event.eventdate).toLocaleDateString();
+      p2.className = "location";
+      p3.className = "location";
+      volunteercount.className = "volunteer-count";
+      itag.innerHTML = `${event.no_of_volunteers_registered} volunteers enrolled`;
+      cardfooter.className = "card-footer";
+      anchor1.href = "volunteer.html";
+      anchor1.appendChild(button1);
+      button1.className = "volunteer";
+      button1.innerHTML = "Volunteer";
+      anchor2.href = `${event.event_name}.html`;
+      anchor2.appendChild(button2);
+      button2.className = "more-info";
+      button2.innerHTML = "Explore";
+
+      volunteercount.appendChild(itag);
+      cardcontent.appendChild(h3);
+      cardcontent.appendChild(p1);
+      cardcontent.appendChild(p2);
+      cardcontent.appendChild(p3);
+      cardcontent.appendChild(volunteercount);
+      cardfooter.appendChild(anchor1);
+      cardfooter.appendChild(anchor2);
+      cardcontent.appendChild(cardfooter);
+      carddiv.appendChild(eventimg);
+      carddiv.appendChild(cardcontent);
+      eventsgrid.appendChild(carddiv);
     }
-    for (let i = a - 1; i >= b; i--) {
-      for (let j = 0; j < jsonData[i].events.length; j++) {
-        const carddiv = document.createElement("div");
-        const eventimg = document.createElement("img");
-        const cardcontent = document.createElement("div");
-        const h3 = document.createElement("h3");
-        const p1 = document.createElement("p");
-        const p2 = document.createElement("p");
-        const p3 = document.createElement("p");
-        const volunteercount = document.createElement("div");
-        const itag = document.createElement("i");
-        const cardfooter = document.createElement("div");
-        const anchor1 = document.createElement("a");
-        const anchor2 = document.createElement("a");
-        const button1 = document.createElement("button");
-        const button2 = document.createElement("button");
 
-        carddiv.className = "cards";
-        eventimg.src = jsonData[i].events[j].image;
-        eventimg.alt = "Event Image";
-        cardcontent.className = "card-content";
-        h3.innerHTML = jsonData[i].events[j].event_name;
-        p1.innerHTML = jsonData[i].events[j].community_name;
-        p2.innerHTML = jsonData[i].events[j].place;
-        p3.innerHTML = jsonData[i].events[j].date;
-        p2.className = "location";
-        p3.className = "location";
-        volunteercount.className = "volunteer-count";
-        volunteercount.appendChild(itag);
-        itag.innerHTML = `${jsonData[i].events[j].no_of_volunteers_registered} volunteers enrolled`;
-        cardfooter.className = "card-footer";
-        cardfooter.appendChild(anchor1);
-        cardfooter.appendChild(anchor2);
-        anchor1.href = "volunteer.html";
-        anchor1.appendChild(button1);
-        button1.className = "volunteer";
-        button1.innerHTML = "Volunteer";
-        anchor2.href = `${jsonData[i].events[j].event_name}.html`;
-        anchor2.appendChild(button2);
-        button2.className = "more-info";
-        button2.innerHTML = "Explore";
+    for (let i = b; i >= a; i--) {
+      if (!events[i]) continue;
 
-        carddiv.appendChild(eventimg);
-        cardcontent.appendChild(h3);
-        cardcontent.appendChild(p1);
-        cardcontent.appendChild(p2);
-        cardcontent.appendChild(p3);
-        cardcontent.appendChild(volunteercount);
-        cardcontent.appendChild(cardfooter);
-        carddiv.appendChild(cardcontent);
-        eventsgrid.appendChild(carddiv);
-      }
+      const event = events[i];
+
+      const carddiv = document.createElement("div");
+      const eventimg = document.createElement("img");
+      const cardcontent = document.createElement("div");
+      const h3 = document.createElement("h3");
+      const p1 = document.createElement("p");
+      const p2 = document.createElement("p");
+      const p3 = document.createElement("p");
+      const volunteercount = document.createElement("div");
+      const itag = document.createElement("i");
+      const cardfooter = document.createElement("div");
+      const anchor1 = document.createElement("a");
+      const anchor2 = document.createElement("a");
+      const button1 = document.createElement("button");
+      const button2 = document.createElement("button");
+
+      carddiv.className = "cards";
+      eventimg.src = event.image;
+      eventimg.alt = "Event Image";
+      cardcontent.className = "card-content";
+      h3.innerHTML = event.event_name;
+      p1.innerHTML = event.community_name;
+      p2.innerHTML = event.place;
+      p3.innerHTML = new Date(event.eventdate).toLocaleDateString();
+      p2.className = "location";
+      p3.className = "location";
+      volunteercount.className = "volunteer-count";
+      itag.innerHTML = `${event.no_of_volunteers_registered} volunteers enrolled`;
+      cardfooter.className = "card-footer";
+      anchor1.href = "volunteer.html";
+      anchor1.appendChild(button1);
+      button1.className = "volunteer";
+      button1.innerHTML = "Volunteer";
+      anchor2.href = `${event.event_name}.html`;
+      anchor2.appendChild(button2);
+      button2.className = "more-info";
+      button2.innerHTML = "Explore";
+
+      volunteercount.appendChild(itag);
+      cardcontent.appendChild(h3);
+      cardcontent.appendChild(p1);
+      cardcontent.appendChild(p2);
+      cardcontent.appendChild(p3);
+      cardcontent.appendChild(volunteercount);
+      cardfooter.appendChild(anchor1);
+      cardfooter.appendChild(anchor2);
+      cardcontent.appendChild(cardfooter);
+      carddiv.appendChild(eventimg);
+      carddiv.appendChild(cardcontent);
+      eventsgrid.appendChild(carddiv);
     }
   } catch (error) {
     console.log(error, "in loading data");
