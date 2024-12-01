@@ -10,14 +10,15 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     body {
       background-color: #f4f6f9;
       color: #333;
+      background-image: url("assets/Bg_photo.png");
     }
     header {
-      background-color: #5a67d8;
+      background-color: #173B45;
       color: white;
       padding: 20px;
       text-align: center;
@@ -61,7 +62,7 @@
       border-bottom: 1px solid #ddd;
     }
     table th {
-      background-color: #5a67d8;
+      background-color: #173B45;
       color: white;
     }
     table tr:hover {
@@ -70,14 +71,14 @@
     .btn {
       text-decoration: none;
       color: white;
-      background-color: #5a67d8;
+      background-color: #173B45;
       padding: 10px 20px;
       border-radius: 5px;
       margin-right: 5px;
       transition: all 0.3s ease;
     }
     .btn:hover {
-      background-color: #4c51bf;
+      background-color: #173B45;
     }
     .add-event {
       text-align: right;
@@ -85,7 +86,7 @@
     }
     .add-event a {
       text-decoration: none;
-      background-color: #5a67d8;
+      background-color: #f79f1a;
       color: white;
       font-size: 2rem;
       border-radius: 50%;
@@ -94,7 +95,7 @@
       transition: all 0.3s ease;
     }
     .add-event a:hover {
-      background-color: #4c51bf;
+      background-color: #173B45;
     }
   </style>
 </head>
@@ -116,26 +117,27 @@
         <thead>
           <tr>
             <th>Event Name</th>
-            <th>Community</th>
+            <th>Community Name</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
             <th>Date</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
+            <th>   &nbsp</th>
+            <th>Volunteers Required</th>
             <th>Volunteers Registered</th>
-            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <!-- Example Event -->
-          <tr>
-            <td>Education Drive</td>
-            <td>Chetna</td>
-            <td>November 2, 2024</td>
-            <td>10</td>
-            <td>
-              <a href="#" class="btn">Update</a>
-              <a href="#" class="btn" style="background-color: #e53e3e;">Delete</a>
-            </td>
-          </tr>
+          <!-- Rows will be dynamically added here -->
         </tbody>
       </table>
+
     </div>
 
     <!-- Add Event Button -->
@@ -143,5 +145,6 @@
       <a href="ngoevent.html">+</a>
     </div>
   </div>
+  <script src="ngosidescript.js"></script>
 </body>
 </html>

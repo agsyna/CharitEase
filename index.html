@@ -25,9 +25,15 @@
             <a href="events.html"><div>Events</div></a>
         </div>
         <div class="menu-bar2">
+
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             <a href="contactus.html"><div>Contact</div></a>
             <a href="login.html"><div class="login">Login</div></a>
         </div>
+
     </div>
 
     <div class="content" style="margin-left: 0; margin-right: 0;">
@@ -280,6 +286,7 @@
     </div>
 
 </div>
+
 <script src="usersidescript.js"></script>
 
 </body>
@@ -351,5 +358,16 @@
     </div>
 
 </div>
+<script>
+    const toggle = document.querySelector('.switch input');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('on');
+      setTimeout(()=>{
+        window.location= "/ngodashboard.html";
+      },1000);
+      
+
+    });
+</script>
 
 </html>

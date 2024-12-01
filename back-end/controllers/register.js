@@ -3,7 +3,6 @@ const Fields = require('./../models/registermodel')
 const registerUser = async (req, res) => {
     const { fname, lname, email, governmentid, dob,type,password } = req.body;
 
-    // Create a new user
     const newUser = await Fields.create({
         fname,
         lname,
@@ -14,7 +13,6 @@ const registerUser = async (req, res) => {
         password,
     });
 
-    // Respond with a success message
     res.status(201).json({
         status: 'success',
         message: 'User registered successfully',
@@ -27,7 +25,6 @@ const login = async (req, res, next) => {
     try {
         const { email, password } = req.body;
 
-        // Check if both email and password are provided
         if (!email || !password) {
             return res.status(400).json({
                 status: 'fail',
@@ -35,10 +32,8 @@ const login = async (req, res, next) => {
             });
         }
 
-        // Find user by email
         const user = await Fields.findOne({ email });
 
-        // If user does not exist or passwords do not match
         if (!user || user.password !== password) {
             return res.status(400).json({
                 status: 'fail',
@@ -46,14 +41,12 @@ const login = async (req, res, next) => {
             });
         }
 
-        // Remove password from the response
         user.password = undefined;
 
-        // Respond with a success message
         res.status(200).json({
             status: 'success',
             message: 'You are logged in',
-            user: user, // Optionally, return user data without password
+            user: user, 
         });
     } catch (error) {
         res.status(500).json({

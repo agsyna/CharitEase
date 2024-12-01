@@ -1,94 +1,198 @@
-const Club = require("../models/club");
+const { error } = require("console");
+const Event = require("../models/club");
 
 const fs = require("fs");
 require("dotenv").config();
 
 const path = require("path");
 
-const createClub = async (req, res) => {
+{/* <form id = "eventform"action="#" method="POST" onsubmit="createevent(event)">
+<!-- Community Name -->
+<label for="community_name">Community Name</label>
+<select id="community_name" name="community_name">
+  <option value="Chetna">Chetna</option>
+  <option value="Savera">Savera</option>
+  <option value="CRY">CRY</option>
+</select>
+
+<!-- Event Name -->
+<label for="event_name">Event Name</label>
+<input type="text" id="event_name" name="event_name" required>
+
+<!-- Theme -->
+<label for="theme">Theme</label>
+<input type="text" id="theme" name="theme" required>
+
+<!-- Images -->
+<label for="image">Event Image URL</label>
+<input type="url" id="image" name="image" required>
+<label for="bg_image">Background Image URL</label>
+<input type="url" id="bg_image" name="bg_image">
+
+<!-- Eligibility -->
+<label for="eligibility">Eligibility</label>
+<input type="text" id="eligibility" name="eligibility" required>
+
+<!-- Number of Volunteers -->
+<label for="no_of_volunteers_required">Number of Volunteers Required</label>
+<input type="number" id="no_of_volunteers_required" name="no_of_volunteers_required" required>
+
+<label for="no_of_volunteers_registered">Number of Volunteers Registered</label>
+<input type="number" id="no_of_volunteers_registered" name="no_of_volunteers_registered">
+
+<!-- Date and Time -->
+<label for="date">Date</label>
+<input type="date" id="date" name="date" required>
+
+<label for="time">Time</label>
+<input type="time" id="time" name="time">
+
+<!-- Place -->
+<label for="place">Place</label>
+<input type="text" id="place" name="place" required>
+
+<!-- About -->
+<label for="about">About</label>
+<textarea id="about" name="about" rows="4" required></textarea>
+
+<!-- Features -->
+<label>Features</label>
+<div class="features-section" id="features-container">
+  <input type="text" name="features_title[]" placeholder="Feature Title" required>
+  <input type="text" name="features_img[]" placeholder="Feature Image URL" required>
+  <input type="text" name="features[]" placeholder="Feature Description" required>
+</div>
+<button type="button" class="add-feature-btn" id="add-feature-btn">+ Add More Features</button>
+
+<!-- Perks -->
+<label for="perks">Perks (comma-separated)</label>
+<input type="text" id="perks" name="perks" placeholder="Certificates, Snacks, Free-Wifi">
+
+<!-- Submit -->
+<input type="submit" value="Add Event">
+</form> */}
+
+const createEvent = async (req, res) => {
   try {
-    const { title, description, venue } = req.body;
+    const { community_name, 
+      event_name, 
+      theme,
+       eligibility,
+      no_of_volunteers_required,
+      no_of_volunteers_registered,
+      date,time,place,about,} = req.body;
 
-    const { image } = req.files;
+     const { features, perks } = req.body;
 
-    if (!title || !description || !venue) {
+    const { image,bg_image } = req.files;
+
+    if (!community_name || !event_name || !theme || !eligibility ||
+      !no_of_volunteers_required || !no_of_volunteers_registered || !date || !time || !place || !about ||
+     !features|| !perks) {
       return res.status(400).json({
         success: false,
-        message: "All fields are required",
+        message: "All required fields must be filled!",
       });
     }
+
+    const featuresArray = JSON.parse(features);
+    const perksArray = JSON.parse(perks);
 
     const supportedFile = ["jpg", "png", "jpeg"];
 
-    const ext = image.name.split(".")[1];
+    const image_ext = image.name.split(".")[1];
+    const bg_image_ext = bg_image.name.split(".")[1];
 
-    if (!ext || !supportedFile.includes(ext)) {
+    if (!supportedFile.includes(image_ext) || !supportedFile.includes(bg_image_ext) ) {
       return res.status(400).json({
         success: false,
-        message: "file extension is not supported",
+        message: "File Extension Not Supported",
       });
     }
 
-    const fileName = `${Date.now()}.${ext}`;
+    const imageFileName = `${Date.now()}-image.${image_ext}`;
+    console.log("imageFileName"+imageFileName);
+    const bgImageFileName = `${Date.now()}-bg.${bg_image_ext}`;
+    console.log("bgimageFileName"+bgImageFileName);
+
 
     try {
       fs.renameSync(
         image.tempFilePath,
-        path.join(__dirname, "..", "public", "images", fileName)
+        path.join(__dirname, "..", "public", "images", imageFileName)
+      );
+      fs.renameSync(
+        bg_image.tempFilePath,
+        path.join(__dirname, "..", "public", "images", bgImageFileName)
       );
     } catch (err) {
-      console.log("failed to store image");
+      console.log("Error : "+ err);
       return res.status(500).json({
         success: false,
-        message: "failed to store image",
+        message: "Error : "+err,
       });
     }
 
-    const club = await Club.create({
-      title,
-      description,
-      venue,
-      image: `http://127.0.0.1:${process.env.PORT}/images/${fileName}`,
+    const event = await Event.create({
+      community_name,
+      event_name,
+      theme,
+      eligibility,
+      no_of_volunteers_required,
+      no_of_volunteers_registered,
+      date,
+      time,
+      place,
+      about,
+      features: featuresArray,
+      perks: perksArray,
+      image: `http://127.0.0.1:${process.env.PORT || 4000}/images/${imageFileName}`,
+      bg_image: `http://127.0.0.1:${process.env.PORT || 4000}/images/${bgImageFileName}`,
     });
+
+
+
+    
 
     res.status(200).json({
       success: true,
-      message: "Club created successfully",
-      club,
+      message: "Event Added Successfully",
+      event,
     });
   } catch (err) {
     console.error(err);
 
     res.status(500).json({
       success: false,
-      message: "failed to create club",
+      message: "Failed To Add Club",
     });
   }
 };
 
-const getClub = async (req, res) => {
+const getEvents = async (req, res) => {
   try {
-    const club = await Club.find({});
+    const event = await Event.find({});
 
-    if (!club) {
+    if (!event) {
       return res.status(404).json({
         success: false,
-        message: "Club not found",
+        message: "Events not found",
       });
     }
 
     res.status(200).json({
       success: true,
-      message: "Club fetched successfully",
-      club,
+      message: "Events fetched successfully",
+      event,
     });
   } catch (err) {
     return res.status(500).json({
       success: false,
-      message: "failed to get club",
+      message: "Failed"+err,
     });
   }
 };
+
 
 const deleteClub = async (req, res) => {
   try {
@@ -164,4 +268,4 @@ const updateClub = async (req, res) => {
   }
 };
 
-module.exports = { createClub, getClub, deleteClub , updateClub};
+module.exports = { createEvent, getEvents, deleteClub , updateClub};

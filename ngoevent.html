@@ -7,7 +7,8 @@
   <style>
     body {
       background-color: #f4f6f9;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background-image: url("assets/Bg_photo.png");
     }
     .container {
       max-width: 800px;
@@ -19,7 +20,7 @@
     }
     h2 {
       text-align: center;
-      color: #5a67d8;
+      color: #173B45;
       margin-bottom: 20px;
     }
     form label {
@@ -35,7 +36,7 @@
       border-radius: 5px;
     }
     form input[type="submit"] {
-      background-color: #5a67d8;
+      background-color: #173B45;
       color: white;
       border: none;
       cursor: pointer;
@@ -45,7 +46,7 @@
       margin-top: 20px;
     }
     form input[type="submit"]:hover {
-      background-color: #4c51bf;
+      background-color: #173B45;
     }
     .features-section {
       display: flex;
@@ -68,12 +69,51 @@
     .add-feature-btn:hover {
       background-color: #2f855a;
     }
+    .hidden {
+      display: none;
+    }
+    .dialog {
+      visibility: hidden;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1000;
+      transition: visibility 0.3s, opacity 0.3s;
+      opacity: 0;
+    }
+    
+    .dialog.show {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .dialog p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .dialog.success {
+      border-left: 5px solid #4CAF50; /* Green for success */
+    }
+    
+    .dialog.error {
+      border-left: 5px solid #f44336; /* Red for error */
+    }
+    
   </style>
 </head>
 <body>
   <div class="container">
     <h2>Add New Event</h2>
-    <form action="#" method="POST">
+    <form id = "eventform"action="#" method="POST" onsubmit="createevent(event)">
       <!-- Community Name -->
       <label for="community_name">Community Name</label>
       <select id="community_name" name="community_name">
@@ -92,9 +132,9 @@
 
       <!-- Images -->
       <label for="image">Event Image URL</label>
-      <input type="url" id="image" name="image" required>
+      <input type="file" id="image" name="image" required>
       <label for="bg_image">Background Image URL</label>
-      <input type="url" id="bg_image" name="bg_image">
+      <input type="file" id="bg_image" name="bg_image">
 
       <!-- Eligibility -->
       <label for="eligibility">Eligibility</label>
@@ -139,6 +179,11 @@
       <input type="submit" value="Add Event">
     </form>
   </div>
+  <div id="customDialog" class="dialog hidden">
+    <p id="dialogMessage"></p>
+  </div>
+  
+  
 
   <script src="ngosidescript.js"></script>
 

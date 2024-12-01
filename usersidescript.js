@@ -508,7 +508,7 @@ function updateCountdown() {
           b++;
         }
       }
-      if(b>0)break; // find occurence of event 1 time then exit
+      if(b>0)break; 
     }
   } catch (error) {
     console.log(error, "in loading data");
@@ -516,6 +516,11 @@ function updateCountdown() {
 }
 
 fetcheventpage();
+
+async function createevent(event)
+{
+
+}
 
 // Login -> Signup
 
