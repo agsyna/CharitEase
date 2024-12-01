@@ -1,7 +1,7 @@
 const express = require('express');
 const RegisterUse = require('../controllers/register');
 
-const { getEvents, deleteClub, updateClub, createEvent } = require('../controllers/Club');
+const { getEvents, deleteEvent, updateEvent, createEvent } = require('../controllers/Club');
 const { login, registerUser } = require('../controllers/register');
 const router = express.Router();
 
@@ -13,9 +13,9 @@ router.post('/createEvent', createEvent)
 
 router.get('/getEvents', getEvents)
 
-router.delete('/deleteClub/:clubId', deleteClub)
+router.delete('/deleteEvent/:eventId', deleteEvent)
 
-router.put('/updateClub/:clubId', updateClub)
+router.put('/updateEvent/:eventId', updateEvent)
 
  
 module.exports = router;
