@@ -1,7 +1,7 @@
 const Fields = require('./../models/registermodel')
 
 const registerUser = async (req, res) => {
-    const { fname, lname, email, governmentid, dob, password } = req.body;
+    const { fname, lname, email, governmentid, dob,type,password } = req.body;
 
     // Create a new user
     const newUser = await Fields.create({
@@ -10,6 +10,7 @@ const registerUser = async (req, res) => {
         email,
         governmentid,
         dob,
+        type,
         password,
     });
 
