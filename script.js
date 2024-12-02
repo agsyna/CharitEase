@@ -46,4 +46,25 @@ app.get('/ngoupdate', (req, res) => {
 app.get('/volunteer', (req, res) => {
     res.render('volunteer'); 
 });
+// app.get('/CHETNA%20NGO', (req, res) => {
+//     res.render('chetna ngo'); 
+// });
+// app.get('/asha%20kiran', (req, res) => {
+//     res.render('asha kiran');  
+// });
+// app.get('/c%20a%20r%20e', (req, res) => {
+//     res.render('c a r e'); 
+// });
+// app.get('/diya%20foundation', (req, res) => {
+//     res.render('diya foundation'); 
+// });
+
+app.get('/indievents:name', (req, res) => {
+    const {name} = req.params;
+    res.render('indievents',{name}); 
+});
+app.get('/ngos:name', (req, res) => {
+    const {name} = req.params;
+    res.render('ngos',{name}); 
+});
 

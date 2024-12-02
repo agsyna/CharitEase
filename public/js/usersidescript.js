@@ -173,7 +173,7 @@ async function createsubscribe(id) {
     if (result.success) {
       showCustomAlert("Event Added Successfully", true);
       // setTimeout(() => {
-        window.location.href = "index.html";
+        window.location.href = "/";
       // }, 240);
 
     } else {
@@ -261,7 +261,7 @@ function renderEvents(eventsarr) {
       ).innerText = `${event.no_of_volunteers_registered} + volunteers enrolled`;
       elements[index]
         .querySelector(".moreinfo_atag")
-        .setAttribute("href", `${event.event_name}.html`);
+        .setAttribute("href", `/indievents${event.event_name}`);
     }
   });
 }
@@ -311,7 +311,7 @@ async function fetchcommunitiesdata() {
       indiimage.style.backgroundImage = `url(${community.image})`;
 
       const atag = document.createElement("a");
-      atag.href = `${community.name}` + ".html";
+      atag.href = `/${community.name}` ;
 
       const communitiestext = document.createElement("div");
       communitiestext.className = "communitiestext";
@@ -469,136 +469,189 @@ function updateCountdown() {
 
  // load individual events page
 
- async function fetcheventpage() {
+//  async function fetcheventpage() {
+//   try {
+//     const response = await fetch("data/data.json");
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok " + response.statusText);
+//     }
+//     const jsonData = await response.json();
+//     for (i = 0; i < jsonData.length; i++) {
+//       let b=0;
+//       for(j=0;j<jsonData[i].events.length;j++)
+//       {
+
+//         console.log("jsonData[i].events[j] : "+ jsonData[i].events[j]);
+
+//         if(jsonData[i].events[j].event_name === document.getElementById("eventname-head").innerText)
+//         {
+//           const elem = document.getElementById("event_pic");
+//           elem.src = `${jsonData[i].events[j].bg_image}`
+
+//           const countdown = document.createElement("div");
+//           countdown.className="countdown";
+
+//           const h2 = document.createElement("h2");
+//           h2.innerText = "Starts In";
+
+//           const timer = document.createElement("div");
+//           timer.className = "timer";
+          
+//           const div1 = document.createElement("div");
+//           const span1 = document.createElement("span");
+//           span1.id = "days";
+//           const span12 = document.createElement("span");
+//           span12.innerText="DAYS";
+//           span1.innerText="00";
+
+//           const br4 = document.createElement("br");
+//           const br1 = document.createElement("br");
+//           const br2 = document.createElement("br");
+//           const br3 = document.createElement("br");
+
+//           div1.appendChild(span1);
+//           div1.appendChild(br1);
+//           div1.appendChild(span12);
+
+//           const div2 = document.createElement("div");
+//           const span2 = document.createElement("span");
+//           span2.id = "hours";
+//           const span21 = document.createElement("span");
+//           span21.innerText="HOURS";
+//           span2.innerText="00";
+
+//           div2.appendChild(span2);
+//           div2.appendChild(br2);
+//           div2.appendChild(span21);
+
+//           const div3 = document.createElement("div");
+//           const span3 = document.createElement("span");
+//           span3.id = "minutes";
+//           const span31 = document.createElement("span");
+//           span31.innerText="MINUTES";
+//           span3.innerText="00";
+          
+
+//           div3.appendChild(span3);
+//           div3.appendChild(br3);
+//           div3.appendChild(span31);
+
+//           const div4 = document.createElement("div");
+//           const span4 = document.createElement("span");
+//           span4.id = "seconds";
+//           const span41 = document.createElement("span");
+//           span41.innerText="SECONDS";
+//           span4.innerText="00";
+
+//           div4.appendChild(span4);
+//           div4.appendChild(br4);
+//           div4.appendChild(span41);
+
+//           timer.appendChild(div1);
+//           timer.appendChild(div2);
+//           timer.appendChild(div3);
+//           timer.appendChild(div4);
+
+//           const volunteerbtn = document.createElement("a");
+//           volunteerbtn.href = `/volunteer` ;
+//           volunteerbtn.className = "volunteer-btn";
+//           volunteerbtn.innerText = "VOLUNTEER";
+
+//           countdown.appendChild(h2);
+//           countdown.appendChild(timer);
+//           countdown.appendChild(volunteerbtn);
+
+//           const event_page = document.getElementById("countdown");
+//           // event_page.appendChild(countdown);
+       
+//           event_page.insertBefore(countdown, event_page[0]);
+
+
+
+//           for(let e =0;e<jsonData[i].events[j].features.length;e++)
+//           {
+//             const feature = document.createElement("div");
+//             feature.className = "feature";
+
+//             const img = document.createElement("img");            
+//             img.src = jsonData[i].events[j].features_img[e];
+
+//             const h3 = document.createElement("h3");
+//             h3.innerText = jsonData[i].events[j].features_title[e];
+
+//             const p = document.createElement("p");
+//             p.innerText = jsonData[i].events[j].features[e];
+
+//             const elems = document.getElementById("features");
+//             feature.appendChild(img);
+//             feature.appendChild(h3);
+//             feature.appendChild(p);
+
+//             elems.append(feature);
+
+//           }
+//           b++;
+//         }
+//       }
+//       if(b>0)break; 
+//     }
+//   } catch (error) {
+//     console.log(error, "in loading data");
+//   }
+// }
+
+async function fetcheventpage() {
   try {
-    const response = await fetch("data/data.json");
+    const response = await fetch("http://localhost:4000/api/v1/getEvents");
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
+
     const jsonData = await response.json();
-    for (i = 0; i < jsonData.length; i++) {
-      let b=0;
-      for(j=0;j<jsonData[i].events.length;j++)
-      {
+    const events = jsonData.event;
+    const eventName = document.getElementById("eventname-head").innerText;
 
-        console.log("jsonData[i].events[j] : "+ jsonData[i].events[j]);
+    for (const event of events) {
+      if (event.event_name === eventName) {
+        // Set Event Background Image
+        document.getElementById("event_pic").src = event.bg_image;
 
-        if(jsonData[i].events[j].event_name === document.getElementById("eventname-head").innerText)
-        {
-          const elem = document.getElementById("event_pic");
-          elem.src = `${jsonData[i].events[j].bg_image}`
+        // Create Countdown Section
+        document.getElementById("countdown").innerHTML = `
+          <div class="countdown">
+            <h2>Starts In</h2>
+            <div class="timer">
+              <div><span id="days">00</span><br><span>DAYS</span></div>
+              <div><span id="hours">00</span><br><span>HOURS</span></div>
+              <div><span id="minutes">00</span><br><span>MINUTES</span></div>
+              <div><span id="seconds">00</span><br><span>SECONDS</span></div>
+            </div>
+            <a href="/volunteer" class="volunteer-btn">VOLUNTEER</a>
+          </div>
+        `;
 
-          const countdown = document.createElement("div");
-          countdown.className="countdown";
+        // Populate Features
+        const featuresContainer = document.getElementById("features");
+        featuresContainer.innerHTML = event.features
+          .map(
+            (feature, index) => `
+              <div class="feature">
+                <img src="${event.features_img[index]}" alt="Feature Image">
+                <h3>${event.features_title[index]}</h3>
+                <p>${feature}</p>
+              </div>
+            `
+          )
+          .join("");
 
-          const h2 = document.createElement("h2");
-          h2.innerText = "Starts In";
-
-          const timer = document.createElement("div");
-          timer.className = "timer";
-          
-          const div1 = document.createElement("div");
-          const span1 = document.createElement("span");
-          span1.id = "days";
-          const span12 = document.createElement("span");
-          span12.innerText="DAYS";
-          span1.innerText="00";
-
-          const br4 = document.createElement("br");
-          const br1 = document.createElement("br");
-          const br2 = document.createElement("br");
-          const br3 = document.createElement("br");
-
-          div1.appendChild(span1);
-          div1.appendChild(br1);
-          div1.appendChild(span12);
-
-          const div2 = document.createElement("div");
-          const span2 = document.createElement("span");
-          span2.id = "hours";
-          const span21 = document.createElement("span");
-          span21.innerText="HOURS";
-          span2.innerText="00";
-
-          div2.appendChild(span2);
-          div2.appendChild(br2);
-          div2.appendChild(span21);
-
-          const div3 = document.createElement("div");
-          const span3 = document.createElement("span");
-          span3.id = "minutes";
-          const span31 = document.createElement("span");
-          span31.innerText="MINUTES";
-          span3.innerText="00";
-          
-
-          div3.appendChild(span3);
-          div3.appendChild(br3);
-          div3.appendChild(span31);
-
-          const div4 = document.createElement("div");
-          const span4 = document.createElement("span");
-          span4.id = "seconds";
-          const span41 = document.createElement("span");
-          span41.innerText="SECONDS";
-          span4.innerText="00";
-
-          div4.appendChild(span4);
-          div4.appendChild(br4);
-          div4.appendChild(span41);
-
-          timer.appendChild(div1);
-          timer.appendChild(div2);
-          timer.appendChild(div3);
-          timer.appendChild(div4);
-
-          const volunteerbtn = document.createElement("a");
-          volunteerbtn.href = `volunteer.html` ;
-          volunteerbtn.className = "volunteer-btn";
-          volunteerbtn.innerText = "VOLUNTEER";
-
-          countdown.appendChild(h2);
-          countdown.appendChild(timer);
-          countdown.appendChild(volunteerbtn);
-
-          const event_page = document.getElementById("countdown");
-          // event_page.appendChild(countdown);
-       
-          event_page.insertBefore(countdown, event_page[0]);
-
-
-
-          for(let e =0;e<jsonData[i].events[j].features.length;e++)
-          {
-            const feature = document.createElement("div");
-            feature.className = "feature";
-
-            const img = document.createElement("img");            
-            img.src = jsonData[i].events[j].features_img[e];
-
-            const h3 = document.createElement("h3");
-            h3.innerText = jsonData[i].events[j].features_title[e];
-
-            const p = document.createElement("p");
-            p.innerText = jsonData[i].events[j].features[e];
-
-            const elems = document.getElementById("features");
-            feature.appendChild(img);
-            feature.appendChild(h3);
-            feature.appendChild(p);
-
-            elems.append(feature);
-
-          }
-          b++;
-        }
+        break;
       }
-      if(b>0)break; 
     }
   } catch (error) {
-    console.log(error, "in loading data");
+    console.error("Error in loading data:", error);
   }
 }
+
 
 fetcheventpage();
 
@@ -783,7 +836,7 @@ function pagechange(a) {
 
 async function getcommunityoptions(a) {
   try {
-    const response = await fetch("data/data.json");
+    const response = await fetch("/data/data.json");
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
@@ -820,10 +873,10 @@ async function getcommunityoptions(a) {
         cardfooter.className = "card-footer";
 
         const anchor1 = document.createElement("a");
-        anchor1.href = "volunteer.html";
+        anchor1.href = "/volunteer";
 
         const anchor2 = document.createElement("a");
-        anchor2.href = `${jsonData[i].name}.html`;
+        anchor2.href = `/ngos${jsonData[i].name}`;
 
         const button1 = document.createElement("button");
         button1.className = "volunteer";
@@ -908,11 +961,11 @@ async function geteventsoptions(a, b) {
       volunteercount.className = "volunteer-count";
       itag.innerHTML = `${event.no_of_volunteers_registered} volunteers enrolled`;
       cardfooter.className = "card-footer";
-      anchor1.href = "volunteer.html";
+      anchor1.href = "/volunteer";
       anchor1.appendChild(button1);
       button1.className = "volunteer";
       button1.innerHTML = "Volunteer";
-      anchor2.href = `${event.event_name}.html`;
+      anchor2.href = `indievents${event.event_name}`;
       anchor2.appendChild(button2);
       button2.className = "more-info";
       button2.innerHTML = "Explore";
@@ -964,11 +1017,11 @@ async function geteventsoptions(a, b) {
       volunteercount.className = "volunteer-count";
       itag.innerHTML = `${event.no_of_volunteers_registered} volunteers enrolled`;
       cardfooter.className = "card-footer";
-      anchor1.href = "volunteer.html";
+      anchor1.href = "/volunteer";
       anchor1.appendChild(button1);
       button1.className = "volunteer";
       button1.innerHTML = "Volunteer";
-      anchor2.href = `${event.event_name}.html`;
+      anchor2.href = `/indievents${event.event_name}`;
       anchor2.appendChild(button2);
       button2.className = "more-info";
       button2.innerHTML = "Explore";

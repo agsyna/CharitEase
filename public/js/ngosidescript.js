@@ -134,7 +134,7 @@ const toggle = document.querySelector('.switch input');
 
   function updateEvent(id){
     localStorage.setItem('eventId', id);
-    window.location.href = 'ngoupdate.html';
+    window.location.href = '/ngoupdate';
   }
   
   
