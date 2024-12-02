@@ -1,77 +1,11 @@
 const { error } = require("console");
-const Event = require("../models/club");
+const Event = require("../models/event");
 const newEvent = require("../models/updateEvent");
 
 const fs = require("fs");
 require("dotenv").config();
 
 const path = require("path");
-
-{/* <form id = "eventform"action="#" method="POST" onsubmit="createevent(event)">
-<!-- Community Name -->
-<label for="community_name">Community Name</label>
-<select id="community_name" name="community_name">
-  <option value="Chetna">Chetna</option>
-  <option value="Savera">Savera</option>
-  <option value="CRY">CRY</option>
-</select>
-
-<!-- Event Name -->
-<label for="event_name">Event Name</label>
-<input type="text" id="event_name" name="event_name" required>
-
-<!-- Theme -->
-<label for="theme">Theme</label>
-<input type="text" id="theme" name="theme" required>
-
-<!-- Images -->
-<label for="image">Event Image URL</label>
-<input type="url" id="image" name="image" required>
-<label for="bg_image">Background Image URL</label>
-<input type="url" id="bg_image" name="bg_image">
-
-<!-- Eligibility -->
-<label for="eligibility">Eligibility</label>
-<input type="text" id="eligibility" name="eligibility" required>
-
-<!-- Number of Volunteers -->
-<label for="no_of_volunteers_required">Number of Volunteers Required</label>
-<input type="number" id="no_of_volunteers_required" name="no_of_volunteers_required" required>
-
-<label for="no_of_volunteers_registered">Number of Volunteers Registered</label>
-<input type="number" id="no_of_volunteers_registered" name="no_of_volunteers_registered">
-
-<!-- Date and Time -->
-<label for="date">Date</label>
-<input type="date" id="date" name="date" required>
-
-<label for="time">Time</label>
-<input type="time" id="time" name="time">
-
-<!-- Place -->
-<label for="place">Place</label>
-<input type="text" id="place" name="place" required>
-
-<!-- About -->
-<label for="about">About</label>
-<textarea id="about" name="about" rows="4" required></textarea>
-
-<!-- Features -->
-<label>Features</label>
-<div class="features-section" id="features-container">
-  <input type="text" name="features_title[]" placeholder="Feature Title" required>
-  <input type="text" name="features_img[]" placeholder="Feature Image URL" required>
-  <input type="text" name="features[]" placeholder="Feature Description" required>
-</div>
-<button type="button" class="add-feature-btn" id="add-feature-btn">+ Add More Features</button>
-
-<!-- Perks -->
-<label for="perks">Perks (comma-separated)</label>
-<input type="text" id="perks" name="perks" placeholder="Certificates, Snacks, Free-Wifi">
-
-<!-- Submit -->
-<input type="submit" value="Add Event">
-</form> */}
 
 const createEvent = async (req, res) => {
   try {

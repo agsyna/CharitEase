@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
-const validator = require('validator')
-const bcrypt = require('bcryptjs')
+
 
 
 const subscribeSchema = new mongoose.Schema({
@@ -11,7 +10,6 @@ const subscribeSchema = new mongoose.Schema({
         required: true,
         unique: true,
         lowercase: true,
-        validate: [validator.isEmail]
     }
 })
  

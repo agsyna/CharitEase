@@ -1,9 +1,10 @@
 const express = require('express');
 const RegisterUse = require('../controllers/register');
 
-const { getEvents, deleteEvent, updateEvent, createEvent } = require('../controllers/Club');
+const { getEvents, deleteEvent, updateEvent, createEvent } = require('../controllers/event');
 const { login, registerUser } = require('../controllers/register');
 const SubscribeUser = require("../controllers/subscribe")
+const getStars = require("../controllers/stars")
 const router = express.Router();
 
 
@@ -21,5 +22,6 @@ router.put('/updateEvent/:eventId', updateEvent)
 
 router.post('/subscribe', SubscribeUser)
 
+router.get('/getstars', getStars)
 
 module.exports = router;

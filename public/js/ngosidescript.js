@@ -151,7 +151,7 @@ const toggle = document.querySelector('.switch input');
     const data = await response.json();
     console.log('[SYNA 1 ] response',data);
 
-    window.location.href = 'ngodashboard.html';
+    window.location.href = '/ngodashboard';
     localStorage.clear('eventId')
 
   }catch(error){
@@ -255,7 +255,7 @@ async function createevent(event) {
     if (result.success) {
       // showDialog("Event Added Successfully", true);
       // setTimeout(() => {
-        window.location.href = "ngodashboard.html";
+        window.location.href = "/ngodashboard";
       // }, 240);
 
     } else {

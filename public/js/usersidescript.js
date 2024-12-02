@@ -346,13 +346,16 @@ async function fetchcommunitiesdata() {
 
 async function fetchstarsoftheweek() {
   try {
-    const response = await fetch("data/starsoftheweek.json");
+    const response = await fetch("http://localhost:4000/api/v1/getStars");
+    
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
 
+
     const jsonData = await response.json();
-    const star_names = jsonData.ngo_name;
+    const star_names = jsonData.star;
+
 
     for (let q = 0; q < star_names.length; q++) {
       const star_name = star_names[q];
@@ -377,7 +380,7 @@ async function fetchstarsoftheweek() {
       const star_reason = document.createElement("h5");
       star_reason.textContent = star_name.reason;
       star_div_atag.appendChild(star_reason);
-      // star_div_atag.classList.add("startext");
+
 
       star_div_atag.appendChild(star_div_image);
       star_div.appendChild(star_div_atag);

@@ -557,13 +557,14 @@ padding-top: 10px;
 }
 
 .starsoftheweek-item {
-    width: 400px; 
+    width: 1200px; 
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative; /* For text overlay */
 }
+
 
 .starsoftheweek-item h4 {
   transition: .5s ease;
