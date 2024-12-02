@@ -41,7 +41,7 @@ async function consolecheck(params) {
     console.log("numberofevents : " + numberofevents);
   } else {
     numberofevents = 4;
-    numberofcommunities = 4;
+    numberofcommunities = 5;
     console.log("numberofevents : " + numberofevents);
   }
   ongoing();
@@ -171,13 +171,13 @@ async function createsubscribe(id) {
     }
 
     if (result.success) {
-      showDialog("Event Added Successfully", true);
+      showCustomAlert("Event Added Successfully", true);
       // setTimeout(() => {
         window.location.href = "index.html";
       // }, 240);
 
     } else {
-      showDialog(result.message, false);
+      showCustomAlert("User Added Successfully: " + result.message, false);
     }
   } catch (e) {
     console.error("Failed to Add User:", e.message);
