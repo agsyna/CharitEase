@@ -3,7 +3,9 @@ const RegisterUse = require('../controllers/register');
 
 const { getEvents, deleteEvent, updateEvent, createEvent } = require('../controllers/Club');
 const { login, registerUser } = require('../controllers/register');
+const SubscribeUser = require("../controllers/subscribe")
 const router = express.Router();
+
 
 router.post('/register', registerUser)
 
@@ -17,7 +19,7 @@ router.delete('/deleteEvent/:eventId', deleteEvent)
 
 router.put('/updateEvent/:eventId', updateEvent)
 
- 
-module.exports = router;
- 
+router.post('/subscribe', SubscribeUser)
 
+
+module.exports = router;

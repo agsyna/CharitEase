@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/events.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+    <div class="mains">
+        <div style="display: flex;margin:0px">
+            <p style="align-self: center;font-size: 16px;margin-right: 20px;">Choose Your Location</p>
+            <div>
+                <input type="text" name="locationsearch" id="" placeholder="Choose A Location" >
+
+            </div>  
+
+
+        </div>
+
+
+        <div class="main-container">
+            <!-- <img src="assets/map.png" alt="CharItEase Logo"> -->
+             <!-- <center> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14058.063155231894!2d76.81474560000001!3d28.252373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1730910652439!5m2!1sen!2sin" width="90%" height="440px" style="border:0;margin:0 auto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+             <!-- </center> -->
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="events-header">
+        <div>
+            <h2 style="align-self: center;font-size: 24px;font-weight:800;">Events</h2>
+        </div>
+        <div class="search-filter-container">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+
+    <div class="events-container">
+
+            <div style="display: flex;">
+                <div class="tabactive" id="option1" onclick="geteventslist(0, 9,1)">Ongoing Events</div>
+                <div class="tab" id="option2" onclick="geteventslist(9, 0 ,2)">Upcoming Events</div>
+            </div>
+            <div>
+
+            <div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="events-grid1"></div>
+
+    <div class="pagination">
+        <button class="activepage" id="page1" onclick="pagechange(1)" >1</button>
+        <button class="page" id="page2" onclick="pagechange(2)" >2</button>
+    </div>
+        
+    <script src="usersidescript.js"></script>
+
+
+</body>
+</html>
