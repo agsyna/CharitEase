@@ -4,14 +4,6 @@ const featuresContainer = document.getElementById('features-container');
 
 
 
-async function getngodata()
-{
-
-}
-
-
-
-
 
   async function getEvents() {
 
@@ -27,26 +19,29 @@ async function getngodata()
       let clubs = document.querySelector('.events-list');
 
       
-      const eventDate = event.date;
 
-      let date = '';
-      let time = '';
-
-      if (eventDate && typeof eventDate === 'string') {
-        [date, time] = eventDate.split(',');
-      
-       
-        if (date.includes('T')) {
-          date = date.split('T')[0]; 
-        }
-      }
-
-      date = typeof date === 'string' ? date.trim() : '';
       
       const table = document.createElement('table');
       const tableBody = document.createElement('tbody');
       for (let i = 0; i < events.length; i++) {
         const event = events[i];
+
+        const eventDate = event.date || event.eventdate ;
+
+        let date = '';
+        let time = '';
+  
+        if (eventDate && typeof eventDate === 'string') {
+          [date, time] = eventDate.split(',');
+        
+         
+          if (date.includes('T')) {
+            date = date.split('T')[0]; 
+          }
+        }
+  
+        date = typeof date === 'string' ? date.trim() : '';
+
         const row = document.createElement('tr');
         
         const eventNameDiv = document.createElement('td');
@@ -56,9 +51,6 @@ async function getngodata()
         const communityDiv = document.createElement('td');
         communityDiv.textContent = event.community_name;
         row.appendChild(communityDiv);
-
-
-
         
         const dateDiv = document.createElement('td');
         dateDiv.innerText = date;

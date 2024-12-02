@@ -114,7 +114,8 @@ async function geteventsdata() {
 async function getreveventsdata() {
   lastfiveevents = []; // Reset the array
   try {
-    const response = await fetch("data/data.json");
+    const response = await fetch("http://localhost:4000/api/v1/getEvents");
+
     if (!response.ok) {
       throw new Error("Network response was not ok: " + response.statusText);
     }
@@ -129,8 +130,9 @@ async function getreveventsdata() {
     }
 
 
-    for (let q = events.length - 1; q >= events.length-7; q--) {
-      lastfiveevents.unshift(events[q]); 
+    for (let q = events.length - 1; q >= Math.max(events.length - 7, 0); q--) 
+    {
+      lastfiveevents.push(events[q]); 
     }
 
     console.log("Last 5 Events:", lastfiveevents);
@@ -139,6 +141,7 @@ async function getreveventsdata() {
     console.error("Error fetching JSON:", error);
   }
 }
+
 
 //events-homepage -- for rendering data into designed divs
 
@@ -814,7 +817,6 @@ function toggleDropdown() {
 
 
 //Get events for events pageasync function 
-
 async function geteventsoptions(a, b) {
   try {
     const response = await fetch("http://localhost:4000/api/v1/getEvents");
@@ -883,7 +885,7 @@ async function geteventsoptions(a, b) {
       eventsgrid.appendChild(carddiv);
     }
 
-    for (let i = b; i >= a; i--) {
+    for (let i = a; i >= b; i--) {
       if (!events[i]) continue;
 
       const event = events[i];
