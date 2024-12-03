@@ -1,9 +1,6 @@
-const RegisterController = require('./controllers/register')
 const express = require("express");
-const mongo = require('mongoose');
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
-const fs = require("fs");
 const path = require("path");
 const app = express();
 
@@ -19,7 +16,7 @@ app.use(
   cors({
     origin: "*",
   })
-);
+);  //because of diff ports for frontend and server
 
 app.use(express.json());
 
@@ -30,7 +27,9 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, 'public')))
+// To serve static image files i/e event images
+
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 const router = require("./routes/router");
 app.use("/api/v1", router);
@@ -40,7 +39,7 @@ const DBconnect = require("./database/mongodb");
 DBconnect();
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("CharitEase");
 });
 
 app.listen(port, () => {
