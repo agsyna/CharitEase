@@ -172,9 +172,7 @@ async function createsubscribe(id) {
 
     if (result.success) {
       showCustomAlert("Event Added Successfully", true);
-      // setTimeout(() => {
         window.location.href = "/";
-      // }, 240);
 
     } else {
       showCustomAlert("User Added Successfully: " + result.message, false);

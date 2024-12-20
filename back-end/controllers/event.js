@@ -87,8 +87,6 @@ const createEvent = async (req, res) => {
 
 
 
-    
-
     res.status(200).json({
       success: true,
       message: "Event Added Successfully",
@@ -106,6 +104,7 @@ const createEvent = async (req, res) => {
 
 const getEvents = async (req, res) => {
   try {
+    
     const event = await Event.find({});
 
     if (!event) {

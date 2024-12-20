@@ -4,9 +4,6 @@ const port = 55745
 
 app.set('view engine','ejs');
 app.use(express.static('public'));
-// app.get('/',(req,res)=>{
-//     res.render("views/header")
-// })
 
 app.listen(port,()=>{
     console.log(`App listening to port ${port}`)
@@ -46,18 +43,18 @@ app.get('/ngoupdate', (req, res) => {
 app.get('/volunteer', (req, res) => {
     res.render('volunteer'); 
 });
-// app.get('/CHETNA%20NGO', (req, res) => {
-//     res.render('chetna ngo'); 
-// });
-// app.get('/asha%20kiran', (req, res) => {
-//     res.render('asha kiran');  
-// });
-// app.get('/c%20a%20r%20e', (req, res) => {
-//     res.render('c a r e'); 
-// });
-// app.get('/diya%20foundation', (req, res) => {
-//     res.render('diya foundation'); 
-// });
+app.get('/CHETNA%20NGO', (req, res) => {
+    res.render('chetna ngo'); 
+});
+app.get('/asha%20kiran', (req, res) => {
+    res.render('asha kiran');  
+});
+app.get('/c%20a%20r%20e', (req, res) => {
+    res.render('c a r e'); 
+});
+app.get('/diya%20foundation', (req, res) => {
+    res.render('diya foundation'); 
+});
 
 app.get('/indievents:name', (req, res) => {
     const {name} = req.params;
